@@ -1,0 +1,14 @@
+Patient ID: trec-202220
+Patient Summary: A 49-year-old man presents with a bulging in his groin, diagnosed as a swelling above the inguinal ligament that increases in size upon coughing, indicative of a hernia. He has a history of mild dyslipidemia, which is well-managed through lifestyle modifications. He is scheduled for an elective laparoscopic hernia repair.
+
+Clinical trial ranking:
+NCT03566433: matching_score=1.0, agg_score=1.9, trial_score=2.9, qrels_score=2
+Brief Summary: Immediate pain reaction and return to work after TEP or Lichtenstein hernia repair have not been studied. In this multicenter trial the patients are allocated to surgery using TEP (n=50) or Lichtenstein (n=50) technique. Pain and return to work are recorded postoperatively up to one month. Immediate and late complications are also analyzed.
+Relevance Explanation: The patient is highly relevant to the clinical trial as he has been diagnosed with a symptomatic inguinal hernia, which is the specific condition targeted by the trial. His age of 49 falls within the trial's specified age range of 18-80 years. The trial aims to compare postoperative pain and recovery in patients undergoing either TEP or Lichtenstein hernioplasty for inguinal hernia repair, directly aligning with the patient's scheduled surgical treatment.
+Eligibility Explanation: The patient meets the inclusion criterion of having a symptomatic inguinal hernia and being within the age range required by the trial. Additionally, he does not meet any of the exclusion criteria listed, such as having a large scrotal hernia, bilateral hernia, symptom-free hernia, inguinal pain without clinical evidence of hernia, or being classified as ASA class 3 or higher. Therefore, he is fully eligible for participation in the trial.
+
+NCT04228536: matching_score=-2.0, agg_score=0.0, trial_score=-2.0, qrels_score=1
+Brief Summary: The goal of this study was to evaluate chronic pain and reoperation rates due to recurrence after groin hernia surgery in women compared to men and surgical method.
+Relevance Explanation: The patient is a 49-year-old man with a groin hernia, which aligns with the target conditions of the trial (inguinal hernia). However, the trial specifically focuses on women, making the patient's gender mismatch a critical factor in determining relevance. Despite the condition match, the gender-specific nature of the study significantly reduces the relevance of this trial for the patient.
+Eligibility Explanation: The patient is ineligible for the clinical trial primarily due to the gender requirement. The trial specifically targets women, and the patient is a man. This gender mismatch directly excludes him from participation, as indicated by the criterion-level eligibility predictions.
+

@@ -1,0 +1,18 @@
+# Core packages
+nltk==3.8.1
+numpy==1.26.4
+pandas==2.2.2
+tqdm==4.65.0
+rank_bm25==0.2.2
+openai==1.30.5
+transformers==4.39.3
+streamlit==1.31.0
+
+# Install the following via conda instead of pip for Windows compatibility:
+# conda install -c conda-forge scikit-learn
+# conda install -c pytorch faiss-cpu (or faiss-gpu for GPU support)
+# conda install -c pytorch pytorch torchvision torchaudio
+
+# Install after the conda packages:
+# pip install sentence-transformers==2.6.1
+# pip install beir==2.0.0

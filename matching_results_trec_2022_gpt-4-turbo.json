@@ -1,0 +1,4272 @@
+{
+    "trec-20221": {
+        "0": {
+            "NCT04648969": {
+                "inclusion": {
+                    "0": [
+                        "The patient has poorly developed secondary sexual characteristics, low serum testosterone, and low GnRH levels, which are indicative of hypogonadotropic hypogonadism.",
+                        [
+                            3,
+                            6
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 19 years old.",
+                        [
+                            0
+                        ],
+                        "excluded"
+                    ],
+                    "1": [
+                        "The patient has a confirmed diagnosis of hypogonadotropic hypogonadism (HH) based on low testosterone levels and low levels of GnRH.",
+                        [
+                            6
+                        ],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient has low testosterone levels.",
+                        [
+                            6
+                        ],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "The patient has low levels of GnRH, indicating low gonadotropin levels.",
+                        [
+                            6
+                        ],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "There is no information about TSH and prolactin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no mention of MRI findings in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no information provided about other medical conditions.",
+                        [],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "There is no information about the patient's medication history regarding reproductive endocrine function.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "There is no mention of a history of medication reactions requiring emergency medical care.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "There is no mention of illicit drug use.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "There is no mention of alcohol consumption.",
+                        [],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "There is no information about the patient's blood pressure.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "There is no information about white blood cell, platelet counts, and TSH levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "There is no information about prolactin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "14": [
+                        "There is no information about hemoglobin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "15": [
+                        "Criterion not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "16": [
+                        "The patient is not on testosterone replacement therapy.",
+                        [
+                            6
+                        ],
+                        "excluded"
+                    ],
+                    "17": [
+                        "There is no information about BUN, creatinine, AST, or ALT levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "18": [
+                        "Criterion not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "19": [
+                        "Criterion not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "20": [
+                        "Criterion not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            },
+            "NCT00136695": {
+                "inclusion": {
+                    "0": [
+                        "The patient is 19 years old, which is below the required age of 60 years and older.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient's serum testosterone level is 65 ng/dL, which is below the required range of 150-300 ng/dL.",
+                        [
+                            6
+                        ],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient exhibits symptoms of androgen deficiency, such as poorly developed secondary sexual characteristics and low testes volume.",
+                        [
+                            3,
+                            5
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 19 years old, which does not meet the criterion for 'elderly'.",
+                        [
+                            0
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The patient is male, which is relevant for the study.",
+                        [
+                            0
+                        ],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient has hypogonadism as indicated by low testosterone levels and poorly developed secondary sexual characteristics.",
+                        [
+                            3,
+                            6
+                        ],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "The patient is not elderly, as he is only 19 years old.",
+                        [
+                            0
+                        ],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "There is no information suggesting the patient has a history of non-compliance or inability to provide informed consent.",
+                        [
+                            7
+                        ],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "There is no mention of the patient having a psychiatric illness.",
+                        [],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "There is no mention of the patient having a history of alcohol or substance abuse.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "There is no mention of the patient having liver or kidney disease.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "There is no mention of the patient using other investigational drugs.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "There is no mention of the patient having a history of cancer.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-20222": {
+        "0": {
+            "NCT00065858": {
+                "inclusion": {
+                    "0": [
+                        "The patient's note does not indicate any health issues apart from the current pregnancy concern.",
+                        [
+                            5
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient is sexually active and at risk for pregnancy, but currently seems to be pregnant.",
+                        [
+                            0,
+                            1,
+                            4,
+                            6,
+                            7
+                        ],
+                        "not included"
+                    ],
+                    "2": [
+                        "No information on HIV or STD risk, but multiple partners suggest a higher risk.",
+                        [
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient has multiple male partners.",
+                        [
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "4": [
+                        "The patient has multiple partners and does not expect to have the same partner.",
+                        [
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "5": [
+                        "The patient has regular menses with a cycle length within the required range.",
+                        [
+                            2
+                        ],
+                        "included"
+                    ],
+                    "6": [
+                        "No information on previous deliveries, abortions, or hormonal treatments.",
+                        [],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "The patient is currently pregnant, which contradicts the willingness to accept a risk of pregnancy for contraceptive testing.",
+                        [
+                            6,
+                            7
+                        ],
+                        "not included"
+                    ],
+                    "8": [
+                        "No information on frequency of intercourse.",
+                        [],
+                        "not enough information"
+                    ],
+                    "9": [
+                        "No information on willingness to be fitted with a diaphragm.",
+                        [],
+                        "not enough information"
+                    ],
+                    "10": [
+                        "No information on willingness to use only the test product as the sole method of contraception.",
+                        [],
+                        "not enough information"
+                    ],
+                    "11": [
+                        "No information on capability to use the product and diaphragm properly.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "No information on willingness to keep a diary for recording required information.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "The patient agrees not to participate in any other clinical trials during the study.",
+                        [
+                            8
+                        ],
+                        "included"
+                    ],
+                    "14": [
+                        "The patient will provide informed consent.",
+                        [
+                            8
+                        ],
+                        "included"
+                    ],
+                    "15": [
+                        "No information on the fertility of the patient's sexual partners.",
+                        [],
+                        "not enough information"
+                    ],
+                    "16": [
+                        "No information on treatment for Chlamydia trachomatis or Neisseria gonorrhoeae in the patient's partners.",
+                        [],
+                        "not enough information"
+                    ],
+                    "17": [
+                        "No information on HIV status of the patient's partners.",
+                        [],
+                        "not enough information"
+                    ],
+                    "18": [
+                        "The patient's partners have had more than one sexual partner in the last 4 months.",
+                        [
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "19": [
+                        "No information on homosexual intercourse among the patient's partners.",
+                        [],
+                        "not enough information"
+                    ],
+                    "20": [
+                        "No information on shared injection drug needles among the patient's partners.",
+                        [],
+                        "not enough information"
+                    ],
+                    "21": [
+                        "No information on allergies or sensitivities to spermicides, Nonoxynol 9, or latex.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is likely pregnant given the elevated and abnormally rising serum \u03b2-hCG levels and the absence of a gestational sac in the uterus, suggesting an abnormal pregnancy.",
+                        [
+                            6,
+                            7
+                        ],
+                        "excluded"
+                    ],
+                    "1": [
+                        "No history of infertility or related conditions mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "No mention of allergies or sensitivities to spermicides, Nonoxynol 9, or latex.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "No history of toxic shock syndrome mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The patient has a history of several complicated UTIs but no specific mention of the number within the last 12 months.",
+                        [
+                            3
+                        ],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "No current suspected or diagnosed UTI or vaginitis mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "No contraindications to pregnancy mentioned in terms of medical conditions or chronic medication use.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "No mention of treatment with antibiotics for PID without a subsequent intrauterine pregnancy.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "The patient has multiple male partners, which exceeds the limit of one partner in the 4 months prior to study entry.",
+                        [
+                            4
+                        ],
+                        "excluded"
+                    ],
+                    "9": [
+                        "No mention of shared injection drug needles.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "No information provided about HIV status.",
+                        [],
+                        "not enough information"
+                    ],
+                    "11": [
+                        "No mention of genital herpes simplex virus infection.",
+                        [],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "No mention of sexually transmitted diseases in the last 3 months.",
+                        [],
+                        "not excluded"
+                    ],
+                    "13": [
+                        "No mention of lactating or breastfeeding.",
+                        [],
+                        "not excluded"
+                    ],
+                    "14": [
+                        "The patient has abnormal vaginal spotting, which meets the exclusion criterion.",
+                        [
+                            0
+                        ],
+                        "excluded"
+                    ],
+                    "15": [
+                        "No mention of lower abdominal or pelvic pain.",
+                        [],
+                        "not excluded"
+                    ],
+                    "16": [
+                        "No abnormal findings on pelvic examination mentioned, only ultrasound findings.",
+                        [],
+                        "not excluded"
+                    ],
+                    "17": [
+                        "No mention of vaginal or cervical irritation or related issues.",
+                        [],
+                        "not excluded"
+                    ],
+                    "18": [
+                        "No mention of vaginal or cervical biopsy or surgery in the last 3 months.",
+                        [],
+                        "not excluded"
+                    ],
+                    "19": [
+                        "No mention of recent use of vaginal or systemic antibiotics, antivirals, or antifungals.",
+                        [],
+                        "not excluded"
+                    ],
+                    "20": [
+                        "No mention of Depo-Provera injection.",
+                        [],
+                        "not excluded"
+                    ],
+                    "21": [
+                        "No mention of vaginal or cervical abnormalities that would interfere with diaphragm placement.",
+                        [],
+                        "not excluded"
+                    ],
+                    "22": [
+                        "No mention of an abnormal Pap smear in the last 12 months.",
+                        [],
+                        "not excluded"
+                    ],
+                    "23": [
+                        "No information on alcohol consumption.",
+                        [],
+                        "not enough information"
+                    ],
+                    "24": [
+                        "No mention of drug abuse.",
+                        [],
+                        "not excluded"
+                    ],
+                    "25": [
+                        "No mention of investigational drug or device use in the last month.",
+                        [],
+                        "not excluded"
+                    ],
+                    "26": [
+                        "No indication that the patient has previously participated in or completed this study.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT00546026": {
+                "inclusion": {
+                    "0": [
+                        "The patient note does not specify if the patient is part of the maternal/fetal medicine unit at Mount Sinai Hospital.",
+                        [],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "The patient is described as a 32-year-old woman.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "The patient is able to provide informed consent and comply with the trial protocol, indicating understanding of the study.",
+                        [
+                            8
+                        ],
+                        "included"
+                    ],
+                    "3": [
+                        "The patient has agreed to provide informed consent.",
+                        [
+                            8
+                        ],
+                        "included"
+                    ],
+                    "4": [
+                        "The patient's ultrasound shows no gestational sac in the uterus, indicating there is no ongoing viable singleton pregnancy.",
+                        [
+                            7
+                        ],
+                        "not included"
+                    ],
+                    "5": [
+                        "There is no information about the karyotype of the patient.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no information about a 19-week ultrasound or any major anatomical malformations.",
+                        [],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "The patient note does not specify the patient's fluency in English.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of a major psychiatric illness or use of psychotropic medications in the patient's history.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "No information on illegal substance or alcohol abuse is provided in the patient's history.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The patient's ultrasound does not show a gestational sac, and there is no mention of a 19-week ultrasound or significant fetal structural abnormalities.",
+                        [
+                            7
+                        ],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "There is no mention of an abnormal karyotype in the patient's medical records.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "The patient's ultrasound and medical history do not indicate a multifetal pregnancy.",
+                        [
+                            7
+                        ],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-20223": {
+        "0": {
+            "NCT00495781": {
+                "inclusion": {
+                    "0": [
+                        "The patient's diagnosis is hemochromatosis, not renal anemia, and there is no mention of glomerular filtration rate.",
+                        [],
+                        "not included"
+                    ],
+                    "1": [
+                        "There is no evidence in the patient note that suggests therapy with erythropoietin or darbepoetin.",
+                        [],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient note does not mention the patient undergoing dialysis.",
+                        [],
+                        "not included"
+                    ],
+                    "3": [
+                        "There is no mention of therapy with iron in the patient note.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of cancer in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "No mention of autoimmune diseases in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "No mention of chronic inflammation in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "No mention of liver disease in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The patient is diagnosed with hemochromatosis, which is not listed as an exclusion unless it is a cause of anemia other than renal anemia and iron deficiency anemia.",
+                        [
+                            8
+                        ],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT04648969": {
+                "inclusion": {
+                    "0": [
+                        "The patient is diagnosed with hemochromatosis, not hypogonadotropic hypogonadism.",
+                        [
+                            8
+                        ],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 51 years old.",
+                        [
+                            0
+                        ],
+                        "excluded"
+                    ],
+                    "1": [
+                        "The patient is diagnosed with hemochromatosis, not hypogonadotropic hypogonadism.",
+                        [
+                            8
+                        ],
+                        "excluded"
+                    ],
+                    "2": [
+                        "No information on testosterone or estradiol levels provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "No information on gonadotropin levels provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "No information on TSH and prolactin levels provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "No information on MRI findings provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "The patient is diagnosed with hemochromatosis, which is not described as stable or well controlled.",
+                        [
+                            8
+                        ],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "No information on prescription medications affecting reproductive endocrine function provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "No history of a medication reaction requiring emergency medical care is mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "The patient does not use illicit drugs.",
+                        [
+                            1
+                        ],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "No information on alcohol consumption provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "11": [
+                        "Blood pressure is within normal limits.",
+                        [
+                            2
+                        ],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "No information on white blood cell, platelet counts, and TSH provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "No information on prolactin levels provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "14": [
+                        "No information on hemoglobin levels provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "15": [
+                        "Criterion not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "16": [
+                        "No information on testosterone replacement therapy provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "17": [
+                        "No information on BUN, creatinine, AST, ALT levels provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "18": [
+                        "Criterion not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "19": [
+                        "Criterion not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "20": [
+                        "Criterion not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-20224": {
+        "0": {
+            "NCT01813916": {
+                "inclusion": {
+                    "0": [
+                        "The patient's symptoms and X-ray findings are consistent with osteoarthritis, indicated by joint pain, morning stiffness, and osteophyte formation.",
+                        [
+                            0,
+                            4,
+                            8
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient has agreed to comply with the trial protocol, which implies acceptance of the intra-articular HA injection therapy.",
+                        [
+                            9
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 66 years old, which is typically within the common age range for clinical trials unless specified otherwise.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The patient is female, but the gender is not specified as an exclusion criterion in the provided details.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient has osteoarthritis as indicated by symptoms and X-ray findings.",
+                        [
+                            0,
+                            8
+                        ],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "The patient has hypertension and hypercholesteremia, which are not mentioned as exclusion criteria.",
+                        [
+                            3
+                        ],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The patient has used Tylenol for pain management, but there is no mention of exclusion based on prior medication use.",
+                        [
+                            2
+                        ],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "The patient is willing and able to comply with the trial protocol as indicated by her readiness to provide informed consent.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT00409149": {
+                "inclusion": {
+                    "0": [
+                        "The patient is an adult over 18 years old.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient's use of anti-hypertensive medications is mentioned, but specific blood pressure measurements are not provided.",
+                        [
+                            3
+                        ],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "There is no information indicating that the patient is not using anti-hypertensive medications.",
+                        [],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient has agreed to provide informed consent and comply with the trial protocol.",
+                        [
+                            9
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of any recent cardiovascular events in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The patient does not mention any inability to walk independently.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no mention of diabetes or Hg A1c levels in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "No mention of inflammatory bowel disorders in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "No mention of any malignancy or life expectancy concerns in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "No information about pregnancy or lactation status is provided in the patient's note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "No information about the patient's body mass index is provided in the patient's note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "No information about alcohol consumption is provided in the patient's note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "No mention of recent changes in anti hypertensive medications in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "No plans to change smoking habits are mentioned in the patient's note.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-20225": {
+        "0": {
+            "NCT04648969": {
+                "inclusion": {
+                    "0": [
+                        "The patient's condition or symptoms are not related to hypogonadotropic hypogonadism, which is not mentioned anywhere in the patient note.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 23 years old, which meets the criterion of being 18 years and older.",
+                        [
+                            0
+                        ],
+                        "excluded"
+                    ],
+                    "1": [
+                        "There is no information suggesting a confirmed diagnosis of hypogonadotropic hypogonadism (HH).",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no information about the patient's testosterone or estradiol levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no information about the patient's gonadotropin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "There is no information about the patient's TSH and prolactin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no information about any MRI findings related to the pituitary or hypothalamus.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "The patient has no other medical conditions, indicating that all conditions are stable and well controlled.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "There is no information about the patient taking any prescription medications.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "There is no mention of a history of medication reactions requiring emergency medical care.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "The patient does not use illicit drugs.",
+                        [
+                            5
+                        ],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "The patient does not consume alcohol excessively.",
+                        [
+                            5
+                        ],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "There is no specific information about the patient's blood pressure values.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "There is no information about the patient's white blood cell or platelet counts, or TSH levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "There is no information about the patient's prolactin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "14": [
+                        "There is no information about the patient's hemoglobin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "15": [
+                        "This criterion is not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "16": [
+                        "There is no information suggesting that the patient is on testosterone replacement therapy.",
+                        [],
+                        "not enough information"
+                    ],
+                    "17": [
+                        "There is no information about the patient's BUN, creatinine, AST, or ALT levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "18": [
+                        "This criterion is not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "19": [
+                        "This criterion is not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "20": [
+                        "This criterion is not applicable as the patient is male.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            },
+            "NCT02240407": {
+                "inclusion": {
+                    "0": [
+                        "The patient is a 23-year-old man, which fits within the age range of 18 to 50 years required by the trial.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient's symptoms and diagnosis in the note suggest hypertrophic cardiomyopathy, not Pompe disease.",
+                        [
+                            10
+                        ],
+                        "not included"
+                    ],
+                    "2": [
+                        "There is no information in the patient note about the patient's ability to complete the 10 meter walk test.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no mention of the patient using aspirin or related products in the note.",
+                        [
+                            5
+                        ],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "The patient note does not mention any use of enzyme replacement therapy (ERT), nor does it specify any treatments related to Pompe disease.",
+                        [
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "5": [
+                        "The patient note does not specify the patient's residency, but it is implied that the events are taking place in the United States as the patient is being treated in an emergency department likely in the U.S.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is a 23-year-old man, and there is no mention of pregnancy or nursing, nor is there any indication of childbearing potential relevant to him.",
+                        [],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "There is no mention of the patient having used oral or systemic corticosteroids within the last 15 days.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient note does not provide any information regarding the patient's platelet count.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no information provided about the patient's INR.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "There is no information provided about the patient's serostatus to AAV9 capsid protein.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no mention of the patient having abnormal levels of transaminases or alkaline phosphatase.",
+                        [],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "There is no mention of the patient having abnormal levels of bilirubin or gamma-glutamyl transpeptidase.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "The patient has no other medical conditions as stated in the note.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "There is no information suggesting that the patient is currently or has recently been involved in any other research protocols.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "There is no mention of a history of platelet dysfunction or recent use of drugs that may alter platelet function.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "There is no information suggesting that the patient has received gene transfer agents within the past 6 months.",
+                        [],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "There is no information provided about any medical conditions or circumstances that would contraindicate an MRI evaluation.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "There is no specific information suggesting any concurrent condition that would make the patient unsuitable for the study.",
+                        [],
+                        "not excluded"
+                    ],
+                    "13": [
+                        "There is no mention of enzyme replacement therapy (ERT) use, which is inconsistent with the patient's condition.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-20226": {
+        "0": {
+            "NCT04338100": {
+                "inclusion": {
+                    "0": [
+                        "The patient's diagnosis is not mentioned as COVID-19, and there is no indication of a positive RT-PCR test for COVID-19.",
+                        [],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient is 61 years old.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "There is no information suggesting that the patient requires respiratory assistance or other intensive care.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no information suggesting that the patient is subject to a limitation of active therapeutics.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of pneumonectomy in the patient's medical history.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "No evidence in the patient note that suggests an impossibility to perform chest ultrasonography.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient has agreed to comply with the trial protocol, indicating ability to follow up.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "The patient will provide informed consent, indicating no opposition to research participation.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT04541160": {
+                "inclusion": {
+                    "0": [
+                        "The patient presents with progressive dyspnea but no mention of suspected CAP specifically.",
+                        [
+                            0
+                        ],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "The patient has progressive dyspnea, which is a respiratory symptom.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "There is no mention of fever, chills, sweating, myalgia, mental confusion, or headache in the patient note.",
+                        [],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient has decreased breath sounds and percussive dullness, but these are not specifically described as crackling rales.",
+                        [
+                            3
+                        ],
+                        "not included"
+                    ],
+                    "4": [
+                        "The patient has a definitive diagnosis of a condition involving the pleura, indicated by the biopsy showing proliferation of epithelioid-type cells.",
+                        [
+                            8
+                        ],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No information about CURB-65 or PSA scores is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "The patient does not have a diagnosis of rhinosinusitis or acute nasopharyngitis, nor is there mention of antimicrobial therapy for such conditions.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "3": [
+                        "The patient has a diagnosis of pleural effusion and nodular thickening of the pleura, which are not listed as exclusionary respiratory diseases.",
+                        [
+                            6
+                        ],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "There is no mention of congestive heart failure in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "The patient's BMI is not mentioned in the note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no information on the patient's ability to hold breath for at least 10 seconds.",
+                        [],
+                        "not enough information"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-20227": {
+        "0": {
+            "NCT04020913": {
+                "inclusion": {
+                    "0": [
+                        "The patient is a girl, not applicable for a study targeting boys.",
+                        [],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "The patient is 3 years old, which is below the age range specified (6-11 years).",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient is a girl, not applicable for a study targeting boys.",
+                        [],
+                        "not applicable"
+                    ],
+                    "3": [
+                        "The patient has achondroplasia, which is not listed as GH deficiency or idiopathic short stature.",
+                        [
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "4": [
+                        "There is no information on treatment of other pituitary hormone deficiencies.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "The patient is naive to GH therapy as she has not received any treatment yet.",
+                        [
+                            5
+                        ],
+                        "included"
+                    ],
+                    "6": [
+                        "The patient is a girl, not applicable for a study targeting boys.",
+                        [],
+                        "not applicable"
+                    ],
+                    "7": [
+                        "The patient is 3 years old, which is below the age range specified (6-11 years).",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "8": [
+                        "The patient is a girl, not applicable for a study targeting boys.",
+                        [],
+                        "not applicable"
+                    ],
+                    "9": [
+                        "The patient is a girl, not applicable for a study targeting boys.",
+                        [],
+                        "not applicable"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of brain tumors in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The patient has achondroplasia, which is a genetic condition but not mentioned as affecting the study outcomes directly.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "No information about steroid use is provided in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "No mention of involvement in intense physical training or sports.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT00106977": {
+                "inclusion": {
+                    "0": [
+                        "The patient has a mutation in the FGFR3 gene, but it is not specified as the Pro250Arg mutation required for this study.",
+                        [
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient's father, who also has achondroplasia, could be eligible as a family member, but the patient herself does not meet this criterion directly.",
+                        [
+                            3,
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient has a mutation in the FGFR3 gene, but it is not specified as the Pro250Arg mutation. Therefore, she does not meet the criterion for at-risk individuals specified for Muenke syndrome.",
+                        [
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient is not an unaffected family member; she is affected by a mutation in the FGFR3 gene.",
+                        [
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "4": [
+                        "The patient has been diagnosed with achondroplasia, not Muenke syndrome, and does not meet the criterion for suspected Muenke syndrome.",
+                        [
+                            4
+                        ],
+                        "not included"
+                    ],
+                    "5": [
+                        "The patient does not meet the criteria for genomic or survey arm of the study as she does not have Muenke syndrome or a family member with Muenke syndrome.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient, a minor, will provide informed consent through her parents as indicated in the note.",
+                        [
+                            7
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "There is no information in the patient note suggesting that the medical risks of travel and evaluation outweigh the benefits for this patient.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The criterion is a general statement about the study's inclusion and exclusion criteria and does not specify conditions that would exclude this patient.",
+                        [],
+                        "not applicable"
+                    ],
+                    "3": [
+                        "The study aims to include individuals with barriers such as economic, cultural, geographic, racial, and gender, and specifically includes pediatric and decisionally-impaired individuals. The patient is a child and thus falls within the scope of intended participants.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The study encourages participation from individuals of different ethnic backgrounds, and there is no indication that the patient's background would be a barrier.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "The patient is not mentioned to be pregnant, and the criterion explicitly states that pregnant women will not be excluded.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-20228": {
+        "0": {
+            "NCT04786795": {
+                "inclusion": {
+                    "0": [
+                        "The patient is only 7 months old.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient has not undergone a cholecystectomy; he is being treated for symptoms related to a gastrointestinal condition.",
+                        [],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient does not have dyspeptic symptoms related to a cholecystectomy.",
+                        [],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient is a minor and cannot provide informed consent himself; the note mentions the patient will comply, but this is not applicable as the patient does not meet other criteria.",
+                        [
+                            9
+                        ],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No information on liver or renal function is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "No information on heart and lung function is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "No evidence of neurological or mental illness is mentioned, and the patient is described as capable of providing informed consent and complying with the trial protocol.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "No evidence of advanced malignant tumors, unstable chronic diseases, or acute diseases that interfere with the study is mentioned. The patient has a diagnosis related to the gastrointestinal tract, not mentioned as malignant or unstable.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "No evidence of biliary obstruction or acute hepatitis is mentioned. The patient has a gastrointestinal condition, but it is not related to biliary obstruction or hepatitis.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "No information about the patient taking digestive enzymes or cholagogue drugs by themselves is provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "The patient is a 7-month-old boy, which implies he is not pregnant or lactating.",
+                        [
+                            0
+                        ],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "No information about participation in other clinical trials is provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "The patient is described as capable of providing informed consent and complying with the trial protocol, suggesting they can be followed up on time.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "This criterion is a title for a section and does not specify exclusion conditions.",
+                        [],
+                        "not applicable"
+                    ],
+                    "10": [
+                        "No information about the patient's medication adherence is provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "11": [
+                        "No information about taking other digestive enzymes, cholagogues, or prokinetic drugs during the study is provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "No adverse events related to the study drugs are mentioned.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "This criterion is a title for a section and does not specify exclusion conditions.",
+                        [],
+                        "not applicable"
+                    ],
+                    "14": [
+                        "No adverse events are mentioned, and the patient is described as willing to participate.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ],
+                    "15": [
+                        "No information about the patient withdrawing consent due to poor efficacy or inconvenience in follow-up is provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "16": [
+                        "No information about the patient being lost to follow-up is provided.",
+                        [],
+                        "not enough information"
+                    ]
+                }
+            },
+            "NCT02774746": {
+                "inclusion": {
+                    "0": [
+                        "The patient is a 7-month-old boy, which does not meet the age requirement of \u226518 years old.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient's ability to speak is not mentioned, but given the patient's age, it is unlikely that he speaks English or Spanish fluently.",
+                        [],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient does not have a diagnosis of gastroschisis; instead, the note indicates a diagnosis related to the absence of submucosal ganglia in the large intestine, suggesting Hirschsprung's disease.",
+                        [
+                            8
+                        ],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient is a 7-month-old boy, indicating he is not part of a current pregnancy.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "4": [
+                        "The patient is a 7-month-old boy, and the note does not mention any pregnancy, making this criterion not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "5": [
+                        "The patient is a 7-month-old boy, and the note does not mention any pregnancy, making this criterion not applicable.",
+                        [],
+                        "not applicable"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "2": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "3": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "4": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "5": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "6": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "7": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "8": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "9": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "10": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "11": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "12": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "13": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "14": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "15": [
+                        "The patient is a 7-month-old boy, not a fetus or a pregnant woman, hence none of the maternal or fetal criteria apply.",
+                        [],
+                        "not applicable"
+                    ],
+                    "16": [
+                        "The patient is a 7-month-old boy who cannot provide informed consent himself, but it is mentioned that he will provide informed consent, likely through a legal guardian.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ],
+                    "17": [
+                        "The patient is a 7-month-old boy who is not his own legally authorized representative, but it is mentioned that he will comply with the trial protocol, indicating involvement of a legal guardian.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-20229": {
+        "0": {
+            "NCT02774746": {
+                "inclusion": {
+                    "0": [
+                        "The patient does not have a diagnosis of gastroschisis, nor is there any mention of pregnancy or related conditions in her note.",
+                        [],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient speaks English as indicated by her interaction in the clinic, but this is not explicitly stated.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The patient is 67 years old, which meets the age criterion of being 18 years or older.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "3": [
+                        "The patient does not have a diagnosis of gastroschisis, as her medical issues are unrelated to this condition.",
+                        [],
+                        "not included"
+                    ],
+                    "4": [
+                        "The patient's note does not indicate that she is pregnant, much less with a singleton pregnancy.",
+                        [],
+                        "not included"
+                    ],
+                    "5": [
+                        "The patient is capable of providing informed consent as indicated by her willingness to comply with trial protocols.",
+                        [
+                            9
+                        ],
+                        "included"
+                    ],
+                    "6": [
+                        "There is no information about pregnancy or estimated date of confinement in the patient's note.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient does not have any fetal anomalies or conditions related to gastroschisis.",
+                        [],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "No information about fetal growth or intrauterine growth restriction is provided.",
+                        [],
+                        "not applicable"
+                    ],
+                    "2": [
+                        "No history of previous stillbirth is mentioned in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "No history of spontaneous preterm delivery is mentioned in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "No information about maternal cervical length is provided.",
+                        [],
+                        "not applicable"
+                    ],
+                    "5": [
+                        "The patient has hypertension.",
+                        [
+                            1
+                        ],
+                        "excluded"
+                    ],
+                    "6": [
+                        "No mention of insulin-dependent diabetes in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "No information about the timing of prenatal care initiation is provided.",
+                        [],
+                        "not applicable"
+                    ],
+                    "8": [
+                        "No mention of COVID-19 status or related information.",
+                        [],
+                        "not applicable"
+                    ],
+                    "9": [
+                        "No information about the stability of pregnancy is provided.",
+                        [],
+                        "not applicable"
+                    ],
+                    "10": [
+                        "No information about amniotic fluid volume is provided.",
+                        [],
+                        "not applicable"
+                    ],
+                    "11": [
+                        "No information about umbilical artery Dopplers is provided.",
+                        [],
+                        "not applicable"
+                    ],
+                    "12": [
+                        "No information about non-stress test (NST) or biophysical profile (BPP) is provided.",
+                        [],
+                        "not applicable"
+                    ],
+                    "13": [
+                        "No mention of concurrent enrollment in another study.",
+                        [],
+                        "not excluded"
+                    ],
+                    "14": [
+                        "No mention of surrogacy or being a gestational carrier.",
+                        [],
+                        "not excluded"
+                    ],
+                    "15": [
+                        "The patient is capable of providing informed consent as indicated.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ],
+                    "16": [
+                        "The patient is her own legally authorized representative as indicated by her ability to provide informed consent.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT00001761": {
+                "inclusion": {
+                    "0": [
+                        "The patient's diagnosis is not Wegener's granulomatosis; it is an abnormality in the upper esophagus.",
+                        [
+                            8
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient is 67 years old, which is above the age limit of 65 years.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "2": [
+                        "There is no information about changes in immunosuppressive drug therapy.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no information on the Vasculitis Activity Index score or persistent disease activity related to Wegener's granulomatosis.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "There is no information on the patient's tolerance to therapy or recurrent disease activity related to Wegener's granulomatosis.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no information on the patient's therapy regimen or disease activity related to Wegener's granulomatosis.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no evidence of active infection mentioned in the patient note.",
+                        [
+                            7
+                        ],
+                        "included"
+                    ],
+                    "7": [
+                        "The patient is a woman, but there is no information on pregnancy or birth control.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "There is no information on the patient's serum creatinine levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "9": [
+                        "There is no information on the patient's hemocytopenia status.",
+                        [],
+                        "not enough information"
+                    ],
+                    "10": [
+                        "There is no information on liver function test abnormalities.",
+                        [],
+                        "not enough information"
+                    ],
+                    "11": [
+                        "There is no information on the patient's status regarding HIV, HCV, or HBsAG.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "There is no information on the patient's weight.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "There is no information on the patient's recent treatment with investigational drugs.",
+                        [],
+                        "not enough information"
+                    ],
+                    "14": [
+                        "There is no mention of any pre-existing malignancy in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "15": [
+                        "There is no mention of any known allergy to E. coli protein or IL-10.",
+                        [],
+                        "not enough information"
+                    ],
+                    "16": [
+                        "There is no mention of any psychiatric illness.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 67 years old, which is not an exclusion criterion by itself as age is not specified in the exclusion criteria.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The patient is female, but gender is not specified as an exclusion criterion.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient has hypertension, dyslipidemia, and osteoarthritis, none of which are Wegener's Granulomatosis or related to the target disease of the trial.",
+                        [
+                            1
+                        ],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "The patient does not smoke or use alcohol, which are not mentioned in the exclusion criteria.",
+                        [
+                            2
+                        ],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The patient's ability to perform daily activities and live with her husband indicates no severe disability that would exclude her based on physical or mental incapacity.",
+                        [
+                            3
+                        ],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "The patient's bad breath and abnormal barium swallow study suggest an esophageal issue, but there is no mention of gastrointestinal conditions as an exclusion criterion.",
+                        [
+                            6,
+                            8
+                        ],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "The patient has agreed to provide informed consent and comply with the trial protocol, which is necessary for inclusion, not exclusion.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "There is no evidence of active Wegener's Granulomatosis or any vasculitis in the patient's note, which is required for inclusion in the trial.",
+                        [],
+                        "excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202210": {
+        "0": {
+            "NCT04648969": {
+                "inclusion": {
+                    "0": [
+                        "The patient note does not mention hypogonadotropic hypogonadism or any related symptoms; the focus is on a wrist mass.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 19 years old, which meets the age criterion of being 18 years and older.",
+                        [
+                            0
+                        ],
+                        "excluded"
+                    ],
+                    "1": [
+                        "There is no information suggesting a confirmed diagnosis of hypogonadotropic hypogonadism (HH).",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no information about the patient's testosterone or estradiol levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no information about the patient's gonadotropin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "There is no information about the patient's TSH or prolactin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no information about any MRI findings related to the pituitary or hypothalamus.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no mention of any other medical conditions, suggesting they are stable and well controlled.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "There is no mention of the patient taking any prescription medications that affect reproductive endocrine function.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "There is no history of a medication reaction requiring emergency medical care mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "The patient does not use illicit drugs.",
+                        [
+                            6
+                        ],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "There is no information about alcohol consumption.",
+                        [],
+                        "not enough information"
+                    ],
+                    "11": [
+                        "There is no information about the patient's blood pressure.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "There is no information about the patient's white blood cell or platelet counts, or TSH levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "There is no information about the patient's prolactin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "14": [
+                        "There is no information about the patient's hemoglobin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "15": [
+                        "There is no information about the patient's hemoglobin levels specific to women.",
+                        [],
+                        "not enough information"
+                    ],
+                    "16": [
+                        "The patient is female and there is no information about testosterone replacement therapy.",
+                        [],
+                        "not applicable"
+                    ],
+                    "17": [
+                        "There is no information about the patient's BUN, creatinine, AST, or ALT levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "18": [
+                        "The patient is female.",
+                        [
+                            0
+                        ],
+                        "not excluded"
+                    ],
+                    "19": [
+                        "There is no information about a pregnancy test.",
+                        [],
+                        "not enough information"
+                    ],
+                    "20": [
+                        "There is no information about the patient being pregnant or breastfeeding.",
+                        [],
+                        "not enough information"
+                    ]
+                }
+            },
+            "NCT00335920": {
+                "inclusion": {
+                    "0": [
+                        "The patient will provide informed consent as indicated in the note.",
+                        [
+                            8
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient is 19 years old, which is within the specified age range.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "There is no mention of sudden sensorineural hearing loss or any related symptoms in the patient's note.",
+                        [],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient's note does not mention any hearing loss, let alone specific details about sensorineural hearing loss severity or frequencies affected.",
+                        [],
+                        "not included"
+                    ],
+                    "4": [
+                        "There is no information suggesting that the patient experienced hearing loss, specifically within the last 72 hours.",
+                        [],
+                        "not included"
+                    ],
+                    "5": [
+                        "The patient's note does not indicate any recent occurrence of hearing loss.",
+                        [],
+                        "not included"
+                    ],
+                    "6": [
+                        "There is no evidence of hearing loss or its insufficient recovery in the patient's note.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 19 years old, which is within the acceptable age range for the trial.",
+                        [
+                            0
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "There is no information about hearing loss in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "2": [
+                        "There is no mention of pregnancy, but the patient uses condoms which suggests some level of protection.",
+                        [
+                            7
+                        ],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "There is no mention of middle ear issues in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "4": [
+                        "There is no mention of ear canal inflammation in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "5": [
+                        "There is no mention of conductive hearing loss in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "6": [
+                        "There is no mention of bilateral hearing loss in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "7": [
+                        "There is no mention of any conditions related to non-ISSNHL in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "8": [
+                        "There is no mention of pulse synchronic tinnitus in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "9": [
+                        "There is no mention of previous otologic surgery in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "10": [
+                        "There is no mention of ototoxic treatment in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "11": [
+                        "There is no mention of hypersensitivity, allergy, or intolerance to medications in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "12": [
+                        "There is no mention of non-permitted treatment during the study in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "13": [
+                        "There is no mention of intake of experimental drugs or participation in another clinical study within the last 30 days in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "14": [
+                        "There is no mention of the patient having only one hearing ear in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "15": [
+                        "The patient does not use illicit drugs or have a history of drug abuse.",
+                        [
+                            6
+                        ],
+                        "not excluded"
+                    ],
+                    "16": [
+                        "There is no mention of any ischemic disorders in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "17": [
+                        "The patient is capable of understanding the informed consent form as evidenced by her willingness to comply with the trial protocol.",
+                        [
+                            8
+                        ],
+                        "not excluded"
+                    ],
+                    "18": [
+                        "There is no mention of any psychiatric syndrome requiring treatment in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "19": [
+                        "There is no mention of any severe neurological diseases in the patient note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "20": [
+                        "There is no specific reason mentioned in the patient note that would prohibit inclusion into the study according to the investigator's opinion.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202211": {
+        "0": {
+            "NCT01824459": {
+                "inclusion": {
+                    "0": [
+                        "The patient has a lesion in the stomach identified as diffuse-type adenocarcinoma, which matches the criterion.",
+                        [
+                            5
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient is 63 years old, which is within the specified age range of 18 to 75 years.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "The patient has a measurable lesion in the stomach as identified by upper endoscopy.",
+                        [
+                            5
+                        ],
+                        "included"
+                    ],
+                    "3": [
+                        "There is no mention of the patient receiving palliative chemotherapy or radiotherapy, and no history of adjuvant or neoadjuvant chemotherapy is noted.",
+                        [
+                            2
+                        ],
+                        "included"
+                    ],
+                    "4": [
+                        "No ECOG performance status score is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no information on organ function tests to determine if the criteria are met.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "No ALT and AST levels are provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "No ALP levels are provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "No total bilirubin levels are provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "9": [
+                        "No absolute neutrophil count is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "10": [
+                        "No platelet count is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "11": [
+                        "No hemoglobin level is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "No creatinine level is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "No information on estimated creatinine clearance is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "14": [
+                        "The patient has agreed to provide informed consent and comply with the trial protocol.",
+                        [
+                            6
+                        ],
+                        "included"
+                    ],
+                    "15": [
+                        "No explicit mention of life expectancy, but given the patient's active engagement and lack of severe symptoms, it might be inferred to be more than 3 months.",
+                        [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6
+                        ],
+                        "not enough information"
+                    ],
+                    "16": [
+                        "There is no information about any recent major surgery.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of previous chemotherapy in the patient's note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "No specific reasons provided by the investigator in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "Only gastric adenocarcinoma mentioned, no other malignancies reported.",
+                        [
+                            5
+                        ],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "No mention of brain metastases or leptomeningeal metastasis.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "No history of myocardial infarction, severe unstable angina, or congestive heart failure mentioned.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "No serious complications like those listed are mentioned.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "No chronic nausea, vomiting, or diarrhea reported.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "No gastrointestinal bleeding or need for frequent blood transfusions mentioned.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "No mention of HIV or AIDS.",
+                        [],
+                        "not enough information"
+                    ],
+                    "9": [
+                        "No mention of suffering from a mental illness.",
+                        [],
+                        "not enough information"
+                    ],
+                    "10": [
+                        "No mention of neuropathy or its severity.",
+                        [],
+                        "not enough information"
+                    ],
+                    "11": [
+                        "Patient is not febrile, body temperature not reported as \u2265 38 \u2103.",
+                        [
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "No allergies to Cisplatin, Oxaliplatin, or S-1 mentioned.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "Patient is male, criterion not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "14": [
+                        "No information on contraceptive measures.",
+                        [],
+                        "not enough information"
+                    ],
+                    "15": [
+                        "No mention of being under experimental drug within 4 weeks.",
+                        [],
+                        "not enough information"
+                    ],
+                    "16": [
+                        "No mention of other anti-cancer treatments.",
+                        [],
+                        "not enough information"
+                    ],
+                    "17": [
+                        "No HER2 status mentioned.",
+                        [],
+                        "not enough information"
+                    ]
+                }
+            },
+            "NCT04743102": {
+                "inclusion": {
+                    "0": [
+                        "The patient is a 63-year-old man, which fits within the age range of 18 to 80 years.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient has a diagnosis of diffuse-type adenocarcinoma in the stomach, not colorectal adenocarcinoma.",
+                        [
+                            5
+                        ],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient's tumor is in the stomach, not within the specified distance from the anal margin as required for rectal cancer.",
+                        [
+                            5
+                        ],
+                        "not included"
+                    ],
+                    "3": [
+                        "There is no information provided about the hematopoietic functions of the patient's heart, lung, liver, kidney, and bone marrow.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "The patient's tumor is in the stomach, not the rectum, and there is no MRI staging information provided for a rectal tumor.",
+                        [
+                            5
+                        ],
+                        "not included"
+                    ],
+                    "5": [
+                        "The patient has not undergone neoadjuvant therapy for rectal cancer, and the findings are not consistent with cCR criteria.",
+                        [
+                            5
+                        ],
+                        "not included"
+                    ],
+                    "6": [
+                        "The patient has agreed to provide informed consent and comply with the trial protocol.",
+                        [
+                            6
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient has a diagnosis of diffuse-type adenocarcinoma of the stomach, not colorectal cancer.",
+                        [
+                            5
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "There is no mention of intestinal obstruction, perforation, bleeding, or emergency surgery needs.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no information about lymph node metastasis.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "The patient was recently diagnosed with diffuse-type adenocarcinoma of the stomach, which is a different malignant tumor.",
+                        [
+                            5
+                        ],
+                        "excluded"
+                    ],
+                    "4": [
+                        "There is no information suggesting the patient has participated in other clinical trials.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "No information on ASA rating or ECOG physical status score is provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no mention of severe organ dysfunction or serious basic diseases.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "No history of serious mental illness is mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "The patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "9": [
+                        "There is no mention of any uncontrolled infection.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "There is no specific clinical or laboratory condition mentioned that would exclude the patient.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202212": {
+        "0": {
+            "NCT04541160": {
+                "inclusion": {
+                    "0": [
+                        "The patient does not have suspected CAP; he has chronic cough and dyspnea related to asbestosis and pulmonary fibrosis.",
+                        [
+                            1,
+                            7,
+                            8
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient has chronic cough and dyspnea, which are respiratory symptoms.",
+                        [
+                            1
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "There is no mention of fever, chills, sweating, myalgia, mental confusion, or headache in the patient note.",
+                        [],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient has decreased breath sounds and percussive dullness, but no crackling rales are mentioned.",
+                        [
+                            5
+                        ],
+                        "not included"
+                    ],
+                    "4": [
+                        "The patient has a definitive diagnosis of pulmonary fibrosis and asbestosis.",
+                        [
+                            7,
+                            8
+                        ],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No information about CURB-65 or PSA scores is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "The patient does not have a diagnosis of rhinosinusitis or acute nasopharyngitis, nor is there mention of antimicrobial therapy for such conditions.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "3": [
+                        "The patient has chronic exposure to asbestosis and pulmonary fibrosis, which are considered interstitial lung diseases.",
+                        [
+                            7,
+                            8
+                        ],
+                        "excluded"
+                    ],
+                    "4": [
+                        "There is no mention of congestive heart failure in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "No information about the patient's BMI is provided.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no information provided about the patient's ability to hold breath.",
+                        [],
+                        "not enough information"
+                    ]
+                }
+            },
+            "NCT03462056": {
+                "inclusion": {
+                    "0": [
+                        "The patient has been diagnosed with pulmonary fibrosis and asbestosis, not cystic fibrosis.",
+                        [
+                            8
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "There is no mention of exocrine pancreatic insufficiency or pancreatic enzyme replacement therapy in the patient's note.",
+                        [],
+                        "not included"
+                    ],
+                    "2": [
+                        "There is no information provided about the patient's BMI or weight for age.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of cystic fibrosis related diabetes mellitus in the patient's note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "No mention of cystic fibrosis related liver disease in the patient's note.",
+                        [],
+                        "not applicable"
+                    ],
+                    "2": [
+                        "No information about allergies to peanut, cow's milk, oat flour, or other RUTF ingredients is provided in the patient's note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "No evidence in the patient's note that they have undergone lung or liver transplantation.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "No mention of the patient currently receiving enteral supplemental nutrition through gastrostomy or nasogastric tube.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202213": {
+        "0": {
+            "NCT02956980": {
+                "inclusion": {
+                    "0": [
+                        "The patient is 24 years old, which is above the age limit for pediatric patients.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient is 24 years old, which is above the specified age for Group 1.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient is 24 years old, which is above the specified age for Group 2.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "3": [
+                        "The patient's body weight is 77 kg, which meets the criterion of being more than 10 kg.",
+                        [
+                            4
+                        ],
+                        "included"
+                    ],
+                    "4": [
+                        "The patient is 24 years old and thus is pubescent, but does not fit the age group specified for pubescent or non-pubescent groups.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "5": [
+                        "The patient is an adult and can provide his own consent, which does not meet the criterion requiring parental consent.",
+                        [
+                            9
+                        ],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of any active infectious disease in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The patient has Klinefelter syndrome, which could involve perturbations of the immune system, but no specific immune or inflammatory system perturbations are mentioned.",
+                        [
+                            8
+                        ],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The patient is male, and the criterion specifically mentions contraception in pubescent girls.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            },
+            "NCT01028365": {
+                "inclusion": {
+                    "0": [
+                        "The patient is a 24-year-old man, not a woman.",
+                        [
+                            0
+                        ],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "The patient and his wife have been trying to conceive for 18 months, which exceeds the criterion of less than 3 months.",
+                        [
+                            1
+                        ],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient is a man, and this criterion specifically refers to living with a male partner, which is not applicable in this context.",
+                        [],
+                        "not applicable"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is male and the criterion is not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "The patient and his wife have been trying to conceive for the last 18 months, which exceeds the 3 months specified in the criterion.",
+                        [
+                            1
+                        ],
+                        "excluded"
+                    ],
+                    "2": [
+                        "There is no mention of the patient using hormone shots for birth control in the past year.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "There is no mention of renal failure in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "The patient has been diagnosed with Klinefelter syndrome, which is a known fertility problem.",
+                        [
+                            8
+                        ],
+                        "excluded"
+                    ],
+                    "5": [
+                        "There is no information about the patient planning to move.",
+                        [],
+                        "not enough information"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202214": {
+        "0": {
+            "NCT04844814": {
+                "inclusion": {
+                    "0": [
+                        "The patient is an adult over 18 years old.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "Gout is confirmed by identification of urate crystals in the joint fluid.",
+                        [
+                            8
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "The patient meets several criteria for gout according to Nijmegen criteria: man (2 pts), previous crisis (2 pts), involvement of first MTP joint (2.5 pts), maximum pain within 24 hours (0.5 pt), redness (1 pt).",
+                        [
+                            0,
+                            1,
+                            3,
+                            7
+                        ],
+                        "included"
+                    ],
+                    "3": [
+                        "There is no information provided about the patient's kidney function or history of renal transplantation.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "The patient's current flare is described as acute, suggesting it is within 5 days.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "5": [
+                        "Pain severity is not quantified using a visual analogical scale in the note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no mention of the patient's pain level on a visual analogical scale.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of participation in another trial.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "No active infection is mentioned in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "No history of allergy to anakinra or prednisone is mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "No contra-indications for anakinra or prednisone are mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "Neutrophil count is not mentioned in the patient's note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "The patient's ability to understand French is not mentioned.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "The patient's literacy is not mentioned, but he is able to provide informed consent.",
+                        [
+                            9
+                        ],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "The patient is male.",
+                        [],
+                        "not applicable"
+                    ],
+                    "8": [
+                        "No information suggests that the patient is deprived of liberty, under psychiatric care, or admitted to an institution for non-research purposes.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "No information suggests that the patient is under legal protection or unable to express consent.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "No information about the patient's social security status is provided.",
+                        [],
+                        "not enough information"
+                    ]
+                }
+            },
+            "NCT01193803": {
+                "inclusion": {
+                    "0": [
+                        "The patient is 39 years old, which is above the age of 18.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient note does not mention any refusal to have medical records reviewed for research.",
+                        [],
+                        "included"
+                    ],
+                    "2": [
+                        "The patient does not have spondylodiscitis; he has gouty arthritis.",
+                        [
+                            3,
+                            8
+                        ],
+                        "not applicable"
+                    ],
+                    "3": [
+                        "The patient does not require spinal biopsy, nor is there any mention of discitis or vertebral osteomyelitis.",
+                        [],
+                        "not applicable"
+                    ],
+                    "4": [
+                        "The patient does not have spinal pain.",
+                        [],
+                        "not applicable"
+                    ],
+                    "5": [
+                        "The patient does not have spinal pain unrelieved by rest.",
+                        [],
+                        "not applicable"
+                    ],
+                    "6": [
+                        "The patient does not have localized tenderness, neurological deficits, or limited range of motion related to the spine.",
+                        [],
+                        "not applicable"
+                    ],
+                    "7": [
+                        "The patient is not febrile.",
+                        [
+                            2
+                        ],
+                        "not applicable"
+                    ],
+                    "8": [
+                        "There are no imaging findings related to spondylodiscitis.",
+                        [],
+                        "not applicable"
+                    ],
+                    "9": [
+                        "There are no imaging findings of erosions of end plates on adjacent vertebral bodies.",
+                        [],
+                        "not applicable"
+                    ],
+                    "10": [
+                        "There is no decreased height of the intervertebral disk mentioned.",
+                        [],
+                        "not applicable"
+                    ],
+                    "11": [
+                        "There is no mention of a nonvascularized zone suggesting presence of pus or necroses.",
+                        [],
+                        "not applicable"
+                    ],
+                    "12": [
+                        "The patient does not have a prosthetic joint infection.",
+                        [],
+                        "not applicable"
+                    ],
+                    "13": [
+                        "The patient does not require surgical revision for a prosthetic joint.",
+                        [],
+                        "not applicable"
+                    ],
+                    "14": [
+                        "The patient does not have persistent joint pain related to a prosthetic joint.",
+                        [],
+                        "not applicable"
+                    ],
+                    "15": [
+                        "The patient is not febrile.",
+                        [
+                            2
+                        ],
+                        "not applicable"
+                    ],
+                    "16": [
+                        "The patient does not have an erythematous, swollen, fluctuant, and/or tender surgical wound.",
+                        [],
+                        "not applicable"
+                    ],
+                    "17": [
+                        "There is no wound dehiscence mentioned.",
+                        [],
+                        "not applicable"
+                    ],
+                    "18": [
+                        "There is no limited range of joint motion related to a prosthetic joint.",
+                        [],
+                        "not applicable"
+                    ],
+                    "19": [
+                        "There are no biological findings related to a prosthetic joint infection.",
+                        [],
+                        "not applicable"
+                    ],
+                    "20": [
+                        "The patient does not have CRP > 10 mg/l related to a prosthetic joint infection.",
+                        [],
+                        "not applicable"
+                    ],
+                    "21": [
+                        "The patient does not have synovial leukocytes count > 1500/mm3 and polymorphonuclear leukocytes > 65% related to a prosthetic joint infection.",
+                        [],
+                        "not applicable"
+                    ],
+                    "22": [
+                        "There are no imaging findings related to prosthetic joint loosening.",
+                        [],
+                        "not applicable"
+                    ],
+                    "23": [
+                        "There are no scintigraphy findings related to a prosthetic joint.",
+                        [],
+                        "not applicable"
+                    ],
+                    "24": [
+                        "The patient does not have septic arthritis without a prosthesis.",
+                        [],
+                        "not applicable"
+                    ],
+                    "25": [
+                        "The patient does not have acute joint pain and/or swelling related to septic arthritis without a prosthesis.",
+                        [],
+                        "not applicable"
+                    ],
+                    "26": [
+                        "There is no adenopathy near an inflammatory joint mentioned.",
+                        [],
+                        "not applicable"
+                    ],
+                    "27": [
+                        "The patient is not febrile.",
+                        [
+                            2
+                        ],
+                        "not applicable"
+                    ],
+                    "28": [
+                        "The patient does not have WBC > 10 000/mm3 related to septic arthritis without a prosthesis.",
+                        [],
+                        "not applicable"
+                    ],
+                    "29": [
+                        "The patient does not have CRP > 10 mg/l related to septic arthritis without a prosthesis.",
+                        [],
+                        "not applicable"
+                    ],
+                    "30": [
+                        "The patient does not have synovial leukocytes count > 2000/mm3 or polymorphonuclear leukocytes > 90% related to septic arthritis without a prosthesis.",
+                        [],
+                        "not applicable"
+                    ],
+                    "31": [
+                        "There are no imaging findings of capsular and surrounding soft-tissues swelling related to septic arthritis without a prosthesis.",
+                        [],
+                        "not applicable"
+                    ],
+                    "32": [
+                        "There are no imaging findings of synovial notch and/or demineralization related to septic arthritis without a prosthesis.",
+                        [],
+                        "not applicable"
+                    ],
+                    "33": [
+                        "There is no periarticular abscess mentioned.",
+                        [],
+                        "not applicable"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No information in the patient note indicates that the patient is already included in another study.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "The patient note does not provide any information regarding the patient's health insurance status.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The patient note does not mention any antibiotic treatment prior to sampling.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202215": {
+        "0": {
+            "NCT03479008": {
+                "inclusion": {
+                    "0": [
+                        "The patient is diagnosed with Duchenne Muscular Dystrophy (DMD), not critically ill or suffering from Post Intensive Care Syndrome.",
+                        [
+                            5
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient is 8 years old, which is not specified as an exclusion or inclusion based on age in the provided criteria.",
+                        [
+                            0
+                        ],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The patient has neuromuscular weakness as evidenced by difficulty standing and low muscle strength.",
+                        [
+                            0,
+                            2
+                        ],
+                        "included"
+                    ],
+                    "3": [
+                        "The patient is able to provide informed consent and comply with the trial protocol.",
+                        [
+                            6
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No information about pregnancy is provided in the patient note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "There is no indication that the patient is a prisoner.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT02240407": {
+                "inclusion": {
+                    "0": [
+                        "The patient is 8 years old, which is below the age range specified in the criterion.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient is diagnosed with DMD, not Pompe disease.",
+                        [
+                            5
+                        ],
+                        "not included"
+                    ],
+                    "2": [
+                        "There is no information about the patient's ability to complete the 10 meter walk test.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no information about the patient's use of aspirin or similar drugs.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "There is no mention of the patient taking enzyme replacement therapy (ERT) for Pompe disease.",
+                        [],
+                        "not applicable"
+                    ],
+                    "5": [
+                        "The patient is not specified as a United States resident.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is an 8-year-old boy, thus the criterion about pregnancy, nursing, or contraception is not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "1": [
+                        "There is no information in the patient note about the use of corticosteroids.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The patient note does not provide any information regarding the patient's platelet count.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "The patient note does not provide any information regarding the patient's INR levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "There is no information in the patient note about seronegativity to AAV9 capsid protein.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no information in the patient note about the levels of transaminases and alkaline phosphatase.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "There is no information in the patient note about the levels of bilirubin and gamma-glutamyl transpeptidase.",
+                        [],
+                        "not enough information"
+                    ],
+                    "7": [
+                        "There is no information in the patient note about any chronic liver disease.",
+                        [],
+                        "not enough information"
+                    ],
+                    "8": [
+                        "The patient note does not mention participation in any other research protocols.",
+                        [],
+                        "not enough information"
+                    ],
+                    "9": [
+                        "There is no information in the patient note about a history of platelet dysfunction or recent use of drugs that may alter platelet function.",
+                        [],
+                        "not enough information"
+                    ],
+                    "10": [
+                        "The patient note does not mention any recent gene transfer therapy.",
+                        [],
+                        "not enough information"
+                    ],
+                    "11": [
+                        "There is no information in the patient note about any medical conditions that would contraindicate an MRI evaluation.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "The patient note does not provide any information about other concurrent conditions that would make the subject unsuitable for the study.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "The patient is diagnosed with DMD, not Pompe disease, and there is no mention of enzyme replacement therapy (ERT) use.",
+                        [
+                            5
+                        ],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202216": {
+        "0": {
+            "NCT03255720": {
+                "inclusion": {
+                    "0": [
+                        "The patient's note does not mention any cognitive complaints or interference in complex occupational and social activities.",
+                        [],
+                        "not included"
+                    ],
+                    "1": [
+                        "There is no mention of changes in cognition reported by the patient, informant, or clinician in the patient note.",
+                        [],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient note does not provide information about the presence or absence of profound sub-cortical ischemic changes.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of delirium in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "No mention of a recent stroke event in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient's note mentions sarcoidosis, which is a specific cause of white matter lesions.",
+                        [
+                            9
+                        ],
+                        "excluded"
+                    ],
+                    "3": [
+                        "No specific serology tests or abnormalities mentioned that contribute to cognitive impairment.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "No mention of severe hearing or visual impairment in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "No mention of severe dementia; the patient is able to provide informed consent and comply with the trial protocol.",
+                        [
+                            10
+                        ],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT04648969": {
+                "inclusion": {
+                    "0": [
+                        "The patient's condition is not mentioned as hypogonadotropic hypogonadism, but rather symptoms and findings suggest a possible diagnosis of sarcoidosis.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 39 years old, which is within the age range of 18 years and older.",
+                        [
+                            0
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "There is no mention of a confirmed diagnosis of hypogonadotropic hypogonadism (HH) in the patient's note.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "There is no information provided about the patient's testosterone or estradiol levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no information provided about the patient's gonadotropin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "There is no information provided about the patient's TSH and prolactin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no mention of any MRI findings related to the pituitary or hypothalamus.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "The patient's prior medical condition is unremarkable and she takes no medications, suggesting her medical conditions are stable and well controlled.",
+                        [
+                            2
+                        ],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "The patient takes no medications, which meets the criterion of not taking any prescription medications known to affect reproductive endocrine function.",
+                        [
+                            2
+                        ],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "There is no history of a medication reaction requiring emergency medical care mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "The patient does not use illicit drugs.",
+                        [
+                            5
+                        ],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "The patient drinks alcohol occasionally, which does not suggest excessive consumption.",
+                        [
+                            5
+                        ],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "Vital signs are reported as normal, which typically includes normal blood pressure.",
+                        [
+                            7
+                        ],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "There is no information about the patient's white blood cell, platelet counts, and TSH levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "There is no information about the patient's prolactin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "14": [
+                        "There is no information about the patient's hemoglobin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "15": [
+                        "There is no information about the patient's hemoglobin levels specific to the criterion for women.",
+                        [],
+                        "not enough information"
+                    ],
+                    "16": [
+                        "This criterion is not applicable as it specifically pertains to men.",
+                        [],
+                        "not applicable"
+                    ],
+                    "17": [
+                        "There is no information about the patient's BUN, creatinine, AST, or ALT levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "18": [
+                        "This criterion is not applicable as it specifically pertains to men.",
+                        [],
+                        "not applicable"
+                    ],
+                    "19": [
+                        "There is no information about a pregnancy test, but the patient is willing to provide informed consent and comply with the trial protocol, which may include undergoing required tests.",
+                        [
+                            10
+                        ],
+                        "not excluded"
+                    ],
+                    "20": [
+                        "There is no information suggesting that the patient is breastfeeding or pregnant.",
+                        [],
+                        "not enough information"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202217": {
+        "0": {
+            "NCT00335920": {
+                "inclusion": {
+                    "0": [
+                        "The patient has agreed to provide informed consent and comply with the trial protocol.",
+                        [
+                            8
+                        ],
+                        "included"
+                    ],
+                    "1": [
+                        "The patient is 67 years old, which is within the specified age range of 18 to 75 years.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "The patient's note does not mention any diagnosis of sudden sensorineural hearing loss; the symptoms described relate to vision issues.",
+                        [],
+                        "not included"
+                    ],
+                    "3": [
+                        "There is no information in the patient note about sensorineural hearing loss or specific audiogram results.",
+                        [],
+                        "not included"
+                    ],
+                    "4": [
+                        "There is no mention of hearing loss occurring within 72 hours in the patient note.",
+                        [],
+                        "not included"
+                    ],
+                    "5": [
+                        "The patient note does not provide any information about the timing of hearing loss.",
+                        [],
+                        "not included"
+                    ],
+                    "6": [
+                        "There is no information about the recovery of hearing loss or comparison of hearing between ears.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 67 years old, which is within the acceptable age range for the trial.",
+                        [
+                            0
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "There is no information provided about when the hearing loss occurred.",
+                        [],
+                        "not enough information"
+                    ],
+                    "2": [
+                        "The patient is male, reducing the likelihood of pregnancy, and there is no mention of lactation.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "There is no mention of middle ear inflammation or effusion in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "There is no mention of ear canal inflammation in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "There is no mention of conductive hearing loss or its severity in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "6": [
+                        "There is no mention of sudden bilateral hearing loss in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "The patient's note does not mention any conditions that indicate the hearing loss is not ISSNHL.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "There is no mention of pulse synchronic tinnitus in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "There is no mention of previous otologic surgery in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "There is no mention of recent ototoxic treatment in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "There is no mention of known hypersensitivity, allergy, or intolerance to the study medication in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "There is no mention of use of non-permitted treatment during the study in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "13": [
+                        "There is no mention of intake of experimental drugs or participation in a clinical study within the last 30 days in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "14": [
+                        "There is no mention of the patient having only one hearing ear in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "15": [
+                        "There is no mention of a history of drug abuse or alcoholism in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "16": [
+                        "There is no mention of a history of an ischemic disorder in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "17": [
+                        "The patient is capable of understanding the informed consent form as indicated by his willingness to comply with the trial protocol.",
+                        [
+                            8
+                        ],
+                        "not excluded"
+                    ],
+                    "18": [
+                        "There is no mention of any psychiatric syndrome requiring treatment in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "19": [
+                        "There is no mention of any severe neurological disease in the patient's note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "20": [
+                        "There is no specific reason mentioned in the patient's note that would prohibit inclusion into the study according to the investigator's opinion.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT04224909": {
+                "inclusion": {
+                    "0": [
+                        "The patient's note does not mention Sudden Sensorineural Hearing Loss; the symptoms and history provided relate to vision issues.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No mention of vertigo in the patient's symptoms or history.",
+                        [],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "No other etiology causing dizziness is mentioned in the patient's history.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "No neurological dysfunction other than hearing loss is mentioned, and the patient's primary complaint is vision-related.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "No evidence of difficulty performing the vHIT is mentioned, and the patient is willing to comply with the trial protocol.",
+                        [
+                            8
+                        ],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "No chronic vestibular disorder is mentioned in the patient's history.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "The patient is a male, thus the criterion about pregnancy does not apply.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202218": {
+        "0": {
+            "NCT04648969": {
+                "inclusion": {
+                    "0": [
+                        "The patient note does not mention hypogonadotropic hypogonadism or any related symptoms; the patient is described with a rash and normal development.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 2 years old, which is below the age requirement of 18 years and older.",
+                        [
+                            0
+                        ],
+                        "excluded"
+                    ],
+                    "1": [
+                        "There is no mention of a confirmed diagnosis of hypogonadotropic hypogonadism (HH) in the patient note.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no information on testosterone or estradiol levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "3": [
+                        "There is no information on gonadotropin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "4": [
+                        "There is no information on TSH and prolactin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "5": [
+                        "There is no mention of MRI findings related to the pituitary or hypothalamus.",
+                        [],
+                        "not enough information"
+                    ],
+                    "6": [
+                        "The patient is described as having no major illnesses and appears healthy.",
+                        [
+                            2,
+                            4
+                        ],
+                        "not excluded"
+                    ],
+                    "7": [
+                        "The patient takes no medications.",
+                        [
+                            3
+                        ],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "There is no history of a medication reaction requiring emergency medical care mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "There is no mention of illicit drug use.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "There is no mention of alcohol consumption.",
+                        [],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "There is no information on blood pressure.",
+                        [],
+                        "not enough information"
+                    ],
+                    "12": [
+                        "There is no information on white blood cell, platelet counts, and TSH levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "13": [
+                        "There is no information on prolactin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "14": [
+                        "There is no information on hemoglobin levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "15": [
+                        "The patient is male, so the criterion about women's hemoglobin levels is not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "16": [
+                        "The patient is not on testosterone replacement therapy.",
+                        [],
+                        "not excluded"
+                    ],
+                    "17": [
+                        "There is no information on BUN, creatinine, AST, or ALT levels.",
+                        [],
+                        "not enough information"
+                    ],
+                    "18": [
+                        "The patient is male, so the criterion about women is not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "19": [
+                        "The patient is male, so the criterion about pregnancy tests is not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "20": [
+                        "The patient is male, so the criterion about breastfeeding and pregnancy is not applicable.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            },
+            "NCT02753777": {
+                "inclusion": {
+                    "0": [
+                        "The patient is only 2 years old.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "No diagnosis of pemphigus vulgaris, pemphigus foliaceus, or bullous pemphigoid is mentioned; the symptoms described do not align with these conditions.",
+                        [],
+                        "not included"
+                    ],
+                    "2": [
+                        "The patient is 2 years old and cannot provide informed consent.",
+                        [
+                            8
+                        ],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 2 years old.",
+                        [
+                            0
+                        ],
+                        "excluded"
+                    ],
+                    "1": [
+                        "The patient's symptoms suggest a rash that is not consistent with pemphigus or pemphigoid diseases.",
+                        [
+                            0,
+                            1
+                        ],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "There is no information suggesting that the patient is a Penn employee.",
+                        [],
+                        "not excluded"
+                    ],
+                    "3": [
+                        "There is no information suggesting that the patient is a Penn student.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "There is no indication that the patient is cognitively impaired.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202219": {
+        "0": {
+            "NCT02596308": {
+                "inclusion": {
+                    "0": [
+                        "The patient is 7 years old, which does not meet the age requirement of 18-55 months old.",
+                        [
+                            0
+                        ],
+                        "not included"
+                    ],
+                    "1": [
+                        "The patient's guardians are present and involved, as indicated by bringing her to the emergency department and providing a history of the event.",
+                        [
+                            0
+                        ],
+                        "included"
+                    ],
+                    "2": [
+                        "The patient note mentions that the patient will comply with the trial protocol.",
+                        [
+                            6
+                        ],
+                        "included"
+                    ],
+                    "3": [
+                        "There is no information provided about the patient's temperature.",
+                        [],
+                        "not enough information"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "No family history of seizures or progressive neurological disease is mentioned.",
+                        [],
+                        "not enough information"
+                    ],
+                    "1": [
+                        "No history of plague or plague vaccination is mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "2": [
+                        "The patient has a generalized rash and bilateral expiratory wheezes, suggesting an allergic reaction.",
+                        [
+                            0,
+                            5
+                        ],
+                        "excluded"
+                    ],
+                    "3": [
+                        "No autoimmune diseases or immune deficiencies including HIV are mentioned.",
+                        [],
+                        "not excluded"
+                    ],
+                    "4": [
+                        "No mention of dysgenopathy or severe chronic disease.",
+                        [],
+                        "not excluded"
+                    ],
+                    "5": [
+                        "The patient is a 7-year-old girl, thus not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "6": [
+                        "The patient is a 7-year-old girl, thus not applicable.",
+                        [],
+                        "not applicable"
+                    ],
+                    "7": [
+                        "No mention of thrombocytopenia or other blood coagulation disorders.",
+                        [],
+                        "not excluded"
+                    ],
+                    "8": [
+                        "No mention of prior administration of immunodepressants, corticosteroids, antianaphylactic treatment, or cytotoxic therapy.",
+                        [],
+                        "not excluded"
+                    ],
+                    "9": [
+                        "No information suggesting difficulty in collecting blood samples.",
+                        [],
+                        "not excluded"
+                    ],
+                    "10": [
+                        "No mention of prior administration of blood products.",
+                        [],
+                        "not excluded"
+                    ],
+                    "11": [
+                        "No mention of prior administration of other research medicines.",
+                        [],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "No mention of prior administration of attenuated live vaccines.",
+                        [],
+                        "not excluded"
+                    ],
+                    "13": [
+                        "No mention of prior administration of subunit or inactivated vaccines.",
+                        [],
+                        "not excluded"
+                    ],
+                    "14": [
+                        "No mention of fever or high temperature before vaccination.",
+                        [],
+                        "not excluded"
+                    ],
+                    "15": [
+                        "The patient has a generalized rash, but it is not specified to be on the injection site.",
+                        [
+                            0
+                        ],
+                        "not enough information"
+                    ],
+                    "16": [
+                        "No specific conditions mentioned that may interfere with the evaluation of study objectives.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT04648969": {
+                "inclusion": {
+                    "0": [
+                        "The patient note does not mention hypogonadotropic hypogonadism or any related symptoms; the patient is being treated for symptoms likely due to an allergic reaction or sting.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is 7 years old, which is below the age limit of 18 years.",
+                        [
+                            0
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "There is no information suggesting a diagnosis of hypogonadotropic hypogonadism.",
+                        [],
+                        "not applicable"
+                    ],
+                    "2": [
+                        "There is no information on testosterone or estradiol levels.",
+                        [],
+                        "not applicable"
+                    ],
+                    "3": [
+                        "There is no information on gonadotropin levels.",
+                        [],
+                        "not applicable"
+                    ],
+                    "4": [
+                        "There is no information on TSH or prolactin levels.",
+                        [],
+                        "not applicable"
+                    ],
+                    "5": [
+                        "There is no mention of MRI findings related to the pituitary or hypothalamus.",
+                        [],
+                        "not applicable"
+                    ],
+                    "6": [
+                        "There is no information on the stability or control of other medical conditions.",
+                        [],
+                        "not applicable"
+                    ],
+                    "7": [
+                        "There is no information on the use of medications affecting reproductive endocrine function.",
+                        [],
+                        "not applicable"
+                    ],
+                    "8": [
+                        "There is no history of a medication reaction requiring emergency medical care mentioned.",
+                        [],
+                        "not applicable"
+                    ],
+                    "9": [
+                        "There is no mention of illicit drug use.",
+                        [],
+                        "not applicable"
+                    ],
+                    "10": [
+                        "There is no information on alcohol consumption.",
+                        [],
+                        "not applicable"
+                    ],
+                    "11": [
+                        "The patient's blood pressure is 75/55 mm Hg, which is below the normal range specified.",
+                        [
+                            3
+                        ],
+                        "not excluded"
+                    ],
+                    "12": [
+                        "There is no information on white blood cell or platelet counts, or TSH levels.",
+                        [],
+                        "not applicable"
+                    ],
+                    "13": [
+                        "There is no information on prolactin levels.",
+                        [],
+                        "not applicable"
+                    ],
+                    "14": [
+                        "There is no information on hemoglobin levels.",
+                        [],
+                        "not applicable"
+                    ],
+                    "15": [
+                        "The patient is a female, but there is no information on hemoglobin levels.",
+                        [],
+                        "not applicable"
+                    ],
+                    "16": [
+                        "There is no information on testosterone replacement therapy as it is not applicable to a female child.",
+                        [],
+                        "not applicable"
+                    ],
+                    "17": [
+                        "There is no information on BUN, creatinine, AST, or ALT levels.",
+                        [],
+                        "not applicable"
+                    ],
+                    "18": [
+                        "The patient is a female, but there is no specific exclusion criterion for females other than pregnancy and breastfeeding.",
+                        [],
+                        "not applicable"
+                    ],
+                    "19": [
+                        "There is no information on pregnancy status, but the patient is only 7 years old.",
+                        [],
+                        "not applicable"
+                    ],
+                    "20": [
+                        "The patient is not breastfeeding or pregnant due to her age.",
+                        [],
+                        "not applicable"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    },
+    "trec-202220": {
+        "0": {
+            "NCT03566433": {
+                "inclusion": {
+                    "0": [
+                        "The patient has a clinically diagnosed symptomatic inguinal hernia as evidenced by the bulging in his groin and the increase in bulge size when coughing.",
+                        [
+                            0,
+                            2
+                        ],
+                        "included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient note describes a bulging in the groin that increases with coughing, indicating a likely symptomatic hernia, not symptom-free. There is no mention of a large scrotal hernia, bilateral hernia, or inguinal pain without hernia. The ASA class is not mentioned, but there is no indication of severe systemic disease that would suggest ASA class 3 or higher.",
+                        [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "not excluded"
+                    ]
+                }
+            },
+            "NCT04228536": {
+                "inclusion": {
+                    "0": [
+                        "The patient is a 49-year-old man, which does not meet the gender requirement for a study focused on women.",
+                        [],
+                        "not included"
+                    ]
+                },
+                "exclusion": {
+                    "0": [
+                        "The patient is scheduled for elective laparoscopic hernia repair and there is no mention of non-responsiveness to questionnaires or previous operations during the inclusion period.",
+                        [
+                            6
+                        ],
+                        "not excluded"
+                    ],
+                    "1": [
+                        "There is no information suggesting that the patient has undergone bilateral operations.",
+                        [],
+                        "not excluded"
+                    ]
+                }
+            }
+        },
+        "1": {},
+        "2": {}
+    }
+}

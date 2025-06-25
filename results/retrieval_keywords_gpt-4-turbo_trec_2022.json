@@ -1,0 +1,211 @@
+{
+    "trec-20221": {
+        "summary": "A 19-year-old male presents with concerns about sexual development and satisfaction in his relationship. He exhibits poorly developed secondary sexual characteristics, a low testicular volume, and significantly reduced serum testosterone levels. Additionally, he has an impaired sense of smell (anosmia) but normal visual acuity. Hormonal evaluation indicates low levels of GnRH, suggesting a possible pituitary or hypothalamic dysfunction.",
+        "conditions": [
+            "Delayed puberty",
+            "Hypogonadism",
+            "Anosmia",
+            "Hypogonadotropic hypogonadism",
+            "Testicular hypofunction"
+        ]
+    },
+    "trec-20222": {
+        "summary": "A 32-year-old woman presents with vaginal spotting and a history of inconsistent contraceptive use, reporting her last menstrual period 10 weeks ago. Her serum \u03b2-hCG levels are abnormally rising but not doubling as expected in a normal early pregnancy, and pelvic ultrasound shows no gestational sac, suggesting a possible ectopic pregnancy or abnormal intrauterine pregnancy. Her medical history includes an appendectomy and recurrent complicated urinary tract infections (UTIs).",
+        "conditions": [
+            "Ectopic pregnancy",
+            "Abnormal intrauterine pregnancy",
+            "Vaginal spotting",
+            "Recurrent urinary tract infections",
+            "History of appendectomy"
+        ]
+    },
+    "trec-20223": {
+        "summary": "A 51-year-old man presents with fatigue, sexual dysfunction including reduced libido, and increased skin pigmentation. He has a normal blood pressure, pulse, and BMI, and does not smoke or use illicit drugs. Genetic testing reveals homozygosity for the C282Y mutation, and laboratory results indicate elevated transferrin saturation and serum ferritin levels, leading to a diagnosis of hemochromatosis.",
+        "conditions": [
+            "Hemochromatosis",
+            "Fatigue",
+            "Sexual dysfunction",
+            "Reduced libido",
+            "Increased skin pigmentation",
+            "Elevated transferrin saturation",
+            "Elevated serum ferritin"
+        ]
+    },
+    "trec-20224": {
+        "summary": "A 66-year-old woman presents with joint pain in her hands and knees, associated with morning stiffness lasting less than 30 minutes. She experiences moderate to severe pain that worsens with activity and minimal relief from Tylenol. Physical examination reveals firm nodules over the distal interphalangeal joints and symptoms of bone friction. X-ray findings include joint space narrowing, subchondral bone sclerosis, and osteophyte formation, indicative of osteoarthritis. She also has a history of hypertension and hypercholesterolemia.",
+        "conditions": [
+            "Osteoarthritis",
+            "Hypertension",
+            "Hypercholesterolemia",
+            "Joint pain",
+            "Morning stiffness",
+            "Subchondral bone sclerosis",
+            "Osteophyte formation"
+        ]
+    },
+    "trec-20225": {
+        "summary": "A 23-year-old man experienced syncope during physical activity, with a history of similar episodes over the past year. He has a harsh systolic murmur and echocardiography revealed asymmetric interventricular septal hypertrophy. There is a family history of sudden death, as his father died suddenly at age 35. No use of tobacco, alcohol, or illicit drugs is reported.",
+        "conditions": [
+            "Syncope",
+            "Asymmetric interventricular septal hypertrophy",
+            "Harsh systolic murmur",
+            "Family history of sudden cardiac death",
+            "Exercise-induced lightheadedness"
+        ]
+    },
+    "trec-20226": {
+        "summary": "A 61-year-old male patient presents with a nonproductive cough and progressive dyspnea. He has a history of hypertension, hypercholesterolemia, and peptic ulcer disease, and is a heavy smoker with a 30-year history of smoking two packs per day. Clinical examination reveals decreased breath sounds and percussive dullness at the base of the left lung. A CT scan indicates a left-sided pleural effusion and nodular pleural thickening. A thoracentesis yielded bloody pleural fluid, and a biopsy showed proliferation of epithelioid-type cells with very long microvilli, suggesting a malignant pleural condition.",
+        "conditions": [
+            "Pleural effusion",
+            "Malignant pleural mesothelioma",
+            "Hypertension",
+            "Hypercholesterolemia",
+            "Peptic ulcer disease",
+            "Chronic obstructive pulmonary disease",
+            "Lung cancer",
+            "Smoking-related illness"
+        ]
+    },
+    "trec-20227": {
+        "summary": "A 3-year-old girl presents with short stature, short limbs, a relatively large head, flat nasal bridge, and a small midface, features consistent with achondroplasia. Genetic testing confirmed an autosomal dominant point mutation in the FGFR3 gene, a condition shared with her father. This is her first medical assessment in the US, and she has not yet received any treatment for her condition. Her mental and developmental examinations show no abnormalities.",
+        "conditions": [
+            "Achondroplasia",
+            "Short stature",
+            "Mutation in FGFR3 gene",
+            "Autosomal dominant inheritance"
+        ]
+    },
+    "trec-20228": {
+        "summary": "A 7-month-old boy presents with chronic constipation and discomfort during bowel movements since birth, which worsened after the introduction of semi-solid foods. He exhibits abdominal distension and tenderness, and an X-ray with barium revealed a narrow rectum and rectosigmoid area with dilation of the proximal colon. A digital rectal exam showed a burst of feces, and a biopsy confirmed the absence of submucosal ganglia in the distal large intestine, indicative of Hirschsprung's disease.",
+        "conditions": [
+            "Hirschsprung's disease",
+            "Chronic constipation",
+            "Rectal distension",
+            "Abdominal distension",
+            "Abdominal tenderness",
+            "Rectosigmoid hypoplasia"
+        ]
+    },
+    "trec-20229": {
+        "summary": "A 67-year-old woman presents with symptoms of choking, dysphagia, and cough, alongside a history of hypertension, dyslipidemia, and osteoarthritis. She does not smoke or consume alcohol. A barium swallow study indicated an abnormality in the upper esophagus, specifically an outpouching at the junction of the lower throat and upper esophagus, suggesting a possible Zenker's diverticulum.",
+        "conditions": [
+            "Zenker's diverticulum",
+            "Dysphagia",
+            "Hypertension",
+            "Dyslipidemia",
+            "Osteoarthritis",
+            "Cough",
+            "Halitosis"
+        ]
+    },
+    "trec-202210": {
+        "summary": "A 19-year-old female presents with a four-month history of a non-tender, rounded, transilluminating mass on the dorsal aspect of her left wrist, primarily concerned about its cosmetic appearance. She is left-handed and requires extensive use of her hands for typing, which could be relevant to the wrist mass. Her vital signs are normal, and she does not have any reported history of smoking or illicit drug use. She is sexually active with two partners and uses condoms.",
+        "conditions": [
+            "Ganglion cyst"
+        ]
+    },
+    "trec-202211": {
+        "summary": "A 63-year-old man presents with recent unintentional weight loss and epigastric discomfort after meals. He has no prior known medical issues and takes no medications. An upper endoscopy revealed a lesion in the stomach diagnosed as diffuse-type adenocarcinoma with signet ring cells, which are characteristic of this cancer type.",
+        "conditions": [
+            "Diffuse-type gastric adenocarcinoma",
+            "Signet ring cell carcinoma",
+            "Unintentional weight loss",
+            "Epigastric discomfort",
+            "Gastric cancer"
+        ]
+    },
+    "trec-202212": {
+        "summary": "A 47-year-old male with a history of chronic cough, progressive dyspnea, hypertension, and osteoarthritis presents with symptoms suggestive of asbestos-related lung disease. He has a smoking history and previous occupational exposure to asbestos as a construction worker. Examination and imaging findings indicate pulmonary fibrosis, predominantly in the lower lobes, with evidence of asbestos bodies, and mild bilateral pleural effusion with diffuse pleural thickening.",
+        "conditions": [
+            "Pulmonary fibrosis",
+            "Asbestosis",
+            "Chronic cough",
+            "Dyspnea",
+            "Hypertension",
+            "Osteoarthritis",
+            "Pleural effusion",
+            "Pleural thickening",
+            "Smoking",
+            "Occupational lung disease",
+            "Chronic respiratory disease"
+        ]
+    },
+    "trec-202213": {
+        "summary": "A 24-year-old man presents with infertility after 18 months of unsuccessful attempts to conceive with his wife, whose medical evaluations show no abnormalities. He exhibits bilateral gynecomastia and abnormally long lower extremities. His karyotype reveals 47, XXY, confirming a diagnosis of Klinefelter syndrome. Physical examination shows normal heart and lung sounds, and his testes are described as bilateral descended and firm.",
+        "conditions": [
+            "Klinefelter syndrome",
+            "Infertility",
+            "Gynecomastia",
+            "Abnormally long lower extremities"
+        ]
+    },
+    "trec-202214": {
+        "summary": "A 39-year-old man presents with severe pain, redness, and swelling in his left toe, specifically at the first metatarsophalangeal joint. He has a history of gouty arthritis, confirmed by the presence of needle-shaped crystals in the joint fluid and a high leukocyte count. There is no recent trauma or fever associated with this episode. His medical treatment includes Allopurinol for gout prevention. Family history is notable for gout in his father.",
+        "conditions": [
+            "Gouty arthritis",
+            "Acute gout flare",
+            "Hyperuricemia"
+        ]
+    },
+    "trec-202215": {
+        "summary": "An 8-year-old boy presents with weakness and difficulty standing up from a sitting position. He has a family history suggestive of a similar condition, with an uncle who was wheelchair-bound and died young. Physical examination reveals lower extremity muscle strength of 3/5 and enlarged calf muscles. A muscle biopsy indicates an absence of dystrophin protein, leading to a diagnosis of Duchenne Muscular Dystrophy (DMD).",
+        "conditions": [
+            "Duchenne Muscular Dystrophy",
+            "Muscle weakness",
+            "Difficulty standing",
+            "Enlarged calf muscles",
+            "Family history of neuromuscular disease",
+            "Absence of dystrophin"
+        ]
+    },
+    "trec-202216": {
+        "summary": "A 39-year-old woman presents with arthralgias, skin nodules on her legs, and moderate hepatomegaly. The nodules are tender and located primarily on the anterior surface of the lower extremities. A chest x-ray shows enlarged hilar lymph nodes, and laboratory tests reveal an elevated ACE level. A biopsy of a skin lesion indicates noncaseating granulomas, negative for fungi and acid-fast bacilli, suggesting a diagnosis of sarcoidosis.",
+        "conditions": [
+            "Sarcoidosis",
+            "Arthralgia",
+            "Hepatomegaly",
+            "Skin nodules",
+            "Enlarged hilar lymph nodes",
+            "Elevated ACE level",
+            "Noncaseating granulomas"
+        ]
+    },
+    "trec-202217": {
+        "summary": "A 67-year-old man presents with progressively worsening bilateral vision, particularly impaired during nighttime, affecting his ability to drive. Ocular examination reveals a loss of the red reflex and blurry vision, with an acuity testing result of 50/100 in both eyes but normal visual fields. His medical history is otherwise unremarkable, and his general physical examination, including blood pressure and pulse, is within normal limits.",
+        "conditions": [
+            "Bilateral vision loss",
+            "Night blindness",
+            "Loss of red reflex",
+            "Blurry vision"
+        ]
+    },
+    "trec-202218": {
+        "summary": "A 2-year-old boy presents with a recurrent, itchy, red rash on his cheeks, trunk, and arms, which has been occurring intermittently since infancy. He has experienced several upper respiratory infections but has no other major illnesses. His vaccinations are up to date, and he is not currently on any medications. His growth and developmental milestones are normal, and his vital signs are within normal limits.",
+        "conditions": [
+            "Atopic Dermatitis",
+            "Eczema",
+            "Recurrent Rash",
+            "Upper Respiratory Infections"
+        ]
+    },
+    "trec-202219": {
+        "summary": "A 7-year-old girl presented to the emergency department with a generalized rash and symptoms suggestive of an allergic reaction, possibly due to an insect sting while playing outdoors. She exhibits signs of anaphylaxis, including hypotension (blood pressure 75/55 mm Hg) and tachycardia (heart rate 122/min), along with erythematous, raised plaques on her trunk, extremities, and face. Additionally, she has bilateral expiratory wheezes indicating respiratory distress.",
+        "conditions": [
+            "Anaphylaxis",
+            "Allergic reaction",
+            "Hypotension",
+            "Tachycardia",
+            "Urticaria",
+            "Respiratory distress",
+            "Insect sting allergy",
+            "Expiratory wheezing"
+        ]
+    },
+    "trec-202220": {
+        "summary": "A 49-year-old man presents with a bulging in his groin, diagnosed as a swelling above the inguinal ligament that increases in size upon coughing, indicative of a hernia. He has a history of mild dyslipidemia, which is well-managed through lifestyle modifications. He is scheduled for an elective laparoscopic hernia repair.",
+        "conditions": [
+            "Inguinal hernia",
+            "Dyslipidemia"
+        ]
+    }
+}

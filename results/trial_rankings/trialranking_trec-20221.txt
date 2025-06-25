@@ -1,0 +1,14 @@
+Patient ID: trec-20221
+Patient Summary: A 19-year-old male presents with concerns about sexual development and satisfaction in his relationship. He exhibits poorly developed secondary sexual characteristics, a low testicular volume, and significantly reduced serum testosterone levels. Additionally, he has an impaired sense of smell (anosmia) but normal visual acuity. Hormonal evaluation indicates low levels of GnRH, suggesting a possible pituitary or hypothalamic dysfunction.
+
+Clinical trial ranking:
+NCT04648969: matching_score=-0.0, agg_score=1.4, trial_score=1.4, qrels_score=2
+Brief Summary: The goal of this study is to develop novel treatments for patients with a condition called hypogonadotropic hypogonadism (HH) through the use of exogenous kisspeptin.
+Relevance Explanation: The patient exhibits symptoms and hormonal profiles indicative of hypogonadotropic hypogonadism (HH), such as poorly developed secondary sexual characteristics, low serum testosterone, and low GnRH levels, which aligns directly with the target condition of the clinical trial. This makes the trial highly relevant for the patient.
+Eligibility Explanation: The patient meets the primary inclusion criterion by exhibiting signs and symptoms of HH. However, he is excluded by two criteria: being 19 years old (exclusion criterion 0) and not being on adequate testosterone replacement therapy (exclusion criterion 16). Despite these exclusions, the patient's condition and the trial's focus on HH make him a strong candidate, but these exclusions reduce his overall eligibility score.
+
+NCT00136695: matching_score=-1.66667, agg_score=0.0, trial_score=-1.66667, qrels_score=1
+Brief Summary: The purpose of the study is to assess the effects of sustained aromatase inhibitor therapy to reduce estrogen levels in elderly men with mild hypogonadism (a decreased level of sex hormones).
+Relevance Explanation: The patient is a 19-year-old male presenting with symptoms of hypogonadism, which is the target condition of the clinical trial. However, the trial specifically targets elderly men aged 60 and older with mild hypogonadism, whereas this patient is significantly younger and has severe hypogonadism indicated by very low testosterone levels and underdeveloped secondary sexual characteristics. Therefore, while the patient's condition aligns with the study's focus, his age and severity of condition do not match the trial's target demographic.
+Eligibility Explanation: The patient does not meet two critical inclusion criteria: age and serum testosterone levels. The trial requires participants to be 60 years or older and have testosterone levels between 150-300 ng/dL. The patient is only 19 years old and has a testosterone level of 65 ng/dL, which are both well outside the specified ranges. Although he shows symptoms of androgen deficiency, which aligns with one inclusion criterion, his non-compliance with the other two criteria makes him ineligible for the trial.
+

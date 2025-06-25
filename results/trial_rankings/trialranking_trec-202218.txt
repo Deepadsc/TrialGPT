@@ -1,0 +1,14 @@
+Patient ID: trec-202218
+Patient Summary: A 2-year-old boy presents with a recurrent, itchy, red rash on his cheeks, trunk, and arms, which has been occurring intermittently since infancy. He has experienced several upper respiratory infections but has no other major illnesses. His vaccinations are up to date, and he is not currently on any medications. His growth and developmental milestones are normal, and his vital signs are within normal limits.
+
+Clinical trial ranking:
+NCT04648969: matching_score=-2.0, agg_score=0.0, trial_score=-2.0, qrels_score=1
+Brief Summary: The goal of this study is to develop novel treatments for patients with a condition called hypogonadotropic hypogonadism (HH) through the use of exogenous kisspeptin.
+Relevance Explanation: The patient does not have hypogonadotropic hypogonadism, the condition targeted by the clinical trial. Instead, the patient's symptoms are related to a skin rash and there is no mention of any symptoms or diagnoses related to hypogonadotropic hypogonadism. Therefore, the trial is not relevant to the patient's current medical condition.
+Eligibility Explanation: Since the patient's condition is not relevant to the clinical trial, the eligibility score is automatically the lowest possible, which is equal to the negative value of the relevance score.
+
+NCT02753777: matching_score=-2.0, agg_score=0.0, trial_score=-2.0, qrels_score=1
+Brief Summary: Pemphigus and bullous pemphigoid (BP) are severe autoimmune blistering diseases (AIBD) that pose a critical need for new therapeutic approaches. Clinical trials in pemphigus and BP will require the availability of validated disease severity measures that can be used to define primary outcomes.
+Relevance Explanation: The patient is a 2-year-old boy presenting with a non-specific rash, which does not align with the autoimmune blistering diseases specified in the clinical trial (Pemphigus Vulgaris, Pemphigus Foliaceus, Bullous Pemphigoid). Additionally, the trial targets adults over 18 years old, further reducing the relevance of this trial for the patient.
+Eligibility Explanation: The patient does not meet the age requirement as he is only 2 years old, whereas the trial requires participants to be above 18 years old. Furthermore, the patient's rash does not match the specific diseases studied in the trial, and he is unable to provide informed consent due to his age. These factors make him ineligible for the trial.
+
