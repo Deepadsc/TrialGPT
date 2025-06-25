@@ -407,7 +407,7 @@ try:
             st.session_state.query_id = query_ids[0] if query_ids else None
         
         # Create query selector
-        query_id = st.selectbox("Select a query ID:", 
+        query_id = st.selectbox("Select a Patient ID:", 
                               query_ids, 
                               index=query_ids.index(st.session_state.query_id) if st.session_state.query_id in query_ids else 0)
         
