@@ -58,7 +58,7 @@ def get_keyword_generation_messages(note):
 
     ### Instructions:
     1. Summarize the patient's main medical issues in 3-5 sentences.
-    2. List up to 32 key medical conditions, ranked by relevance for clinical trial matching.
+    2. Generate At least 27-32 key conditions, ranked by relevance for clinical trial matching.
     3. Use standardized medical terminology (e.g., "Type 2 Diabetes" instead of "high blood sugar").
     4. Include conditions only if explicitly mentioned or strongly implied in the description.
 
@@ -70,6 +70,7 @@ def get_keyword_generation_messages(note):
     }}
 
     ### Important Notes:
+    - **MANDATORY**: Generate at least 30 keywords - clinical trial matching requires comprehensive coverage
     - If you are unsure about a condition, include it only if it is explicitly mentioned or strongly implied in the description.
     - **Do NOT include any text outside of the JSON object.** This means no notes, explanations, headers, or footers outside the JSON.
 
