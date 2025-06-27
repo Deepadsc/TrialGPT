@@ -4,21 +4,21 @@
     "trials": {
       "NCT04648969": {
         "matching_score": -0.0,
-        "agg_score": -0.3,
-        "trial_score": -0.3,
-        "qrels_score": 0,
+        "agg_score": 1.4,
+        "trial_score": 1.4,
+        "qrels_score": 2,
         "brief_summary": "The goal of this study is to develop novel treatments for patients with a condition called hypogonadotropic hypogonadism (HH) through the use of exogenous kisspeptin.",
-        "relevance_explanation": "The patient exhibits key symptoms and diagnostic markers of hypogonadotropic hypogonadism (HH), such as poorly developed secondary sexual characteristics, low serum testosterone, and low GnRH levels, which align directly with the target condition of the clinical trial. This makes the trial highly relevant for the patient.",
-        "eligibility_explanation": "The patient meets the primary inclusion criterion by having a confirmed diagnosis of HH, indicated by his low testosterone and GnRH levels. However, he is excluded by two criteria: being 19 years old (the trial excludes those 18 years and older) and not being on adequate testosterone replacement therapy. Other exclusion criteria either do not apply or lack sufficient information to assess, such as levels of TSH, prolactin, and other blood parameters."
+        "relevance_explanation": "The patient exhibits symptoms and hormonal profiles indicative of hypogonadotropic hypogonadism (HH), such as poorly developed secondary sexual characteristics, low serum testosterone, and low GnRH levels, which aligns directly with the target condition of the clinical trial. This makes the trial highly relevant for the patient.",
+        "eligibility_explanation": "The patient meets the primary inclusion criterion by exhibiting signs and symptoms of HH. However, he is excluded by two criteria: being 19 years old (exclusion criterion 0) and not being on adequate testosterone replacement therapy (exclusion criterion 16). Despite these exclusions, the patient's condition and the trial's focus on HH make him a strong candidate, but these exclusions reduce his overall eligibility score."
       },
       "NCT00136695": {
-        "matching_score": -0.66667,
-        "agg_score": -0.15,
-        "trial_score": -0.81667,
+        "matching_score": -1.66667,
+        "agg_score": 0.0,
+        "trial_score": -1.66667,
         "qrels_score": 1,
         "brief_summary": "The purpose of the study is to assess the effects of sustained aromatase inhibitor therapy to reduce estrogen levels in elderly men with mild hypogonadism (a decreased level of sex hormones).",
-        "relevance_explanation": "The patient is a 19-year-old male with symptoms of hypogonadism, which is the target condition of the clinical trial. However, the trial specifically targets elderly men aged 60 and older with mild hypogonadism, and the patient's age and severe hypogonadism symptoms (extremely low testosterone levels and underdeveloped secondary sexual characteristics) do not align with the trial's focus on mild cases in an older population. Therefore, while the patient's condition is relevant, his demographic and severity of condition are not.",
-        "eligibility_explanation": "The patient does not meet two critical inclusion criteria: age and serum testosterone levels. The trial requires participants to be aged 60 and older, and the patient is only 19. Additionally, the trial specifies a testosterone range of 150-300 ng/dL, whereas the patient's level is significantly lower at 65 ng/dL. Although the patient does show symptoms of androgen deficiency, which aligns with one inclusion criterion, his non-compliance with the other two criteria makes him largely ineligible for this trial."
+        "relevance_explanation": "The patient is a 19-year-old male presenting with symptoms of hypogonadism, which is the target condition of the clinical trial. However, the trial specifically targets elderly men aged 60 and older with mild hypogonadism, whereas this patient is significantly younger and has severe hypogonadism indicated by very low testosterone levels and underdeveloped secondary sexual characteristics. Therefore, while the patient's condition aligns with the study's focus, his age and severity of condition do not match the trial's target demographic.",
+        "eligibility_explanation": "The patient does not meet two critical inclusion criteria: age and serum testosterone levels. The trial requires participants to be 60 years or older and have testosterone levels between 150-300 ng/dL. The patient is only 19 years old and has a testosterone level of 65 ng/dL, which are both well outside the specified ranges. Although he shows symptoms of androgen deficiency, which aligns with one inclusion criterion, his non-compliance with the other two criteria makes him ineligible for the trial."
       }
     }
   },
@@ -27,21 +27,21 @@
     "trials": {
       "NCT00546026": {
         "matching_score": -0.625,
-        "agg_score": -0.4,
-        "trial_score": -1.025,
+        "agg_score": 0.0,
+        "trial_score": -0.625,
         "qrels_score": 1,
         "brief_summary": "Women whose pregnancies are at judged to be at risk of a poor outcome from an early delivery due to medical problems such as diabetes or high blood pressure, are often very anxious during pregnancy, at least until they know they have passed the risk period of premature birth (after 8 months). Anxiety itself can have a significant effect on the developing baby, on the newborn child and the mother-infant bonding process. We will use a combination of pregnancy blood tests and an ultrasound assessment to check on placental function, since placental damage is the greatest cause of poor outcome. Most women tested this way will have normal results, and so may feel reassured and do better in pregnancy than untested women. The benefits may extend after birth to mother-infant bonding, breastfeeding success and a reduced risk of postnatal depression. We will randomly select an equal number of women for testing and no testing (like tossing a coin, known as a randomized control trial) to be confident that any benefits observed are genuine. The potential benefits of our research would be substantial for the mental health of many pregnant women, for their newborn and for their children as they grow up. The tests are easy to do and would add very little in terms of a woman's and in terms of the total costs of prenatal care.",
-        "relevance_explanation": "The patient is a 32-year-old woman presenting with symptoms suggesting a pregnancy complication, specifically an abnormal rise in serum \u03b2-hCG levels and no gestational sac visible on ultrasound, indicating a non-viable pregnancy. The clinical trial targets women with high-risk pregnancies to assess placental function and reduce psychological distress. Although the patient's current condition involves pregnancy, it is not a 'high-risk pregnancy' in the context required by the trial (i.e., a viable pregnancy at risk of early delivery due to medical issues). Therefore, the trial is only moderately relevant to her situation.",
-        "eligibility_explanation": "The patient meets several inclusion criteria: she is over 18, can understand the study, and can provide consent. However, she does not meet the critical inclusion criterion of having a singleton pregnancy, as indicated by the absence of a gestational sac in her ultrasound. This disqualifies her from the trial, which requires participants to have a viable pregnancy. Additionally, there is insufficient information to assess other criteria such as normal karyotype, fluency in English, and absence of major anatomical malformations at 19 weeks. She is not excluded by any of the exclusion criteria provided."
+        "relevance_explanation": "The patient is not relevant to the clinical trial as she does not have a confirmed ongoing pregnancy, which is a fundamental requirement for a study focusing on mid-gestation placental function in high-risk pregnancies. The trial targets women with singleton pregnancies who are beyond the early stages of pregnancy, specifically those at risk of premature birth and related complications. The patient's current medical condition, indicated by vaginal spotting and the absence of a gestational sac, suggests she is not experiencing a viable pregnancy at this time.",
+        "eligibility_explanation": "The patient is ineligible for the clinical trial as she does not meet the basic inclusion criteria of having a confirmed ongoing singleton pregnancy. The absence of a gestational sac on ultrasound confirms that there is no current pregnancy to assess for placental function or any related high-risk conditions. Therefore, she cannot participate in a trial designed to monitor placental function and its effects on pregnancy outcomes."
       },
       "NCT00065858": {
-        "matching_score": -0.81818,
-        "agg_score": -0.5,
-        "trial_score": -1.31818,
+        "matching_score": -1.81818,
+        "agg_score": 0.1,
+        "trial_score": -1.71818,
         "qrels_score": 1,
         "brief_summary": "BufferGel is a new contraceptive gel designed to be used with a diaphragm. In addition to preventing pregnancy, BufferGel may also prevent some types of sexually transmitted diseases (STDs). This study will compare BufferGel to Gynol II, a currently available contraceptive gel.",
-        "relevance_explanation": "The patient is relevant to the clinical trial as she is sexually active and at risk for pregnancy, which aligns with the trial's focus on evaluating a new contraceptive gel. However, her current pregnancy status and multiple sexual partners complicate her direct relevance to the trial's target demographic, which ideally seeks participants at risk for pregnancy but not currently pregnant.",
-        "eligibility_explanation": "The patient is ineligible for the clinical trial primarily due to her likely current pregnancy, as indicated by elevated and abnormally rising serum \u03b2-hCG levels and ultrasound findings, which meet the exclusion criteria. Additionally, her history of multiple sexual partners disqualifies her based on several inclusion and exclusion criteria related to sexual activity and risk factors."
+        "relevance_explanation": "The patient is relevant to the clinical trial as she is a sexually active woman at risk for pregnancy, which aligns with the trial's focus on evaluating a new contraceptive gel. However, her current pregnancy concerns and multiple sexual partners may affect her suitability for a trial aimed at single-partner contraception.",
+        "eligibility_explanation": "The patient meets several inclusion criteria such as general good health, normal cyclic menses, and willingness to provide informed consent. However, she is ineligible due to multiple exclusion criteria, including being likely pregnant, having abnormal vaginal spotting, and having multiple sexual partners recently, which are critical disqualifiers for this trial."
       }
     }
   },
@@ -50,21 +50,21 @@
     "trials": {
       "NCT00495781": {
         "matching_score": -1.0,
-        "agg_score": -0.0,
-        "trial_score": -1.0,
-        "qrels_score": 1,
-        "brief_summary": "The purpose of the study is to define laboratory parameters which are best suited to diagnose functional iron deficiency. Functional iron deficiency is a condition where - due to the lack of iron bioavailability - the patient suffers from symptoms such as fatigue and weakness, or his/her capacity to produce red blood cells is reduced.",
-        "relevance_explanation": "The patient has hemochromatosis, characterized by high iron levels, which is the opposite condition of functional iron deficiency targeted by the clinical trial. The trial aims to study parameters for diagnosing functional iron deficiency, where there is a lack of iron bioavailability, whereas the patient suffers from iron overload. Therefore, the patient's condition is not relevant to the trial's focus.",
-        "eligibility_explanation": "Since the patient's condition (hemochromatosis with iron overload) is fundamentally different from the condition the trial is investigating (functional iron deficiency), he does not meet any of the inclusion criteria which are specific to conditions like renal anemia, therapy with erythropoietin or darbepoetin, dialysis, or iron therapy. Additionally, none of the exclusion criteria apply directly to him, but his primary diagnosis itself makes him ineligible."
-      },
-      "NCT04648969": {
-        "matching_score": -1.0,
         "agg_score": 0.0,
         "trial_score": -1.0,
         "qrels_score": 1,
+        "brief_summary": "The purpose of the study is to define laboratory parameters which are best suited to diagnose functional iron deficiency. Functional iron deficiency is a condition where - due to the lack of iron bioavailability - the patient suffers from symptoms such as fatigue and weakness, or his/her capacity to produce red blood cells is reduced.",
+        "relevance_explanation": "The patient has hemochromatosis, characterized by high iron levels, which is the opposite of functional iron deficiency targeted by the trial. The trial aims to study parameters for diagnosing functional iron deficiency, where there is a lack of iron bioavailability. The patient's condition involves excessive iron, making the trial's focus irrelevant to his medical needs.",
+        "eligibility_explanation": "The patient does not meet any of the inclusion criteria specified for the clinical trial, which focus on conditions and treatments not applicable to him, such as renal anemia, dialysis, and specific therapies like erythropoietin or iron. Furthermore, none of the exclusion criteria apply to him, as they do not mention hemochromatosis or related symptoms directly. However, since the trial is not relevant to his condition, his eligibility score remains at the lowest possible."
+      },
+      "NCT04648969": {
+        "matching_score": -2.0,
+        "agg_score": 0.0,
+        "trial_score": -2.0,
+        "qrels_score": 1,
         "brief_summary": "The goal of this study is to develop novel treatments for patients with a condition called hypogonadotropic hypogonadism (HH) through the use of exogenous kisspeptin.",
-        "relevance_explanation": "The patient is diagnosed with hemochromatosis, which is distinct from hypogonadotropic hypogonadism (HH), the target condition of the clinical trial. The trial aims to treat HH using kisspeptin, which is unrelated to the patient's condition. Therefore, the patient's condition does not match the focus of the trial, making him irrelevant to the study.",
-        "eligibility_explanation": "Since the patient's condition (hemochromatosis) does not match the target condition of the trial (HH), he does not meet the primary inclusion criterion. Additionally, the exclusion criteria specifically exclude individuals without a confirmed diagnosis of HH, further confirming his ineligibility for the trial."
+        "relevance_explanation": "The patient is diagnosed with hemochromatosis, which is distinct from hypogonadotropic hypogonadism (HH), the target condition of the clinical trial. The trial aims to treat HH using kisspeptin, which is unrelated to the patient's condition. Therefore, the patient's condition does not match the focus of the trial, making him largely irrelevant to the study.",
+        "eligibility_explanation": "The patient is explicitly excluded from the trial due to his diagnosis of hemochromatosis, which does not meet the trial's requirement for a confirmed diagnosis of HH. Additionally, there is no information suggesting that the patient has HH or any related symptoms or treatments. Thus, he does not meet the primary inclusion criteria and is excluded based on his current medical condition."
       }
     }
   },
@@ -73,21 +73,21 @@
     "trials": {
       "NCT01813916": {
         "matching_score": 1.0,
-        "agg_score": 0.95,
-        "trial_score": 1.95,
+        "agg_score": 1.9,
+        "trial_score": 2.9,
         "qrels_score": 2,
         "brief_summary": "The purpose of this study is to use the proteomic analysis of synovial fluid to perform the comprehensive investigation of the biomarker that will be useful to assign the tratment effectiveness of five weekly intra-articular HA injection.",
-        "relevance_explanation": "The patient's clinical presentation and diagnostic findings align closely with the target condition of the clinical trial, which is osteoarthritis. The symptoms described, such as joint pain, morning stiffness, and the presence of osteophytes, along with X-ray findings of joint space narrowing and subchondral sclerosis, are characteristic of osteoarthritis. These factors make the trial highly relevant to the patient's condition.",
-        "eligibility_explanation": "The patient meets all the inclusion criteria specified for the clinical trial. She has a clinical diagnosis of osteoarthritis, as evidenced by her symptoms and X-ray findings, and she has agreed to comply with the trial protocol, including accepting intra-articular HA injection therapy. There are no exclusion criteria mentioned in the provided data, and the patient's other medical conditions (hypertension and hypercholesteremia) do not appear to disqualify her from participation."
+        "relevance_explanation": "The patient's clinical presentation and diagnostic findings align closely with the target condition of the clinical trial, which is osteoarthritis. The symptoms described, such as joint pain, morning stiffness, and the presence of osteophytes, along with X-ray findings indicating joint space narrowing and subchondral sclerosis, are characteristic of osteoarthritis. These factors make the trial highly relevant to the patient's condition.",
+        "eligibility_explanation": "The patient meets all the inclusion criteria specified for the clinical trial. She has a clinical diagnosis of osteoarthritis, as evidenced by her symptoms and X-ray findings. Additionally, she has agreed to comply with the trial protocol, which includes accepting intra-articular HA injection therapy. There are no exclusion criteria mentioned in the provided data, and the patient's other medical conditions (hypertension and hypercholesteremia) do not appear to disqualify her from participation."
       },
       "NCT00409149": {
-        "matching_score": -0.5,
-        "agg_score": 0.45,
-        "trial_score": -0.05,
-        "qrels_score": 0,
+        "matching_score": 0.5,
+        "agg_score": 1.2,
+        "trial_score": 1.7,
+        "qrels_score": 2,
         "brief_summary": "Intervention description:~Complementary Approaches to Lower Mean arterial pressure (CALM) is a multi dispensary program aimed to reduce blood pressure in hypertensive patients. The program utilizes a naturopathic dietary approach, education on cooking and food consumption choices, walking physical exercise, Qi Gong - a form of Chinese slow movement exercise combined with relaxation breathing and imagery and group therapy coaching in stress management techniques and mind-body balancing techniques.~Trial Objectives:~To compare the effect of CALM in reducing blood pressure to the standard dietary DASH approach in hypertensive patients.~Methodology:~120 Participants will be randomly assigned in to two groups:~CALM program for reducing blood pressure as the treatment group.~Standard DASH diet and lifestyle modification counseling as the control group. Inclusion Criteria~Adult men and women over 18 years.~Patients using anti hypertensive medications with mean systolic blood pressure measurements of 120-180 mm Hg and/or mean diastolic measurements of 70-100 mm Hg as determined by a 24 hour Holter test.~Patients not using anti hypertensive medications with mean systolic blood pressure measurements of 130-180 mm Hg and or mean diastolic measurements of 80-100 mmHg.~Signed informed consent (appears in IRB forms)~Assessment of Efficacy Primary end point efficacy will be assessed by comparing the mean BP measurements in the CALM group to the mean BP measurements in the DASH control group. Blood pressure measurements will be performed by 24 hours Holter BP monitoring in the beginning and at the end of the trial.~Secondary end points efficacy will be assed by comparing CALM to DASH programs with respect to effects use of BP medications and weight loss. Lab test and pulse wave analysis will also be assessed at the beginning and at the end of the study.",
-        "relevance_explanation": "The patient is relevant to the clinical trial as she has hypertension, which is the primary condition targeted by the trial. The trial aims to explore interventions to manage blood pressure, directly aligning with the patient's condition. Additionally, the patient's age and willingness to provide informed consent further align her with the trial's demographic and procedural requirements.",
-        "eligibility_explanation": "The patient meets the age criterion and has agreed to provide informed consent, which are both inclusion criteria. However, her eligibility is uncertain due to the lack of specific blood pressure measurements and information on her use of anti-hypertensive medications, which are crucial to determine her exact fit for the trial's requirements. She does not meet any of the exclusion criteria based on the available information, which positively influences her eligibility score."
+        "relevance_explanation": "The patient is relevant to the clinical trial as she has a documented history of hypertension, which is the primary target condition of the trial. The trial aims to explore interventions to manage blood pressure in hypertensive patients, directly aligning with the patient's medical condition.",
+        "eligibility_explanation": "The patient meets the age criterion and has agreed to provide informed consent, which are both inclusion criteria. However, there is insufficient information regarding her current blood pressure measurements and whether she is on antihypertensive medications, which are crucial to determine her full eligibility. She does not meet any of the exclusion criteria based on the available information. Therefore, while she is relevant to the trial, her complete eligibility cannot be confirmed without additional data on her blood pressure status."
       }
     }
   },
@@ -96,44 +96,44 @@
     "trials": {
       "NCT02240407": {
         "matching_score": -0.83333,
-        "agg_score": -0.05,
-        "trial_score": -0.88333,
+        "agg_score": 0.0,
+        "trial_score": -0.83333,
         "qrels_score": 1,
         "brief_summary": "A recombinant AAV vector has been generated to carry the codon-optimized acid alpha-glucosidase (coGAA) gene expressed from a human desmin enhancer/promoter (DES). The proposed clinical trial is a within-participant, double-blind, randomized, phase I controlled study evaluating the toxicology, biodistribution and potential activity of re-administration of rAAV9-DES-hGAA injected intramuscularly into the TA. Nine participants (18 to 50-years old) who reside within the United States with Late-Onset Pompe Disease (LOPD) will be included. The goal of the immune modulation strategy is to ablate B-cells (Rituximab and Sirolimus) prior to the initial exposure to the study agent in one leg and the subsequent exposure of the same vector to the contralateral leg after four months. At each study agent dosing, the contralateral leg will receive excipient. Patients will act as their own controls. Repeated measures, at baseline and during the following 3 months after each injection, will assess the safety, biochemical and functional impact of the vector.",
-        "relevance_explanation": "The patient's condition, as described in the patient note, is hypertrophic cardiomyopathy, not Pompe disease, which is the target condition for the clinical trial. Therefore, the patient's condition does not match the specific disease focus of the trial, making the trial largely irrelevant to the patient.",
-        "eligibility_explanation": "The patient does not meet the primary inclusion criterion of having a diagnosis of Pompe disease, which is essential for participation in the trial. Although the patient fits the age criterion and is likely a U.S. resident, the absence of a Pompe disease diagnosis makes him ineligible for this trial. Additionally, there is no information on enzyme replacement therapy, which is another key inclusion criterion. The patient does not meet any exclusion criteria explicitly, but the lack of a Pompe disease diagnosis is a critical factor."
+        "relevance_explanation": "The patient's medical condition, as described in the patient note, is hypertrophic cardiomyopathy, not Pompe disease. The clinical trial specifically targets patients with Late-Onset Pompe Disease, and there is no indication in the patient note that the patient has this condition. Therefore, the patient's condition does not match the target condition of the clinical trial, making the trial largely irrelevant to the patient.",
+        "eligibility_explanation": "Although the patient fits the age criterion for the trial, he does not have a diagnosis of Pompe disease, which is a critical inclusion criterion for this trial. The absence of this diagnosis makes him ineligible for the trial despite meeting the age requirement and not being excluded by any of the exclusion criteria explicitly. The patient's eligibility is significantly negative due to the lack of a Pompe disease diagnosis."
       },
       "NCT04648969": {
-        "matching_score": -1.0,
+        "matching_score": -2.0,
         "agg_score": 0.0,
-        "trial_score": -1.0,
+        "trial_score": -2.0,
         "qrels_score": 1,
         "brief_summary": "The goal of this study is to develop novel treatments for patients with a condition called hypogonadotropic hypogonadism (HH) through the use of exogenous kisspeptin.",
-        "relevance_explanation": "The patient's medical condition and symptoms, as described in the patient note, do not align with the target condition of the clinical trial, which is hypogonadotropic hypogonadism (HH). The patient's symptoms and diagnosis of asymmetric interventricular septal hypertrophy suggest a cardiovascular issue rather than a reproductive endocrine disorder like HH. Therefore, the trial is not relevant to the patient's current medical needs.",
-        "eligibility_explanation": "Since the patient's condition does not match the target condition of the clinical trial, he does not meet the primary inclusion criteria. Additionally, the patient is excluded based on age criteria as per the trial's exclusion criteria. Therefore, the patient is completely ineligible for the trial."
+        "relevance_explanation": "The patient's symptoms and medical history are indicative of a cardiovascular issue, specifically related to asymmetric interventricular septal hypertrophy, rather than hypogonadotropic hypogonadism (HH). The clinical trial is focused on treating HH with kisspeptin, which is unrelated to the patient's condition. Therefore, the patient's condition does not match the target condition of the trial.",
+        "eligibility_explanation": "Since the patient's condition does not match the target condition of the trial, he is completely ineligible for participation. The trial is designed for patients with hypogonadotropic hypogonadism, which the patient does not have, as indicated by his symptoms and the absence of any related medical history or test results."
       }
     }
   },
   "trec-20226": {
     "patient_summary": "A 61-year-old male patient presents with a nonproductive cough and progressive dyspnea. He has a history of hypertension, hypercholesterolemia, and peptic ulcer disease, and is a heavy smoker with a 30-year history of smoking two packs per day. Clinical examination reveals decreased breath sounds and percussive dullness at the base of the left lung. A CT scan indicates a left-sided pleural effusion and nodular pleural thickening. A thoracentesis yielded bloody pleural fluid, and a biopsy showed proliferation of epithelioid-type cells with very long microvilli, suggesting a malignant pleural condition.",
     "trials": {
-      "NCT04338100": {
-        "matching_score": -0.75,
-        "agg_score": -0.05,
-        "trial_score": -0.8,
-        "qrels_score": 1,
-        "brief_summary": "COVID-19 pandemic has developed worldwide in less than 4 months. While most patients have a mild or uncomplicated disease (80%), approximately 15% need hospital care and 5% intensive care. Severe cases are characterized by pulmonary involvement which may progress to acute respiratory distress syndrome (ARDS). Early identification of patients who are likely to get worse is therefore a major issue.~While, chest X-ray has poor diagnostic performances, pulmonary computed tomography (CT scan) seems very sensitive (97%) and quite specific of COVID-19. Sub-pleural bilateral ground-glass pattern can precede the positivity of RT-PCR for SARS-CoV-2. CT scan is now considered as the best imaging test to assess COVID-19 patients and is recommended as first-line diagnosis tool by the French Society of Radiology (SFR). However, performing CT scan in all or many patients with suspected COVID-19 may result in radiology department overload, especially, taking into account bio-cleaning between patients. Moreover, CT scan may lead to adverse effects including induced cancer due to the cumulative diagnostic irradiation.~Chest ultrasonography may be an alternative to CT scan. It is a simple, non-invasive, non-irradiating, inexpensive and available at the point of care (POCUS). Most of emergency physicians and many other specialists (pneumologists, infectious disease or intensive care physicians) are trained to perform chest POCUS and use it in their everyday practice. Multiple studies have demonstrated its superiority to chest X-ray for the detection of pneumonia. In ARDS, a scoring has been developed and has shown good correlation with mortality. POCUS is very effective in detecting peripheral patterns and seems appropriate to explore COVID-19 patients.~Previous studies suggest its interest in SARSCov2 infections for initial patient assessment and identification of lung damage. However, its performances have never been scientifically evaluated to date.~Our main hypothesis is that point of care lung ultrasonography performed during the initial examination may identify high-risk COVID-19 patients.",
-        "relevance_explanation": "The patient's clinical presentation and symptoms are primarily related to a non-COVID-19 condition, specifically symptoms and findings suggestive of pleural effusion and possible mesothelioma, as indicated by the presence of bloody pleural fluid and epithelioid-type cell proliferation. There is no mention of COVID-19 symptoms, diagnosis, or a positive RT-PCR test for COVID-19 in the patient's note. Therefore, the clinical trial focusing on COVID-19 patients using ultrasonography for risk stratification is not directly relevant to this patient's current medical condition.",
-        "eligibility_explanation": "The patient does not meet the primary inclusion criterion of having a confirmed or probable COVID-19 diagnosis, which is critical for participation in this trial. Although the patient meets the age criterion and there are no explicit exclusions based on the patient's current medical condition or history, the lack of a COVID-19 diagnosis significantly impacts his eligibility for this specific trial."
-      },
       "NCT04541160": {
         "matching_score": -0.8,
-        "agg_score": -0.2,
-        "trial_score": -1.0,
+        "agg_score": 0.2,
+        "trial_score": -0.6,
         "qrels_score": 1,
         "brief_summary": "This is a randomized study that sought to compare the rule-out capacity and antibiotics prescriptions associated with two different diagnostic imaging strategies (ultra-low-dose chest computed tomography versus chest radiography) in a group of healthy adults presenting to the emergency department (ED) with suspected community-acquired pneumonia (CAP).",
-        "relevance_explanation": "The patient presents with respiratory symptoms, specifically progressive dyspnea and nonproductive cough, which aligns with the clinical trial's focus on diagnosing community-acquired pneumonia using imaging techniques. However, the patient's definitive diagnosis of a pleural condition involving epithelioid-type cells suggests a more specific pathology than CAP, reducing the overall relevance to the trial's primary aim.",
-        "eligibility_explanation": "The patient meets one of the inclusion criteria by presenting with a respiratory symptom (dyspnea). However, he does not meet other inclusion criteria such as symptoms related to infection or specific auscultatory findings, and he has a definitive diagnosis other than CAP, which disqualifies him according to one of the inclusion criteria. He does not meet any exclusion criteria explicitly, but the lack of information on some exclusion criteria (e.g., CURB-65 score, BMI, ability to hold breath) prevents a full assessment of his eligibility."
+        "relevance_explanation": "The patient presents with respiratory symptoms such as nonproductive cough and progressive dyspnea, which aligns with the clinical trial's focus on diagnosing community-acquired pneumonia using imaging techniques. However, the patient's definitive diagnosis of a pleural condition based on biopsy results suggests a different underlying pathology rather than pneumonia, reducing the overall relevance to the trial's primary objective.",
+        "eligibility_explanation": "The patient meets one of the inclusion criteria by presenting with a respiratory symptom (dyspnea). However, he does not meet other inclusion criteria such as symptoms related to infection or specific auscultatory findings (crackling rales), and he has a definitive diagnosis, which disqualifies him per one of the inclusion criteria. He does not meet any exclusion criteria explicitly, but the lack of information on some exclusion criteria (CURB-65 or PSA scores, BMI, ability to hold breath) prevents a full assessment of eligibility."
+      },
+      "NCT04338100": {
+        "matching_score": -0.75,
+        "agg_score": 0.0,
+        "trial_score": -0.75,
+        "qrels_score": 1,
+        "brief_summary": "COVID-19 pandemic has developed worldwide in less than 4 months. While most patients have a mild or uncomplicated disease (80%), approximately 15% need hospital care and 5% intensive care. Severe cases are characterized by pulmonary involvement which may progress to acute respiratory distress syndrome (ARDS). Early identification of patients who are likely to get worse is therefore a major issue.~While, chest X-ray has poor diagnostic performances, pulmonary computed tomography (CT scan) seems very sensitive (97%) and quite specific of COVID-19. Sub-pleural bilateral ground-glass pattern can precede the positivity of RT-PCR for SARS-CoV-2. CT scan is now considered as the best imaging test to assess COVID-19 patients and is recommended as first-line diagnosis tool by the French Society of Radiology (SFR). However, performing CT scan in all or many patients with suspected COVID-19 may result in radiology department overload, especially, taking into account bio-cleaning between patients. Moreover, CT scan may lead to adverse effects including induced cancer due to the cumulative diagnostic irradiation.~Chest ultrasonography may be an alternative to CT scan. It is a simple, non-invasive, non-irradiating, inexpensive and available at the point of care (POCUS). Most of emergency physicians and many other specialists (pneumologists, infectious disease or intensive care physicians) are trained to perform chest POCUS and use it in their everyday practice. Multiple studies have demonstrated its superiority to chest X-ray for the detection of pneumonia. In ARDS, a scoring has been developed and has shown good correlation with mortality. POCUS is very effective in detecting peripheral patterns and seems appropriate to explore COVID-19 patients.~Previous studies suggest its interest in SARSCov2 infections for initial patient assessment and identification of lung damage. However, its performances have never been scientifically evaluated to date.~Our main hypothesis is that point of care lung ultrasonography performed during the initial examination may identify high-risk COVID-19 patients.",
+        "relevance_explanation": "The patient's clinical presentation and medical history do not indicate COVID-19, which is the primary focus of the clinical trial. The trial aims to use ultrasonography to identify high-risk COVID-19 patients, but the patient has not been diagnosed with COVID-19 nor is there any indication of a positive RT-PCR test for COVID-19. Therefore, the patient's condition is not relevant to the trial's target conditions.",
+        "eligibility_explanation": "Since the patient's condition is not relevant to the clinical trial's target conditions, he does not meet the primary inclusion criterion of having a confirmed or probable COVID-19 diagnosis. Consequently, despite meeting age requirements and not being excluded by any exclusion criteria, the patient's overall eligibility is negatively impacted by the lack of relevance to the trial's focus."
       }
     }
   },
@@ -141,22 +141,22 @@
     "patient_summary": "A 3-year-old girl presents with short stature, short limbs, a relatively large head, flat nasal bridge, and a small midface, features consistent with achondroplasia. Genetic testing confirmed an autosomal dominant point mutation in the FGFR3 gene, a condition shared with her father. This is her first medical assessment in the US, and she has not yet received any treatment for her condition. Her mental and developmental examinations show no abnormalities.",
     "trials": {
       "NCT04020913": {
-        "matching_score": -0.8,
+        "matching_score": -0.66667,
         "agg_score": 0.0,
-        "trial_score": -0.8,
+        "trial_score": -0.66667,
         "qrels_score": 1,
         "brief_summary": "The purpose of the study is to measure the functional effects of recombinant GH in skeletal muscle, in addition to growth promotion, in short prepubertal boys with either growth hormone deficiency or idiopathic short stature. Patients will be similarly short. The investigators will also compare these values in the short stature cohort to those obtained in testing performed in normally growing age-matched healthy control boys not on GH. The group on GH will be studied before and after 6 and 12 months of GH treatment.",
-        "relevance_explanation": "The patient is a 3-year-old girl with achondroplasia, which is not the target condition of the clinical trial. The trial specifically targets boys aged 6-11 years with growth hormone deficiency or idiopathic short stature, neither of which the patient has. Her condition (achondroplasia) is a genetic disorder unrelated to the conditions being studied in the trial. Additionally, the trial is gender and age-specific, further reducing the relevance of this trial to the patient.",
-        "eligibility_explanation": "The patient does not meet the primary inclusion criteria of the trial, which are gender-specific (boys only) and age-specific (6-11 years). Furthermore, her condition of achondroplasia does not fall under the conditions specified in the trial (growth hormone deficiency or idiopathic short stature). Therefore, she does not fulfill the necessary criteria to participate in this trial."
+        "relevance_explanation": "The patient is a 3-year-old girl with achondroplasia, a genetic condition causing short stature. However, the clinical trial specifically targets prepubertal boys aged 6-11 years with growth hormone deficiency or idiopathic short stature, not achondroplasia. Therefore, the patient's condition and demographic characteristics (age and gender) do not align with the trial's target group, making her largely irrelevant to the trial.",
+        "eligibility_explanation": "The patient does not meet the primary inclusion criteria of the trial, which are gender-specific (boys only) and age-specific (6-11 years). Additionally, her condition of achondroplasia does not fall under the conditions being studied (GH deficiency or idiopathic short stature). Although she is naive to GH therapy, which aligns with one inclusion criterion, her overall eligibility is negated by the more critical demographic and condition-specific criteria."
       },
       "NCT00106977": {
-        "matching_score": -1.0,
-        "agg_score": -0.3,
-        "trial_score": -1.3,
+        "matching_score": -2.0,
+        "agg_score": 0.0,
+        "trial_score": -2.0,
         "qrels_score": 1,
         "brief_summary": "This study will explore the range and type of medical and developmental problems in patients with Muenke syndrome, a condition that results when one or more of the suture between the bones of the skull close before birth. Because of the premature closure, the skull is not able to grow in its natural shape; instead, it compensates with growth in areas of the skull where the sutures have not yet closed. This can result in an abnormally shaped head, wide-set eyes, and flattened cheekbones. Patients may also have an enlarged head, abnormalities of the hands or feet, and hearing loss.~The fibroblast growth factor receptor 3 (FGFR3) gene, which is involved in the development and maintenance of bone tissue, plays a role in Muenke syndrome. In some cases, the FGFR3 mutation is inherited from a parent with Muenke syndrome; in other cases, where there is no family history of the disorder, the mutation occurs anew. A better understanding of this gene may lead researchers to develop better treatments and genetic counseling for people affected by Muenke syndrome.~Patients with Muenke syndrome and their blood relatives may be eligible for this study. Family members with confirmed Muenke syndrome will have genetic counseling, and patients undergo the following tests and procedures:~Review of medical records and test results.~Questionnaires about the patient's prenatal, birth, newborn, and past medical history; family history; growth and development; medications; and current therapies.~Physical, neurological, ear, nose and throat, dental, and eye examinations.~Neuropsychological testing to assess cognitive thinking abilities.~Hearing evaluation. This includes an audiology test in which the patients listens to soft tones through earphones; a power reflectance test in which a chirping sound is heard through an earpiece placed at the entrance to the ear canal, and possibly an ABR/ASSR test, in which electrodes are attached to the forehead, earlobes, and behind the ears to measure brain waves in response to certain conditions.~MRI scan of the brain. MRI uses a strong magnetic field and radio waves to produce detailed pictures of the brain. During the scan, the patient lies on a table in a narrow cylinder (the scanner), wearing ear plugs to muffle loud noises that occur with electrical switching of the magnetic fields.~MRI scan of the middle and inner ear. This test is similar to the MRI, but uses a dye injected in a vein to enhance the images.~CT scan of the skull. CT uses x-rays to produce 3-dimensional images of the part of the body studied.~Dental evaluation with x-rays.~Skeletal survey (x-rays of all bones of the body).~Developmental assessment of IQ testing.~Blood tests for research purposes. A cell line may be established for use in future research.~Medical photographs to demonstrate clinical features, including side and front views of the face, head, and other parts of the body that may be involved in Muenke syndrome, like the hands and feet.~Other consultations or tests as clinically indicated",
-        "relevance_explanation": "The patient has a mutation in the FGFR3 gene, which is relevant to the study's focus on FGFR3-related disorders. However, the specific mutation (Pro250Arg) associated with Muenke syndrome, which is the focus of the trial, has not been confirmed in this patient. Instead, she has been diagnosed with achondroplasia, a different condition also involving FGFR3 but distinct from Muenke syndrome. Therefore, while there is a genetic connection through the FGFR3 gene, the specific conditions and mutations differ.",
-        "eligibility_explanation": "The patient does not meet any of the inclusion criteria specific to Muenke syndrome as her genetic mutation and diagnosis (achondroplasia) differ from those required (Pro250Arg mutation and Muenke syndrome). Although she has a relevant gene mutation (FGFR3), it is not the specific mutation the study is investigating. She does not meet the exclusion criteria, but her lack of alignment with the inclusion criteria significantly limits her eligibility."
+        "relevance_explanation": "The patient has a confirmed mutation in the FGFR3 gene, which is relevant to the study's focus on FGFR3-related conditions. However, the specific mutation and condition (achondroplasia) differ from those targeted by the trial (Muenke syndrome with Pro250Arg mutation). This genetic distinction significantly reduces the relevance of the trial to this patient.",
+        "eligibility_explanation": "The patient is ineligible for the clinical trial as she does not meet any of the inclusion criteria specific to Muenke syndrome. She has a different FGFR3 mutation associated with achondroplasia, not the Pro250Arg mutation required for the study. Additionally, she is excluded by the criterion that aims to include only individuals with Muenke syndrome and their families."
       }
     }
   },
@@ -169,8 +169,8 @@
         "trial_score": -1.0,
         "qrels_score": 1,
         "brief_summary": "To confirm the clinical efficacy of Compound Azintamide Enteric-coated Tablets in the treatment of patients with dyspepsia after cholecystectomy (such as abdominal distension, abdominal pain/abdominal discomfort, diarrhea/fatty stool, early satiety, belching, loss of appetite, etc.) by comparing with positive control drug, to observe its safety, and to evaluate the quality of life of subjects before and after treatment",
-        "relevance_explanation": "The patient is a 7-month-old boy with symptoms related to a gastrointestinal condition, specifically a diagnosis suggestive of Hirschsprung's disease, indicated by the absence of submucosal ganglia and symptoms of constipation and bowel obstruction. The clinical trial is focused on adults with dyspeptic symptoms following a cholecystectomy, a surgical procedure that the patient has not undergone. Therefore, the patient's condition and the focus of the clinical trial are entirely unrelated.",
-        "eligibility_explanation": "Since the patient's condition does not match the target condition of the clinical trial, which is dyspepsia post-cholecystectomy, and he does not meet any of the inclusion criteria (age, having undergone a cholecystectomy, and specific dyspeptic symptoms post-surgery), he is completely ineligible for the trial. The patient's age and lack of relevant surgical history disqualify him from the trial."
+        "relevance_explanation": "The patient is a 7-month-old boy with symptoms of a gastrointestinal condition, specifically related to a narrow rectum and absence of submucosal ganglia, indicative of Hirschsprung's disease. This condition and the patient's age make him completely irrelevant to the clinical trial, which targets adults with dyspeptic symptoms following a cholecystectomy. None of the patient's symptoms or medical history align with the trial's focus on post-cholecystectomy dyspepsia.",
+        "eligibility_explanation": "Given the patient's complete irrelevance to the clinical trial, as he does not meet any of the inclusion criteria and the trial's focus does not align with his medical condition, the eligibility score is also zero. The patient's age, lack of cholecystectomy, and unrelated symptoms disqualify him from participation."
       },
       "NCT02774746": {
         "matching_score": -1.0,
@@ -178,31 +178,31 @@
         "trial_score": -1.0,
         "qrels_score": 1,
         "brief_summary": "The objective of this study is to investigate the hypothesis that delivery at 35 0/7- 35 6/7 weeks in stable patients with gastroschisis is superior to observation and expectant management with a goal of delivery at 38 0/7 - 38 6/7 weeks. To test this hypothesis, we will complete a randomized, prospective, multi-institutional trial across NAFTNet-affiliated institutions. Patients may be enrolled in the study any time prior to 33 weeks, but will be randomized at 33 weeks to delivery at 35 weeks or observation with a goal of 38 weeks. The primary composite outcome will include stillbirth, neonatal death prior to discharge, respiratory morbidity, and need for parenteral nutrition at 30 days.",
-        "relevance_explanation": "The patient is a 7-month-old boy with symptoms indicative of Hirschsprung's disease, not gastroschisis. The clinical trial is focused on outcomes related to gastroschisis in pregnancies, specifically comparing delivery times. The patient's condition and circumstances (postnatal, diagnosed with a different condition) are entirely unrelated to the focus of the trial, which is on prenatal management and outcomes of gastroschisis.",
-        "eligibility_explanation": "Since the patient's condition (Hirschsprung's disease) does not match the target condition of the trial (gastroschisis), and the trial is designed for pregnant individuals managing gastroschisis, the patient does not meet any inclusion criteria nor is he subject to any exclusion criteria, which are all related to pregnancy and gastroschisis. Therefore, he is completely ineligible for this trial."
+        "relevance_explanation": "The patient is a 7-month-old boy with symptoms of Hirschsprung's disease, which is unrelated to gastroschisis, the focus of the clinical trial. The trial is designed for pregnant women dealing with fetal gastroschisis, making the patient's condition and circumstances completely irrelevant to the study's objectives and target population.",
+        "eligibility_explanation": "Given the patient's complete irrelevance to the trial, as he does not meet any of the inclusion criteria nor does he fall under the scope of the study's target condition or demographic, his eligibility score is the lowest possible within the defined range, matching his relevance score."
       }
     }
   },
   "trec-20229": {
     "patient_summary": "A 67-year-old woman presents with symptoms of choking, dysphagia, and cough, alongside a history of hypertension, dyslipidemia, and osteoarthritis. She does not smoke or consume alcohol. A barium swallow study indicated an abnormality in the upper esophagus, specifically an outpouching at the junction of the lower throat and upper esophagus, suggesting a possible Zenker's diverticulum.",
     "trials": {
-      "NCT02774746": {
-        "matching_score": -0.71429,
-        "agg_score": 0.0,
-        "trial_score": -0.71429,
-        "qrels_score": 1,
-        "brief_summary": "The objective of this study is to investigate the hypothesis that delivery at 35 0/7- 35 6/7 weeks in stable patients with gastroschisis is superior to observation and expectant management with a goal of delivery at 38 0/7 - 38 6/7 weeks. To test this hypothesis, we will complete a randomized, prospective, multi-institutional trial across NAFTNet-affiliated institutions. Patients may be enrolled in the study any time prior to 33 weeks, but will be randomized at 33 weeks to delivery at 35 weeks or observation with a goal of 38 weeks. The primary composite outcome will include stillbirth, neonatal death prior to discharge, respiratory morbidity, and need for parenteral nutrition at 30 days.",
-        "relevance_explanation": "The patient is not relevant to the clinical trial as her medical condition and symptoms are unrelated to gastroschisis, which is the focus of the study. Gastroschisis is a condition associated with fetal development, and the patient's issues pertain to esophageal abnormalities in an adult. Additionally, the trial targets pregnant individuals with a specific fetal diagnosis, which does not apply to this patient.",
-        "eligibility_explanation": "Since the patient's condition and demographic do not match the target population of the clinical trial (pregnant individuals with a fetus diagnosed with gastroschisis), she does not meet the necessary inclusion criteria. Furthermore, she is explicitly excluded due to her hypertension. Therefore, she is completely ineligible for this trial."
-      },
       "NCT00001761": {
-        "matching_score": -0.94118,
+        "matching_score": -1.0,
         "agg_score": 0.0,
-        "trial_score": -0.94118,
+        "trial_score": -1.0,
         "qrels_score": 1,
         "brief_summary": "The purpose of this study is to assess the safety, tolerance, and immunologic effects of interleukin-10 (IL-10), in patients with Wegener's granulomatosis. A secondary objective is to determine if IL-10 demonstrates sufficient anti-inflammatory activity in the treatment of Wegener's granulomatosis to warrant further study in a larger trial. In this study, IL-10 will be given either alone or in combination with standard therapeutic agents, usually consisting of cyclophosphamide, methotrexate, and/or prednisone. Patients will be eligible to receive IL-10 when there is evidence of active disease. IL-10 will be administered by subcutaneous injection at a dose of 4 \u00b5 (Micro)g/kg/day for 28 days.",
-        "relevance_explanation": "The patient's medical condition is an abnormality in the upper esophagus, which is unrelated to Wegener's Granulomatosis, the target condition of the clinical trial. The trial specifically aims to study the effects of interleukin-10 in patients with Wegener's Granulomatosis, a type of vasculitis. Since the patient does not have this condition, the trial is not relevant to her medical needs.",
-        "eligibility_explanation": "Given the patient's diagnosis does not match the primary condition of interest in the trial (Wegener's Granulomatosis), she is completely ineligible for participation. Additionally, she exceeds the age limit set by the trial, which further disqualifies her."
+        "relevance_explanation": "The patient's medical condition is unrelated to Wegener's granulomatosis, the primary focus of the clinical trial. The patient's symptoms and diagnosis pertain to an esophageal issue, specifically an outpouching in the upper esophagus, which does not align with the vasculitis or Wegener's granulomatosis targeted by the trial. Therefore, the trial is not relevant to her current medical needs.",
+        "eligibility_explanation": "Since the patient's condition does not match the specific disease (Wegener's granulomatosis) being studied in the trial, and she exceeds the age limit set by the trial criteria, she does not meet the necessary inclusion criteria. Additionally, there is no information suggesting she meets any other specific requirements set by the trial. Thus, she is completely ineligible for participation."
+      },
+      "NCT02774746": {
+        "matching_score": -1.57143,
+        "agg_score": 0.0,
+        "trial_score": -1.57143,
+        "qrels_score": 1,
+        "brief_summary": "The objective of this study is to investigate the hypothesis that delivery at 35 0/7- 35 6/7 weeks in stable patients with gastroschisis is superior to observation and expectant management with a goal of delivery at 38 0/7 - 38 6/7 weeks. To test this hypothesis, we will complete a randomized, prospective, multi-institutional trial across NAFTNet-affiliated institutions. Patients may be enrolled in the study any time prior to 33 weeks, but will be randomized at 33 weeks to delivery at 35 weeks or observation with a goal of 38 weeks. The primary composite outcome will include stillbirth, neonatal death prior to discharge, respiratory morbidity, and need for parenteral nutrition at 30 days.",
+        "relevance_explanation": "The patient is not relevant to the clinical trial as she does not have gastroschisis, which is the target condition of the study. Additionally, the trial is focused on outcomes related to pregnancy and delivery, specifically in cases of gastroschisis, and there is no indication that the patient is pregnant or has any related conditions.",
+        "eligibility_explanation": "Since the patient is completely irrelevant to the clinical trial due to the absence of the target condition (gastroschisis) and any related pregnancy conditions, she is also ineligible for participation in the trial."
       }
     }
   },
@@ -215,17 +215,17 @@
         "trial_score": -0.71429,
         "qrels_score": 1,
         "brief_summary": "The purpose of this study is to evaluate the efficacy and safety of an intratympanic continuous two-week application of dexamethasone compared to placebo using a temporarily implanted catheter in patients with severe to profound sudden sensorineural hearing loss and insufficient recovery after initial systemic prednisolone therapy.",
-        "relevance_explanation": "The patient's clinical presentation and medical history do not mention any issues related to sudden sensorineural hearing loss, which is the specific condition targeted by the clinical trial. The trial focuses on evaluating a treatment for sudden hearing loss, and there is no indication in the patient's note that she suffers from this or any related condition. Therefore, the trial is not relevant to her current medical needs.",
-        "eligibility_explanation": "Since the patient's condition (a wrist mass) is unrelated to the trial's focus on sudden sensorineural hearing loss, she does not meet any of the specific inclusion criteria related to the diagnosis and characteristics of hearing loss required by the trial. Consequently, she is completely ineligible for participation in this trial."
+        "relevance_explanation": "The patient's clinical presentation and concerns are centered around a wrist mass, which is unrelated to the clinical trial's focus on sudden sensorineural hearing loss. There is no mention of hearing loss or related symptoms in the patient's note, indicating that the trial's target condition does not align with the patient's current health issues.",
+        "eligibility_explanation": "Since the patient's condition (wrist mass) does not match the specific requirements of the clinical trial (sudden sensorineural hearing loss), she does not meet any of the inclusion criteria that are specific to the diagnosis and characteristics of hearing loss required by the trial. Therefore, she is completely ineligible for participation."
       },
       "NCT04648969": {
-        "matching_score": -1.0,
+        "matching_score": -2.0,
         "agg_score": 0.0,
-        "trial_score": -1.0,
+        "trial_score": -2.0,
         "qrels_score": 1,
         "brief_summary": "The goal of this study is to develop novel treatments for patients with a condition called hypogonadotropic hypogonadism (HH) through the use of exogenous kisspeptin.",
-        "relevance_explanation": "The patient's clinical presentation and history do not mention or suggest hypogonadotropic hypogonadism (HH) or any related symptoms such as hormonal imbalances or reproductive issues. The patient visited the clinic for a wrist mass, which is unrelated to the hormonal or reproductive systems that are the focus of the trial. Therefore, the trial, which aims to treat HH using kisspeptin, is not relevant to her current medical concerns.",
-        "eligibility_explanation": "Since the patient's condition (wrist mass) and medical history provided in the patient note do not align with the target condition of the clinical trial (HH), she does not meet the primary inclusion criteria of having a confirmed diagnosis of HH. Consequently, she is ineligible for the trial as her medical issue is unrelated to the study's focus, making her eligibility score the lowest possible within the defined range."
+        "relevance_explanation": "The patient presents with a wrist mass, which is unrelated to hypogonadotropic hypogonadism (HH), the target condition of the clinical trial. There is no mention of any symptoms or diagnostic findings that would suggest the patient has HH. Therefore, the patient's condition does not align with the focus of the trial.",
+        "eligibility_explanation": "Since the patient's condition (wrist mass) is not relevant to the trial's target condition (HH), she does not meet any of the inclusion criteria. Additionally, the patient is excluded by the age criterion as she is 19 and the trial excludes those 18 years and older. Therefore, she is completely ineligible for the trial."
       }
     }
   },
@@ -234,44 +234,44 @@
     "trials": {
       "NCT01824459": {
         "matching_score": 0.29412,
-        "agg_score": 0.7,
-        "trial_score": 0.99412,
+        "agg_score": 1.65,
+        "trial_score": 1.94412,
         "qrels_score": 2,
         "brief_summary": "The purpose of this study is to evaluate the effectiveness and safety of S-1+Oxaliplatin vs.S-1+Cisplatin First-line Treatment in Advanced or Recurrent Non-intestinal Gastric Adenocarcinoma or Gastroesophageal Junction Adenocarcinoma Patients.",
-        "relevance_explanation": "The patient's diagnosis of diffuse-type gastric adenocarcinoma aligns directly with the clinical trial's focus on advanced or recurrent non-intestinal type gastric adenocarcinoma, making the trial highly relevant for the patient. The patient's age and the nature of his disease (measurable and advanced) further align with the trial's target demographic and condition specifications.",
-        "eligibility_explanation": "The patient meets several key inclusion criteria: confirmed diagnosis of the target cancer type, age within the required range, no prior chemotherapy or radiotherapy, and willingness to comply with the trial protocol. However, there is insufficient information regarding the patient's ECOG performance status, organ function tests, and other specific health metrics required by the trial. No exclusion criteria explicitly disqualify the patient, but the lack of detailed health data prevents a full eligibility confirmation."
+        "relevance_explanation": "The patient has been diagnosed with diffuse-type adenocarcinoma of the stomach, which is specifically targeted by the clinical trial aimed at treating advanced or recurrent non-intestinal type gastric adenocarcinoma. The trial's focus on first-line treatment for this type of cancer directly aligns with the patient's condition, making the trial highly relevant for him.",
+        "eligibility_explanation": "The patient meets several key inclusion criteria: confirmed diagnosis of the target cancer type, age within the required range, no prior chemotherapy or radiotherapy, and willingness to comply with the trial protocol. However, there is insufficient information regarding the patient's ECOG status, organ function, and various blood levels, which are necessary to fully determine eligibility. No exclusion criteria apply to the patient based on the available information. Therefore, while the patient is highly relevant, the lack of complete medical data prevents a full eligibility confirmation."
       },
       "NCT04743102": {
-        "matching_score": -0.71429,
-        "agg_score": -0.0,
-        "trial_score": -0.71429,
+        "matching_score": -1.71429,
+        "agg_score": 0.0,
+        "trial_score": -1.71429,
         "qrels_score": 1,
         "brief_summary": "Background There is currently no reliable means to restage rectal cancers after neoadjuvant chemoradiation. There are still no reliable methods to identify patients with pCR before radical surgery. As a result, clinical complete response (cCR), defined as no clinical detectable tumor by physical examination, endoscopic evaluation, and imaging, is designed as a surrogate endpoint for pCR. However, the concordance between cCR and pCR varies from 22% to 96% in different reports, which questions the clinical value of such strategies. Therefore, based on rectal diginal examination, serum CEA, MRI, endoscopy examination, we suggested to add multi-points and full-thickness biopsy technique to further improve the accuracy of cCR.",
-        "relevance_explanation": "The patient has a diagnosis of diffuse-type adenocarcinoma of the stomach, which is not related to the target conditions of the clinical trial focused on rectal cancer and neoadjuvant therapy for rectal cancer. The trial aims to improve diagnostic accuracy for rectal cancer patients post-neoadjuvant therapy, which does not align with the patient's condition.",
-        "eligibility_explanation": "The patient is ineligible for the clinical trial as his medical condition (stomach cancer) does not match the trial's focus on rectal cancer. Additionally, the patient does not meet several key inclusion criteria specific to rectal cancer and its treatment, and is explicitly excluded due to a recent diagnosis of another malignant tumor."
+        "relevance_explanation": "The patient is diagnosed with diffuse-type adenocarcinoma of the stomach, which is not related to the clinical trial's focus on rectal cancer and neoadjuvant therapy for rectal cancer. The trial specifically targets conditions and treatments that are not applicable to the patient's diagnosis, making the trial irrelevant to his medical needs.",
+        "eligibility_explanation": "Given the patient's diagnosis does not match the target condition of the trial (rectal cancer vs. stomach cancer), he does not meet the fundamental inclusion criteria related to the disease type and location. Therefore, he is completely ineligible for this trial."
       }
     }
   },
   "trec-202212": {
     "patient_summary": "A 47-year-old male with a history of chronic cough, progressive dyspnea, hypertension, and osteoarthritis presents with symptoms suggestive of asbestos-related lung disease. He has a smoking history and previous occupational exposure to asbestos as a construction worker. Examination and imaging findings indicate pulmonary fibrosis, predominantly in the lower lobes, with evidence of asbestos bodies, and mild bilateral pleural effusion with diffuse pleural thickening.",
     "trials": {
-      "NCT04541160": {
-        "matching_score": -0.8,
-        "agg_score": -0.1,
-        "trial_score": -0.9,
-        "qrels_score": 1,
-        "brief_summary": "This is a randomized study that sought to compare the rule-out capacity and antibiotics prescriptions associated with two different diagnostic imaging strategies (ultra-low-dose chest computed tomography versus chest radiography) in a group of healthy adults presenting to the emergency department (ED) with suspected community-acquired pneumonia (CAP).",
-        "relevance_explanation": "The patient is not relevant to the clinical trial as the primary focus of the trial is on diagnosing community-acquired pneumonia (CAP) using imaging techniques, and the patient does not have suspected CAP. Instead, he presents with symptoms and a definitive diagnosis related to asbestosis and pulmonary fibrosis, which are not the target conditions of the trial.",
-        "eligibility_explanation": "The patient is largely ineligible for the trial. While he does have respiratory symptoms, which align with one inclusion criterion, he does not meet other inclusion criteria related to symptoms of infection or specific auscultatory findings. Furthermore, he is explicitly excluded due to his diagnosis of interstitial lung diseases (asbestosis and pulmonary fibrosis)."
-      },
       "NCT03462056": {
         "matching_score": -1.0,
         "agg_score": 0.0,
         "trial_score": -1.0,
         "qrels_score": 1,
         "brief_summary": "Children with cystic fibrosis require increased caloric intake to maintain appropriate growth, an important determinant of long-term outcomes. This study seeks to determine the feasibility of using a novel therapeutic food to promote weight gain and growth in children with cystic fibrosis.",
-        "relevance_explanation": "The patient has been diagnosed with pulmonary fibrosis and asbestosis, not cystic fibrosis, which is the target condition of the clinical trial. Therefore, the patient's condition does not match the primary focus of the trial, making him irrelevant to the study.",
-        "eligibility_explanation": "Since the patient's condition (pulmonary fibrosis and asbestosis) does not match the target condition of the trial (cystic fibrosis), he does not meet any of the inclusion criteria specified for the trial. Additionally, none of the exclusion criteria apply directly because they are specific to complications or treatments related to cystic fibrosis, which the patient does not have."
+        "relevance_explanation": "The patient has pulmonary fibrosis and asbestosis, which are different from cystic fibrosis, the target condition of the clinical trial. The trial is specifically designed for children with cystic fibrosis to assess a nutritional intervention, which does not align with the patient's condition or demographic (adult).",
+        "eligibility_explanation": "The patient does not meet any of the inclusion criteria as he does not have cystic fibrosis, is not receiving pancreatic enzyme replacement therapy, and there is no information on his BMI or weight percentile relevant to the trial's focus on children. Additionally, none of the exclusion criteria apply directly to him since they are specific to conditions and treatments associated with cystic fibrosis, which he does not have."
+      },
+      "NCT04541160": {
+        "matching_score": -1.8,
+        "agg_score": 0.0,
+        "trial_score": -1.8,
+        "qrels_score": 1,
+        "brief_summary": "This is a randomized study that sought to compare the rule-out capacity and antibiotics prescriptions associated with two different diagnostic imaging strategies (ultra-low-dose chest computed tomography versus chest radiography) in a group of healthy adults presenting to the emergency department (ED) with suspected community-acquired pneumonia (CAP).",
+        "relevance_explanation": "The patient presents with respiratory symptoms, which aligns with the clinical trial's focus on diagnosing respiratory conditions like pneumonia using imaging techniques. However, the patient's symptoms and conditions (chronic cough, dyspnea, asbestosis, and pulmonary fibrosis) are not primarily indicative of community-acquired pneumonia (CAP), which is the specific target of the trial. This discrepancy between the patient's actual conditions and the trial's target condition affects the relevance score.",
+        "eligibility_explanation": "While the patient does exhibit respiratory symptoms relevant to the trial's inclusion criteria, he does not meet the specific criteria for suspected CAP, lacks symptoms related to infection, and has a definitive diagnosis of other respiratory diseases (asbestosis and pulmonary fibrosis), which are exclusion criteria for the trial. Therefore, despite some initial relevance due to respiratory symptoms, the patient's specific medical conditions and the presence of other respiratory diseases make him ineligible for the trial."
       }
     }
   },
@@ -279,45 +279,45 @@
     "patient_summary": "A 24-year-old man presents with infertility after 18 months of unsuccessful attempts to conceive with his wife, whose medical evaluations show no abnormalities. He exhibits bilateral gynecomastia and abnormally long lower extremities. His karyotype reveals 47, XXY, confirming a diagnosis of Klinefelter syndrome. Physical examination shows normal heart and lung sounds, and his testes are described as bilateral descended and firm.",
     "trials": {
       "NCT02956980": {
-        "matching_score": -0.83333,
-        "agg_score": -0.3,
-        "trial_score": -1.13333,
+        "matching_score": -1.0,
+        "agg_score": 0.0,
+        "trial_score": -1.0,
         "qrels_score": 1,
         "brief_summary": "Differences in pDCs function related to gender have been demonstrated in adults but have never been addressed in children. Yet, differences in immune responses related to gender also exist in children, both in responses to pathogens and susceptibility to autoimmune diseases. The investigators suppose that these differences are partly linked to difference in pDCs functions. This study aim is to compare pDCs functions in children based on gender and pubertal status. This study will be performed in healthy children, boys with Klinefelter syndrome and girls with Turner syndrome.",
-        "relevance_explanation": "The patient has Klinefelter syndrome, which is specifically mentioned in the clinical trial as a condition of interest for studying plasmacytoid dendritic cells (pDCs) functions. However, the trial is focused on children and the patient is 24 years old, which makes him ineligible based on age criteria. Despite the condition match, the age discrepancy significantly reduces the relevance of this trial for the patient.",
-        "eligibility_explanation": "Although the patient has Klinefelter syndrome, which is relevant to the study's focus, he does not meet the age criteria specified for the trial groups. The trial is designed for pediatric patients and specifies groups for children under 8 years and those over 12 years. The patient, being 24 years old, does not fit into these pediatric categories. Additionally, the requirement for parental consent is not applicable as the patient is an adult. Therefore, despite having a relevant condition, the patient's age makes him ineligible for this trial."
+        "relevance_explanation": "The patient has Klinefelter syndrome, which is specifically mentioned in the clinical trial as a condition of interest. However, the trial is focused on children, specifically targeting differences in plasmacytoid dendritic cells (pDCs) functions based on gender and pubertal status in healthy children and those with Klinefelter or Turner syndrome. The patient's age of 24 years disqualifies him as the trial is designed for pediatric patients only.",
+        "eligibility_explanation": "Despite the patient's diagnosis of Klinefelter syndrome aligning with the study's interest, he is ineligible due to his age. The trial specifies inclusion of pediatric patients only, and all inclusion criteria are based on age groups that do not encompass the patient's age. Furthermore, the requirement for parental consent and the focus on children further emphasize his ineligibility."
       },
       "NCT01028365": {
-        "matching_score": -1.0,
-        "agg_score": -0.3,
-        "trial_score": -1.3,
+        "matching_score": -2.0,
+        "agg_score": 0.0,
+        "trial_score": -2.0,
         "qrels_score": 1,
         "brief_summary": "The purpose of this research study is to learn a way to measure a person's fertility. After 1 year of trying, 1 out of every 7 women will not be pregnant. This is called infertility. This results in significant distress and anxiety. Infertility is common; however, the investigators have no markers to predict who will be infertile. For couples diagnosed with infertility, the investigators have used blood and urine hormone levels (follicle stimulating hormone (FSH), inhibin B, and antimullerian hormone (AMH)) to tell us who will get pregnant with fertility treatment. The investigators don't know if these hormone levels can predict if regular people trying to get pregnant will be able to get pregnant. This study will try to determine if these hormone levels can predict fertility and infertility.",
-        "relevance_explanation": "The patient is a 24-year-old man diagnosed with Klinefelter syndrome, a genetic condition that affects fertility. The clinical trial focuses on fertility issues, specifically measuring hormone levels to predict fertility outcomes. Although the trial primarily targets women, the patient's condition and his infertility issues make the study's focus on fertility relevant to his situation. However, the trial's specific inclusion and exclusion criteria, which are tailored more towards women and different conditions of trying to conceive, reduce the overall relevance for this male patient.",
-        "eligibility_explanation": "The patient does not meet the inclusion criteria as he is not a woman, has been trying to conceive for more than 3 months, and does not fit the demographic specifics of living with a male partner. Furthermore, he is explicitly excluded by two criteria: having been trying to get pregnant for more than 3 months and having a known fertility problem (Klinefelter syndrome). These factors make him ineligible for participation in the trial."
+        "relevance_explanation": "The patient is a 24-year-old man with Klinefelter syndrome, presenting with infertility issues. The clinical trial is focused on fertility, specifically in measuring hormone levels to predict fertility in individuals. Although the trial primarily targets women, the patient's condition (infertility) is directly related to the study's focus. However, the specific criteria and target demographic of the trial (women trying to conceive) make the patient less relevant.",
+        "eligibility_explanation": "The patient does not meet any of the inclusion criteria as he is not a woman, is not in the specified age range, and has been trying to conceive for longer than the specified maximum of 3 months. Additionally, he is explicitly excluded by two criteria: having been trying to conceive for more than 3 months and having a known fertility issue (Klinefelter syndrome). Therefore, he is ineligible for the trial."
       }
     }
   },
   "trec-202214": {
     "patient_summary": "A 39-year-old man presents with severe pain, redness, and swelling in his left toe, specifically at the first metatarsophalangeal joint. He has a history of gouty arthritis, confirmed by the presence of needle-shaped crystals in the joint fluid and a high leukocyte count. There is no recent trauma or fever associated with this episode. His medical treatment includes Allopurinol for gout prevention. Family history is notable for gout in his father.",
     "trials": {
-      "NCT01193803": {
-        "matching_score": 1.0,
-        "agg_score": 0.0,
-        "trial_score": 1.0,
-        "qrels_score": 2,
-        "brief_summary": "Osteoarticular infections are painful and disabling diseases that require antimicrobial treatment adapted to the microorganisms implicated. Microbiological cultures are currently regarded as the reference for identification of pathogenic bacteria. However, the sensitivity of these cultures is very variable and depends both on the context in which clinical samples are taken, and on the pathogen involved. The rate of detection varies according to infection type: from 50 to 70% for infectious spondylodiscitis, 65 to 95% for prosthetic joint infections, 50% for gonococcal arthritis and 90% for non-gonococcal arthritis. The aim of the study is to evaluate the diagnostic performances of microbiological cultures and molecular methods in case of osteoarticular infections. The gold standard will be established by an expert group of osteoarticular infection (composed by a bacteriologist, a radiologist, a surgeon, an anatomy-pathologist and a rheumatologist), which established the final diagnosis of infected or not infected patients.",
-        "relevance_explanation": "The patient has been diagnosed with gouty arthritis, which is not targeted by the clinical trial focused on osteoarticular infections such as spondylodiscitis, prosthetic joint infections, and septic arthritis without a prosthesis. None of the patient's conditions or symptoms align with the specific infections or scenarios outlined in the trial's inclusion criteria.",
-        "eligibility_explanation": "Since the patient's condition (gouty arthritis) does not match any of the conditions specified in the trial's inclusion criteria, which focus on different types of osteoarticular infections, he does not meet any of the inclusion criteria. Therefore, he is completely ineligible for this trial."
-      },
       "NCT04844814": {
-        "matching_score": 0.57143,
-        "agg_score": 0.4,
-        "trial_score": 0.97143,
+        "matching_score": 0.66667,
+        "agg_score": 1.35,
+        "trial_score": 2.01667,
         "qrels_score": 2,
         "brief_summary": "Gout is secondary to urate crystal deposition after chronic elevation of serum urate level. Urate crystal deposition is responsible for acute and recurrent inflammatory flares which can be treated with colchicine, non-steroid anti-inflammatory drugs (NSAID), corticosteroid or interleukin (IL)-1b blockade. Colchicine and NSAID are contra-indicated in patients with chronic renal disease (CKD) stage 4/5 or with renal transplantation. In these patients gout flare is treated with high dose of corticosteroid or IL-1b inhibitors.~Frequent use of high dose of corticosteroid can worsen gout comorbidities including mellitus diabetes type 2, hypertension, obesity and dyslipidemia. Anakinra, an IL-1b receptor antagonist, is efficient in gout flare in patients without CKD stage 4/5.~The aim of this study is to demonstrate that anakinra is superior to prednisone to treat gout flare in patients with CKD 4/5 or renal transplantation.",
-        "relevance_explanation": "The patient is highly relevant to the clinical trial as he has a confirmed diagnosis of gout, which is a primary condition of interest in the trial. The trial specifically targets patients with gout flares and explores treatment options suitable for those with chronic kidney conditions or renal transplants, although it is not specified if the patient has chronic kidney disease or a renal transplant. The patient's acute gout flare and the confirmation of urate crystals in his joint fluid align closely with the trial's focus on gout management.",
-        "eligibility_explanation": "The patient meets several inclusion criteria: he is an adult over 18, has confirmed gout, and his symptoms align with the Nijmegen criteria for gout. However, there is no information on his kidney function or whether he has chronic kidney disease or a renal transplant, which are critical for full eligibility in this trial. Additionally, there is insufficient information regarding his pain assessment on a visual analogical scale, neutrophil count, and social security status. He does not meet any exclusion criteria based on the available information."
+        "relevance_explanation": "The patient is highly relevant to the clinical trial as he has a confirmed diagnosis of gout, which is a primary condition of interest in the trial. The trial specifically targets patients with gout flares and aims to compare treatments suitable for individuals with chronic kidney disease or renal transplantation, although there is no information confirming the patient has CKD or a renal transplant. The patient's acute gout flare and the confirmation of urate crystals in his joint fluid align closely with the trial's focus on gout management.",
+        "eligibility_explanation": "The patient meets several key inclusion criteria: he is an adult over 18, has confirmed gout, and his gout flare onset fits within the required timeframe. However, there is no information about the patient having chronic kidney disease or a renal transplant, which is a critical inclusion criterion for this trial. The patient does not meet any exclusion criteria based on the available information, such as participation in another trial, active infections, allergies to trial medications, or contraindications for the medications involved in the trial. Therefore, while the patient is highly relevant due to his gout diagnosis, the lack of information on his kidney health status slightly reduces his overall eligibility."
+      },
+      "NCT01193803": {
+        "matching_score": -0.33333,
+        "agg_score": 0.0,
+        "trial_score": -0.33333,
+        "qrels_score": 0,
+        "brief_summary": "Osteoarticular infections are painful and disabling diseases that require antimicrobial treatment adapted to the microorganisms implicated. Microbiological cultures are currently regarded as the reference for identification of pathogenic bacteria. However, the sensitivity of these cultures is very variable and depends both on the context in which clinical samples are taken, and on the pathogen involved. The rate of detection varies according to infection type: from 50 to 70% for infectious spondylodiscitis, 65 to 95% for prosthetic joint infections, 50% for gonococcal arthritis and 90% for non-gonococcal arthritis. The aim of the study is to evaluate the diagnostic performances of microbiological cultures and molecular methods in case of osteoarticular infections. The gold standard will be established by an expert group of osteoarticular infection (composed by a bacteriologist, a radiologist, a surgeon, an anatomy-pathologist and a rheumatologist), which established the final diagnosis of infected or not infected patients.",
+        "relevance_explanation": "The patient has gouty arthritis, which is not targeted by the clinical trial focused on osteoarticular infections such as spondylodiscitis, vertebral osteomyelitis, prosthetic joint infections, and septic arthritis. None of the patient's conditions or symptoms align with the specific infections studied in the trial.",
+        "eligibility_explanation": "Since the patient's condition (gouty arthritis) does not match any of the target conditions of the clinical trial (various osteoarticular infections), he does not meet any of the inclusion criteria specific to these conditions. Therefore, he is completely ineligible for this trial."
       }
     }
   },
@@ -325,13 +325,13 @@
     "patient_summary": "An 8-year-old boy presents with weakness and difficulty standing up from a sitting position. He has a family history suggestive of a similar condition, with an uncle who was wheelchair-bound and died young. Physical examination reveals lower extremity muscle strength of 3/5 and enlarged calf muscles. A muscle biopsy indicates an absence of dystrophin protein, leading to a diagnosis of Duchenne Muscular Dystrophy (DMD).",
     "trials": {
       "NCT03479008": {
-        "matching_score": -0.5,
-        "agg_score": -0.1,
-        "trial_score": -0.6,
+        "matching_score": -0.75,
+        "agg_score": 0.0,
+        "trial_score": -0.75,
         "qrels_score": 1,
         "brief_summary": "Objective: Test the ability of vibration to produce physiologic, biochemical, and anatomic changes consistent with exercise that would help prevent the development of muscle weakness that occurs when patients are immobile for long periods of time.",
-        "relevance_explanation": "The patient, diagnosed with Duchenne Muscular Dystrophy (DMD), presents with symptoms of muscle weakness and difficulty in mobility, which are not directly aligned with the target conditions of the clinical trial, which focuses on critically ill patients and those with Post Intensive Care Syndrome. The trial aims to test a device to prevent muscle weakness in patients immobilized for long periods, typically seen in hospitalized or critically ill patients, which does not directly correlate with the chronic, genetic nature of DMD.",
-        "eligibility_explanation": "Although the patient has muscle weakness, his condition (DMD) and circumstances (not being critically ill or recently in intensive care) do not match the specific patient profile the trial is targeting. The trial is intended for patients experiencing muscle weakness due to prolonged immobility typically associated with critical illness or intensive care, not due to a genetic disorder like DMD. Therefore, while the patient is not excluded by the provided exclusion criteria (not being pregnant or a prisoner), his condition does not fit the trial's focus, making his eligibility low."
+        "relevance_explanation": "The patient, diagnosed with Duchenne Muscular Dystrophy (DMD), presents with symptoms of muscle weakness and difficulty in mobility, which are not directly aligned with the trial's focus on critically ill patients or those with Post Intensive Care Syndrome. The trial aims to test a device on patients experiencing muscle weakness due to prolonged immobility typically seen in critical care settings, which differs from the genetic and progressive muscle weakness seen in DMD. Therefore, the patient's condition does not match the target conditions of the trial.",
+        "eligibility_explanation": "Although the patient does not meet the specific target conditions of the trial, he is not explicitly excluded based on the provided exclusion criteria (not being pregnant or a prisoner). However, his condition (DMD) and the trial's focus (critically ill, post-ICU muscle weakness) are mismatched, making his participation in the trial less appropriate."
       },
       "NCT02240407": {
         "matching_score": -1.0,
@@ -339,31 +339,31 @@
         "trial_score": -1.0,
         "qrels_score": 1,
         "brief_summary": "A recombinant AAV vector has been generated to carry the codon-optimized acid alpha-glucosidase (coGAA) gene expressed from a human desmin enhancer/promoter (DES). The proposed clinical trial is a within-participant, double-blind, randomized, phase I controlled study evaluating the toxicology, biodistribution and potential activity of re-administration of rAAV9-DES-hGAA injected intramuscularly into the TA. Nine participants (18 to 50-years old) who reside within the United States with Late-Onset Pompe Disease (LOPD) will be included. The goal of the immune modulation strategy is to ablate B-cells (Rituximab and Sirolimus) prior to the initial exposure to the study agent in one leg and the subsequent exposure of the same vector to the contralateral leg after four months. At each study agent dosing, the contralateral leg will receive excipient. Patients will act as their own controls. Repeated measures, at baseline and during the following 3 months after each injection, will assess the safety, biochemical and functional impact of the vector.",
-        "relevance_explanation": "The patient is diagnosed with Duchenne Muscular Dystrophy (DMD), not Pompe Disease, which is the target condition for the clinical trial. Additionally, the age and residency requirements further distance the patient from the trial's focus.",
-        "eligibility_explanation": "Since the patient does not have Pompe Disease, which is a fundamental requirement for the trial, and also does not meet the age criterion, he is completely ineligible for participation in this clinical trial."
+        "relevance_explanation": "The patient is diagnosed with Duchenne Muscular Dystrophy (DMD), not Pompe Disease, which is the target condition for the clinical trial. Additionally, the age of the patient (8 years old) does not fall within the specified age range (18 to 50 years old) for the trial. These factors make the trial irrelevant to the patient's condition and age.",
+        "eligibility_explanation": "Given the patient's diagnosis of DMD instead of Pompe Disease, and his age being outside the specified range for the trial, he does not meet the primary inclusion criteria. Therefore, he is completely ineligible for the trial."
       }
     }
   },
   "trec-202216": {
     "patient_summary": "A 39-year-old woman presents with arthralgias, skin nodules on her legs, and moderate hepatomegaly. The nodules are tender and located primarily on the anterior surface of the lower extremities. A chest x-ray shows enlarged hilar lymph nodes, and laboratory tests reveal an elevated ACE level. A biopsy of a skin lesion indicates noncaseating granulomas, negative for fungi and acid-fast bacilli, suggesting a diagnosis of sarcoidosis.",
     "trials": {
-      "NCT03255720": {
-        "matching_score": -1.0,
-        "agg_score": 0.0,
-        "trial_score": -1.0,
-        "qrels_score": 1,
-        "brief_summary": "Diffusion Tensor imaging of white matter degeneration in Alzheimer disease",
-        "relevance_explanation": "The patient's condition and symptoms are not related to Alzheimer's disease or the specific focus of the clinical trial, which is on white matter micro-structural changes in Alzheimer's patients using Diffusion Tensor Imaging. The patient's symptoms and diagnosis suggest sarcoidosis, which involves noncaseating granulomas and is unrelated to Alzheimer's disease. Therefore, the trial is not relevant to her current medical condition.",
-        "eligibility_explanation": "Since the patient's condition does not align with the target condition of the clinical trial, which is Alzheimer's disease, she does not meet any of the inclusion criteria that are specific to cognitive changes or Alzheimer's pathology. Additionally, she is explicitly excluded by one of the exclusion criteria due to her diagnosis of sarcoidosis, which is listed as a specific cause of white matter lesions. Therefore, she is ineligible for the trial."
-      },
       "NCT04648969": {
         "matching_score": -1.0,
         "agg_score": 0.0,
         "trial_score": -1.0,
         "qrels_score": 1,
         "brief_summary": "The goal of this study is to develop novel treatments for patients with a condition called hypogonadotropic hypogonadism (HH) through the use of exogenous kisspeptin.",
-        "relevance_explanation": "The patient's clinical presentation and symptoms do not align with the target condition of the clinical trial, which is hypogonadotropic hypogonadism (HH). Instead, her symptoms suggest a possible diagnosis of sarcoidosis, indicated by arthralgias, nodules on her legs, hepatomegaly, enlarged hilar lymph nodes, and elevated ACE levels with biopsy results showing noncaseating granulomas. There is no mention or indication of hypogonadotropic hypogonadism or related endocrine symptoms in her medical history.",
-        "eligibility_explanation": "Since the patient's condition does not match the target condition of the clinical trial, she is inherently ineligible to participate. The trial specifically seeks to treat hypogonadotropic hypogonadism, and there is no evidence or suggestion in the patient's medical profile that she suffers from this condition. Therefore, she does not meet the primary inclusion criterion."
+        "relevance_explanation": "The patient's medical condition and symptoms do not align with the target condition of the clinical trial, which is hypogonadotropic hypogonadism (HH). The patient's note does not mention any symptoms or diagnosis related to HH, such as low testosterone or estradiol levels, or low gonadotropin levels, which are key characteristics of HH. Instead, the patient presents with symptoms suggestive of a different condition, possibly sarcoidosis, indicated by noncaseating granulomas and elevated ACE levels. Therefore, the trial is not relevant to her current medical issues.",
+        "eligibility_explanation": "Since the patient's condition does not match the target condition of the clinical trial, she does not meet the primary inclusion criteria of having hypogonadotropic hypogonadism. Consequently, she is ineligible for the trial as her medical condition is not what the trial aims to treat. The exclusion criteria, while mostly not excluding her, are irrelevant since the inclusion criteria are not met."
+      },
+      "NCT03255720": {
+        "matching_score": -2.0,
+        "agg_score": 0.0,
+        "trial_score": -2.0,
+        "qrels_score": 1,
+        "brief_summary": "Diffusion Tensor imaging of white matter degeneration in Alzheimer disease",
+        "relevance_explanation": "The patient's condition and symptoms are not related to Alzheimer's disease or cognitive impairment, which are the focus of the clinical trial. The trial is specifically designed to study white matter micro-structural changes in Alzheimer's disease using Diffusion Tensor Imaging. The patient's medical issues, including sarcoidosis and symptoms like arthralgias and nodules, do not align with the target condition of the trial.",
+        "eligibility_explanation": "Since the patient's condition does not match the target condition of the trial, she is inherently ineligible. Additionally, she is explicitly excluded due to having sarcoidosis, which is listed as a specific cause of white matter lesions that the trial aims to exclude."
       }
     }
   },
@@ -371,13 +371,13 @@
     "patient_summary": "A 67-year-old man presents with progressively worsening bilateral vision, particularly impaired during nighttime, affecting his ability to drive. Ocular examination reveals a loss of the red reflex and blurry vision, with an acuity testing result of 50/100 in both eyes but normal visual fields. His medical history is otherwise unremarkable, and his general physical examination, including blood pressure and pulse, is within normal limits.",
     "trials": {
       "NCT00335920": {
-        "matching_score": -0.71429,
+        "matching_score": -0.5,
         "agg_score": 0.0,
-        "trial_score": -0.71429,
+        "trial_score": -0.5,
         "qrels_score": 1,
         "brief_summary": "The purpose of this study is to evaluate the efficacy and safety of an intratympanic continuous two-week application of dexamethasone compared to placebo using a temporarily implanted catheter in patients with severe to profound sudden sensorineural hearing loss and insufficient recovery after initial systemic prednisolone therapy.",
-        "relevance_explanation": "The patient's condition, which involves vision issues, is not relevant to the clinical trial's focus on sudden sensorineural hearing loss. The trial specifically targets patients with sudden deafness, and there is no mention of hearing issues in the patient's note. Therefore, the patient's condition does not align with the target condition of the trial.",
-        "eligibility_explanation": "Since the patient's condition is not relevant to the clinical trial's focus, he does not meet any of the specific inclusion criteria related to sudden sensorineural hearing loss. Although he meets some general inclusion criteria such as age and willingness to consent, these do not outweigh the lack of relevance of his condition to the trial's objectives. Therefore, he is ineligible for this trial."
+        "relevance_explanation": "The patient's primary health issue is related to vision impairment, specifically worsening vision and loss of the red reflex, which are not related to the target condition of the clinical trial, sudden sensorineural hearing loss. Therefore, the trial, which focuses on hearing loss treatment, is not relevant to the patient's condition.",
+        "eligibility_explanation": "Since the patient's condition (vision problems) does not match the target condition of the trial (sudden hearing loss), he does not meet the primary inclusion criteria related to the diagnosis of sudden sensorineural hearing loss. Consequently, he is ineligible for the trial."
       },
       "NCT04224909": {
         "matching_score": -1.0,
@@ -385,8 +385,8 @@
         "trial_score": -1.0,
         "qrels_score": 1,
         "brief_summary": "The function of the vestibular system among patients with Sudden Sensori Neural Hearing Loss will be evaluted using the video Head Impulse Test",
-        "relevance_explanation": "The patient's primary health issue is related to vision problems, specifically worsening vision and loss of the red reflex, which are not related to Sudden Sensorineural Hearing Loss, the target condition of the clinical trial. The trial focuses on evaluating the vestibular system in patients with hearing loss, which does not align with the patient's symptoms or medical history.",
-        "eligibility_explanation": "Since the patient's condition (vision problems) does not match the target condition of the trial (Sudden Sensorineural Hearing Loss), he does not meet the inclusion criteria. Therefore, he is completely ineligible for this trial."
+        "relevance_explanation": "The patient's primary health issue is related to vision impairment, specifically worsening vision and loss of the red reflex, which are not related to the target condition of the clinical trial, Sudden Sensorineural Hearing Loss. The trial focuses on evaluating the vestibular system using the video Head Impulse Test in patients with hearing loss, which does not align with the patient's symptoms or medical history.",
+        "eligibility_explanation": "Since the patient does not have Sudden Sensorineural Hearing Loss, he does not meet the primary inclusion criterion of the trial. Additionally, none of the exclusion criteria apply because they are specific to conditions not mentioned in the patient's note. Therefore, the patient is completely ineligible for this trial as his condition does not match the trial's focus."
       }
     }
   },
@@ -394,22 +394,22 @@
     "patient_summary": "A 2-year-old boy presents with a recurrent, itchy, red rash on his cheeks, trunk, and arms, which has been occurring intermittently since infancy. He has experienced several upper respiratory infections but has no other major illnesses. His vaccinations are up to date, and he is not currently on any medications. His growth and developmental milestones are normal, and his vital signs are within normal limits.",
     "trials": {
       "NCT04648969": {
-        "matching_score": -1.0,
+        "matching_score": -2.0,
         "agg_score": 0.0,
-        "trial_score": -1.0,
+        "trial_score": -2.0,
         "qrels_score": 1,
         "brief_summary": "The goal of this study is to develop novel treatments for patients with a condition called hypogonadotropic hypogonadism (HH) through the use of exogenous kisspeptin.",
-        "relevance_explanation": "The patient's condition and symptoms described in the patient note do not align with the target condition of the clinical trial, which is hypogonadotropic hypogonadism (HH). The patient note mentions a rash and normal development, with no indications of HH or related endocrine issues. Therefore, the patient is not relevant to the trial's focus on HH.",
-        "eligibility_explanation": "Since the patient's condition does not match the target condition of the trial, and the patient is explicitly excluded based on age (being only 2 years old while the trial requires participants to be 18 years and older), the patient is completely ineligible for the trial."
+        "relevance_explanation": "The patient does not have hypogonadotropic hypogonadism, the condition targeted by the clinical trial. Instead, the patient's symptoms are related to a skin rash and there is no mention of any symptoms or diagnoses related to hypogonadotropic hypogonadism. Therefore, the trial is not relevant to the patient's current medical condition.",
+        "eligibility_explanation": "Since the patient's condition is not relevant to the clinical trial, the eligibility score is automatically the lowest possible, which is equal to the negative value of the relevance score."
       },
       "NCT02753777": {
-        "matching_score": -1.0,
-        "agg_score": -0.0,
-        "trial_score": -1.0,
+        "matching_score": -2.0,
+        "agg_score": 0.0,
+        "trial_score": -2.0,
         "qrels_score": 1,
         "brief_summary": "Pemphigus and bullous pemphigoid (BP) are severe autoimmune blistering diseases (AIBD) that pose a critical need for new therapeutic approaches. Clinical trials in pemphigus and BP will require the availability of validated disease severity measures that can be used to define primary outcomes.",
-        "relevance_explanation": "The patient is a 2-year-old boy with a history of intermittent rashes, which does not align with the autoimmune blistering diseases targeted by the clinical trial, such as pemphigus vulgaris, pemphigus foliaceus, or bullous pemphigoid. These conditions typically present with more severe and distinct symptoms than those described in the patient note. Additionally, the trial specifically targets adults over 18 years old, making the patient's age a significant factor in determining irrelevance.",
-        "eligibility_explanation": "The patient is ineligible for the clinical trial primarily due to age, as the inclusion criteria specify participants must be over 18 years old, and the patient is only 2 years old. Furthermore, the patient does not have a diagnosis of any of the specific diseases the trial is studying (pemphigus vulgaris, pemphigus foliaceus, bullous pemphigoid), and he cannot provide informed consent due to his age. He is also explicitly excluded by the criterion that excludes individuals under 18 years of age."
+        "relevance_explanation": "The patient is a 2-year-old boy presenting with a non-specific rash, which does not align with the autoimmune blistering diseases specified in the clinical trial (Pemphigus Vulgaris, Pemphigus Foliaceus, Bullous Pemphigoid). Additionally, the trial targets adults over 18 years old, further reducing the relevance of this trial for the patient.",
+        "eligibility_explanation": "The patient does not meet the age requirement as he is only 2 years old, whereas the trial requires participants to be above 18 years old. Furthermore, the patient's rash does not match the specific diseases studied in the trial, and he is unable to provide informed consent due to his age. These factors make him ineligible for the trial."
       }
     }
   },
@@ -417,22 +417,22 @@
     "patient_summary": "A 7-year-old girl presented to the emergency department with a generalized rash and symptoms suggestive of an allergic reaction, possibly due to an insect sting while playing outdoors. She exhibits signs of anaphylaxis, including hypotension (blood pressure 75/55 mm Hg) and tachycardia (heart rate 122/min), along with erythematous, raised plaques on her trunk, extremities, and face. Additionally, she has bilateral expiratory wheezes indicating respiratory distress.",
     "trials": {
       "NCT02596308": {
-        "matching_score": -0.5,
+        "matching_score": -1.5,
         "agg_score": 0.0,
-        "trial_score": -0.5,
+        "trial_score": -1.5,
         "qrels_score": 1,
         "brief_summary": "Plague is a potentially fatal infection in humans caused by the bacterium Yersinia pestis. Pneumonic plague is typically diagnosed in humans with high mortality. It has a long history for plague as an agent of biowarfare, and poses a serious threat to international security. Althought the killed whole-cell plague vaccine and live attenuated vaccine have been licensed, they are rarely used today because of toxicities, limited evidence for efficacy to prevent plague, and limited commercial availability. In the last twenty years,the recombinant subunit vaccines comprised by fraction 1 capsule(F1)and virulence-associated (V)antigens as the main composition have caused widely attention with providing greater protection than vaccines comprised of either subunit alone. This study was aimed to explor the safety and immunogenicity of a new type plague subunit vaccine which comprised natural F1 antigen and recombined V antigen (F1+rV).",
-        "relevance_explanation": "The patient is a 7-year-old girl presenting with symptoms of an allergic reaction, which is not related to the plague or the objectives of the clinical trial focused on plague vaccines. The trial specifically targets healthy adults and aims to study the immunogenicity and safety of a plague vaccine, conditions and objectives that do not align with the patient's current medical situation.",
-        "eligibility_explanation": "Since the patient's age and current health condition do not meet the trial's inclusion criteria and directly conflict with the exclusion criteria (allergic reactions), she is completely ineligible for participation in this clinical trial."
+        "relevance_explanation": "The patient is a 7-year-old girl presenting with symptoms of an allergic reaction, which is not related to the plague or the vaccine being tested in the clinical trial. The trial specifically targets healthy adults aged 18-55 months for a plague vaccine, focusing on immunogenicity and safety. The patient's age and current health condition (allergic reaction) make her irrelevant to the trial's target demographic and objectives.",
+        "eligibility_explanation": "Since the patient's relevance score is 0, indicating complete irrelevance to the clinical trial, the eligibility score must also be 0. This is because the patient's age and health condition do not align with the trial's inclusion criteria, specifically targeting a different age group and health status."
       },
       "NCT04648969": {
-        "matching_score": -1.0,
+        "matching_score": -2.0,
         "agg_score": 0.0,
-        "trial_score": -1.0,
+        "trial_score": -2.0,
         "qrels_score": 1,
         "brief_summary": "The goal of this study is to develop novel treatments for patients with a condition called hypogonadotropic hypogonadism (HH) through the use of exogenous kisspeptin.",
-        "relevance_explanation": "The patient's condition and symptoms described in the patient note are unrelated to hypogonadotropic hypogonadism (HH), the target condition of the clinical trial. The patient is being treated for symptoms likely resulting from an allergic reaction or sting, which does not align with the hormonal and reproductive issues associated with HH. Therefore, the trial is not relevant to her current medical needs.",
-        "eligibility_explanation": "Since the patient's condition does not match the target condition of the trial, she does not meet any of the inclusion criteria. Additionally, she is below the age requirement of 18 years specified in the exclusion criteria. Therefore, she is completely ineligible for the trial."
+        "relevance_explanation": "The patient does not have hypogonadotropic hypogonadism or any related symptoms or diagnosis, which is the target condition of the clinical trial. The patient's symptoms and medical history described in the note are unrelated to the condition being studied in the trial.",
+        "eligibility_explanation": "Since the patient's condition is not relevant to the clinical trial, she does not meet any of the inclusion criteria. Additionally, she is explicitly excluded by the trial's age requirement and her abnormal blood pressure."
       }
     }
   },
@@ -441,21 +441,21 @@
     "trials": {
       "NCT03566433": {
         "matching_score": 1.0,
-        "agg_score": 0.95,
-        "trial_score": 1.95,
+        "agg_score": 1.9,
+        "trial_score": 2.9,
         "qrels_score": 2,
         "brief_summary": "Immediate pain reaction and return to work after TEP or Lichtenstein hernia repair have not been studied. In this multicenter trial the patients are allocated to surgery using TEP (n=50) or Lichtenstein (n=50) technique. Pain and return to work are recorded postoperatively up to one month. Immediate and late complications are also analyzed.",
-        "relevance_explanation": "The patient is highly relevant to the clinical trial as he has been diagnosed with a symptomatic inguinal hernia, which is the specific condition targeted by the trial. The trial aims to compare pain and recovery outcomes in patients undergoing either TEP or Lichtenstein hernioplasty for inguinal hernia repair, directly aligning with the patient's scheduled surgical treatment.",
-        "eligibility_explanation": "The patient meets the inclusion criterion of having a symptomatic inguinal hernia and falls within the specified age range of 18-80. There is no evidence in the patient note to suggest he meets any of the exclusion criteria, such as having a large scrotal hernia, bilateral hernia, symptom-free hernia, or inguinal pain without hernia. Additionally, there is no indication of severe systemic disease that would classify him as ASA class 3 or higher."
+        "relevance_explanation": "The patient is highly relevant to the clinical trial as he has been diagnosed with a symptomatic inguinal hernia, which is the specific condition targeted by the trial. His age of 49 falls within the trial's specified age range of 18-80 years. The trial aims to compare postoperative pain and recovery in patients undergoing either TEP or Lichtenstein hernioplasty for inguinal hernia repair, directly aligning with the patient's scheduled surgical treatment.",
+        "eligibility_explanation": "The patient meets the inclusion criterion of having a symptomatic inguinal hernia and being within the age range required by the trial. Additionally, he does not meet any of the exclusion criteria listed, such as having a large scrotal hernia, bilateral hernia, symptom-free hernia, inguinal pain without clinical evidence of hernia, or being classified as ASA class 3 or higher. Therefore, he is fully eligible for participation in the trial."
       },
       "NCT04228536": {
-        "matching_score": -1.0,
-        "agg_score": -0.1,
-        "trial_score": -1.1,
+        "matching_score": -2.0,
+        "agg_score": 0.0,
+        "trial_score": -2.0,
         "qrels_score": 1,
         "brief_summary": "The goal of this study was to evaluate chronic pain and reoperation rates due to recurrence after groin hernia surgery in women compared to men and surgical method.",
-        "relevance_explanation": "The patient is a 49-year-old man with a hernia, which aligns with the target condition of the trial. However, the trial specifically focuses on women, and the patient's gender does not match the primary demographic of interest in the study. This mismatch significantly reduces the relevance of the trial for this patient.",
-        "eligibility_explanation": "Although the patient's condition (hernia) matches the target condition of the trial, he is ineligible primarily due to the gender-specific focus of the trial, which is on women. The patient being a man directly conflicts with the inclusion criteria, which specify a focus on women. Therefore, he does not meet the fundamental inclusion criterion."
+        "relevance_explanation": "The patient is a 49-year-old man with a groin hernia, which aligns with the target conditions of the trial (inguinal hernia). However, the trial specifically focuses on women, making the patient's gender mismatch a critical factor in determining relevance. Despite the condition match, the gender-specific nature of the study significantly reduces the relevance of this trial for the patient.",
+        "eligibility_explanation": "The patient is ineligible for the clinical trial primarily due to the gender requirement. The trial specifically targets women, and the patient is a man. This gender mismatch directly excludes him from participation, as indicated by the criterion-level eligibility predictions."
       }
     }
   }
