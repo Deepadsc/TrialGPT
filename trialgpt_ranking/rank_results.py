@@ -86,14 +86,14 @@ def get_matching_score(matching):
 
     score += included / (included + not_inc + no_info_inc + eps)
 
-    # if not_inc > 0:
-    #     score -= 1
-    #
-    # if excluded > 0:
-    #     score -= 1 #note max score is 1 min score is ~-2
-
-    if not_inc > 0 or excluded > 0:
+    if not_inc > 0:
         score -= 1
+    
+    if excluded > 0:
+        score -= 1 #note max score is 1 min score is ~-2
+
+    # if not_inc > 0 or excluded > 0:
+    #     score -= 1
 
     return score #note max score is 1 min score is -1
 
@@ -118,8 +118,8 @@ def get_agg_score(assessment):
         rel_explanation = "No explanation provided"
         eli_explanation = "No explanation provided"
 
-    # score = (rel_score + eli_score) / 100 # original equation (2>a>0)
-    score = (eli_score) / 100 # I think the model can give -1Excluded, 0Not Relevant, 1Eligible (1>a>-1)
+    score = (rel_score + eli_score) / 100 # original equation (2>a>0)
+    # score = (eli_score) / 100 # I think the model can give -1Excluded, 0Not Relevant, 1Eligible (1>a>-1)
 
     return score, rel_explanation, eli_explanation
 
