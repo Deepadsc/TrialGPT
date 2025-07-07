@@ -1,12 +1,22 @@
+#USE PYTHON 3.9
 # Core packages
 nltk==3.8.1
 numpy==1.26.4
 pandas==2.2.2
 tqdm==4.65.0
 rank_bm25==0.2.2
-openai==1.30.5
+anthropic==0.18.1  # Added Anthropic client
 transformers==4.39.3
 streamlit==1.31.0
+jsonlines==4.0.0
+openai==1.56.0
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.2 
+python-dotenv==1.0.0
+faiss-cpu==1.11.0
+#--index-url https://download.pytorch.org/whl/cpu
+# Core packages
 
 # Install the following via conda instead of pip for Windows compatibility:
 # conda install -c conda-forge scikit-learn

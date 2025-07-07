@@ -1,7 +1,11 @@
 import json
+import os
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, pipeline as hf_pipeline
 import openai
+import anthropic
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, pipeline as hf_pipeline
+
 
 def load_corpus_details(corpus_path: str) -> dict:
     """
@@ -208,6 +212,14 @@ def setup_model(model_name, num_gpus, checkpoint_dir=None, use_quantization=Fals
         # Initialize OpenAI client
         client = openai.OpenAI()
         return 'gpt', client
+    if model_name.startswith('claude'):
+        # Initialize Anthropic client with API key from environment
+        api_key = os.getenv('ANTHROPIC_API_KEY')
+        if not api_key:
+            raise ValueError("ANTHROPIC_API_KEY environment variable not set")
+        
+        client = anthropic.Anthropic(api_key=api_key)
+        return 'claude', client
     else:
         return 'llama', setup_llama_pipeline(checkpoint_dir, use_quantization, num_gpus)
 
@@ -225,7 +237,45 @@ def generate_response(model_type, model_instance, messages, model_name=None):
         str: The generated response.
     """
     if model_type == 'gpt':
-        return generate_keywords_gpt(model_instance, model_name, messages) if model_name else ""
+        return generate_keywords_gpt(model_instance, model_name, messages)
+    elif model_type == 'claude':
+            # Convert messages to Anthropic format
+            system_message = next((msg['content'] for msg in messages if msg['role'] == 'system'), None)
+            user_messages = [msg['content'] for msg in messages if msg['role'] == 'user']
+            
+            # Ensure we have at least one user message
+            if not user_messages:
+                raise ValueError("At least one user message is required for Claude API")
+            
+            # Prepare the messages for Claude
+            claude_messages = [{"role": "user", "content": "\n".join(user_messages)}]
+            
+            # Select appropriate Claude model
+            if model_name:
+                if 'sonnet' in model_name.lower():
+                    selected_model = "claude-3-5-sonnet-20241022"
+                elif 'haiku' in model_name.lower():
+                    selected_model = "claude-3-haiku-20240307"
+                elif 'opus' in model_name.lower():
+                    selected_model = "claude-3-opus-20240229"
+                else:
+                    selected_model = model_name
+            else:
+                selected_model = "claude-3-haiku-20240307"  # Default to Haiku
+            
+            # Make the API call to Claude
+            response = model_instance.messages.create(
+                model=selected_model,
+                max_tokens=4000,
+                system=system_message,
+                messages=claude_messages
+            )
+            
+            # Extract and return the response text
+            if response.content and len(response.content) > 0:
+                return response.content[0].text
+            else:
+                raise ValueError("Empty response from Claude API") if model_name else ""
     else:  # llama
         return model_instance(messages,
                            max_new_tokens=2856,

@@ -8,7 +8,7 @@ import json
 import os
 import sys
 from dotenv import load_dotenv
-
+from common.utils import generate_response
 # Add the project root directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -18,8 +18,10 @@ load_dotenv()
 # Verify OpenAI API key is set
 if not os.getenv('OPENAI_API_KEY'):
     raise ValueError("OPENAI_API_KEY not found in .env file or environment. Please add your OpenAI API key to the .env file or set it as an environment variable.")
+# Verify Anthropic API key is set
+if not os.getenv('ANTHROPIC_API_KEY'):
+    raise ValueError("ANTHROPIC_API_KEY not found in .env file or environment. Please add your Anthropic API key to the .env file or set it as an environment variable.")
 
-from common.utils import generate_response
 
 
 def parse_criteria(criteria: str) -> str:
@@ -207,9 +209,9 @@ def trialgpt_match(trial: dict[str, any], patient: str, model: str, model_type: 
     Args:
         trial (dict[str, any]): A dictionary containing clinical trial information.
         patient (str): A string containing the patient's medical information.
-        model (str): The specific GPT model name (for OpenAI models).
-        model_type (str): Either 'gpt' or 'llama'.
-        model_instance: Either an OpenAI client or a Llama pipeline.
+        model (str): The specific GPT model name (for OpenAI  models) or Claude model name (for Anthropic models) or Llama model name (for Llama models).
+        model_type (str): Either 'gpt' or 'claude' or 'llama'.
+        model_instance: Either an OpenAI client or Claude client or a Llama pipeline.
 
 
     Returns:

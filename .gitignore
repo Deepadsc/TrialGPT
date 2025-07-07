@@ -1,0 +1,40 @@
+# Ignore Python cache and environment files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.env
+.env
+.venv/
+venv/
+ENV/
+
+# Ignore results and intermediate data
+results/
+*.jsonl
+*.log
+*.tmp
+*.bak
+
+# Ignore Jupyter and notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore model and data directories (customize as needed)
+dataset/
+checkpoints/
+
+# Ignore IDE/project files
+.vscode/
+.idea/
+*.swp
+
+# Ignore sensitive files
+openai_api_key.txt
+
+# Add any other custom ignore patterns below

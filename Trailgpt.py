@@ -3,14 +3,22 @@ import argparse
 import os
 from dotenv import load_dotenv
 import openai
+import sys
+print("Python executable:", sys.executable)
+print("Python path:", sys.path)
+PYTHON_PATH = sys.executable
 
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-# Load environment variables from .env file
+project_root = r"D:\Deepa_Nexturn\Task_Details\TrialGPT_Test_Cursor\Test_WF_Sigir"
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 load_dotenv()
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
-# Verify OpenAI API key is set
 if not os.getenv('OPENAI_API_KEY'):
     raise ValueError("OPENAI_API_KEY not found in .env file. Please add your OpenAI API key to the .env file.")
+if not os.getenv('ANTHROPIC_API_KEY'):
+    raise ValueError("ANTHROPIC_API_KEY not found in .env file. Please add your Anthropic API key to the .env file.")
 
 def get_user_input():
     """
@@ -38,8 +46,11 @@ def get_user_input():
     print("2. gpt-4-turbo")
     print("3. gpt-4")
     print("4. gpt-3.5-turbo")
-    model_choice = input("Select model (1-4): ").strip()
-    model_map = {'1': 'gpt-4o-mini', '2': 'gpt-4-turbo', '3': 'gpt-4', '4': 'gpt-3.5-turbo'}
+    print("5. claude-3-5-sonnet-20241022")
+    print("6. claude-3-haiku-20240307")
+    print("7. claude-3-opus-20240229")
+    model_choice = input("Select model (1-7): ").strip()
+    model_map = {'1': 'gpt-4o-mini', '2': 'gpt-4-turbo', '3': 'gpt-4', '4': 'gpt-3.5-turbo', '5': 'claude-3-5-sonnet-20241022', '6': 'claude-3-haiku-20240307', '7': 'claude-3-opus-20240229'}
     model = model_map.get(model_choice, 'gpt-4o-mini')
 
     # Only prompt for keyword generation query type if not skipping
@@ -51,20 +62,25 @@ def get_user_input():
         print("3. gpt-4-turbo")
         print("4. gpt-4")
         print("5. gpt-3.5-turbo")
-        print("6. Clinician_A")
-        print("7. Clinician_B")
-        print("8. Clinician_C")
-        print("9. Clinician_D")
-        qtype_choice = input("Select query type (1-9): ").strip()
+        print("6. claude-3-5-sonnet-20241022")
+        print("7. claude-3-haiku-20240307")
+        print("8. claude-3-opus-20240229")
+        print("9. Clinician_A")
+        print("10. Clinician_B")
+        print("11. Clinician_C")
+        print("12. Clinician_D")
+        qtype_choice = input("Select query type (1-12): ").strip()
         qtype_map = {
             '1': 'raw', '2': 'gpt-4o-mini', '3': 'gpt-4-turbo', '4': 'gpt-4',
-            '5': 'gpt-3.5-turbo', '6': 'Clinician_A', '7': 'Clinician_B',
-            '8': 'Clinician_C', '9': 'Clinician_D'
+            '5': 'gpt-3.5-turbo',   '6': 'claude-3-5-sonnet-20241022', '7': 'claude-3-haiku-20240307',
+            '8': 'claude-3-opus-20240229', '9': 'Clinician_A', '10': 'Clinician_B',
+            '11': 'Clinician_C', '12': 'Clinician_D'
         }
         q_type = qtype_map.get(qtype_choice, 'raw')
 
     # Only prompt for hybrid fusion params if not skipping
     # Step-specific overwrite flags
+    q_type = None
     topk = bm25_weight = medcpt_weight = rrf_k = batch_size = eligibility_threshold = exclusion_threshold = None
     overwrite_hybrid = overwrite_matching = overwrite_aggregation = None
 
