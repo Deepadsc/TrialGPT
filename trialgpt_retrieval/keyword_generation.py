@@ -16,7 +16,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from common.utils import setup_model, generate_response
 
-
 def parse_arguments_kg():
     """
     Parse command-line arguments for the keyword generation script.
@@ -32,8 +31,9 @@ def parse_arguments_kg():
     # Required arguments
     parser.add_argument("-c", "--corpus", required=True, help="The corpus to process: trec_2021, trec_2022, or sigir")
     parser.add_argument("-m", "--model", required=True, help="The model to use for generating keywords")
-    parser.add_argument("-g", "--num_gpus", help="The number of GPUs to use for model distribution")
+
     # Optional arguments
+    parser.add_argument("-g", "--num_gpus", help="The number of GPUs to use for model distribution")
     parser.add_argument("-d", "--checkpoint_dir", help="Checkpoint directory for Llama models")
     parser.add_argument("-q", "--quantize", action="store_true", help="Use 8-bit quantization for Llama models")
 
@@ -108,6 +108,8 @@ def main(args):
 
                 if model_type == 'gpt':
                     output = generate_response(model_type, model_instance, messages, args.model)
+                elif model_type == 'llama':
+                    output = generate_response(model_type, model_instance, messages, args.model)
                 else:
                     output = generate_response(model_type, model_instance, messages)
 
@@ -127,13 +129,13 @@ def main(args):
                 }
 
     # Save successful outputs
-    output_file = f"results/retrieval_keywords_{args.model}_{args.corpus}.json"
+    output_file = f"results/retrieval_keywords_{model_type}_{args.corpus}.json"
     with open(output_file, "w") as f:
         json.dump(outputs, f, indent=4)
     print(f"Results saved to {output_file}")
 
     # Save failed outputs
-    failed_output_file = f"results/failed_retrieval_keywords_{args.model}_{args.corpus}.json"
+    failed_output_file = f"results/failed_retrieval_keywords_{model_type}_{args.corpus}.json"
     with open(failed_output_file, "w") as f:
         json.dump(failed_outputs, f, indent=4)
     print(f"Failed results saved to {failed_output_file}")

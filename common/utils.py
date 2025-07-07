@@ -1,7 +1,25 @@
 import json
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, pipeline as hf_pipeline
+from huggingface_hub import InferenceClient
 import openai
+
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+def setup_model_key(model_name: str):
+    if model_name.startswith('gpt'):
+        # Verify OpenAI API key is set
+        if not os.getenv('OPENAI_API_KEY'):
+            raise ValueError("OPENAI_API_KEY not found in .env file. Please add your OpenAI API key to the .env file.")
+
+    elif model_name.startswith('meta'):
+        # Verify Huggingface token is set
+        if not os.getenv('HF_TOKEN'):
+            raise ValueError("Huggingface Token not found in .env file. Please add your Huggingface token to the .env file.")
 
 def load_corpus_details(corpus_path: str) -> dict:
     """
@@ -53,23 +71,42 @@ def generate_keywords_gpt(client, model, messages):
     )
     return response.choices[0].message.content.strip("`").strip("json")
 
-def generate_keywords_llama(pipeline, messages):
+def generate_keywords_llama(client, model, messages):
     """
-    Generate keywords using Llama models.
+    Generate keywords using llama models.
 
     Args:
-        pipeline (transformers.Pipeline): The Llama model pipeline.
+        client (llama): The llama client instance.
+        model (str): The llama model to use.
         messages (list): The input messages for the model.
 
     Returns:
         str: The generated keywords as a JSON string.
     """
-    response = pipeline(messages,
-                        max_new_tokens=2856,
-                        do_sample=False,
-                        temperature=None,
-                        top_p=None)
-    return response[0]['generated_text'].strip("`")
+    response = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        temperature=0,
+    )
+    return response.choices[0].message.content.strip("`").strip("json")
+
+# def generate_keywords_llama(pipeline, messages):
+#     """
+#     Generate keywords using Llama models.
+
+#     Args:
+#         pipeline (transformers.Pipeline): The Llama model pipeline.
+#         messages (list): The input messages for the model.
+
+#     Returns:
+#         str: The generated keywords as a JSON string.
+#     """
+#     response = pipeline(messages,
+#                         max_new_tokens=2856,
+#                         do_sample=False,
+#                         temperature=None,
+#                         top_p=None)
+#     return response[0]['generated_text'].strip("`")
 
 def create_llama_device_map(num_gpus, first_weight=1.0, last_weight=1.0):
     """
@@ -208,8 +245,14 @@ def setup_model(model_name, num_gpus, checkpoint_dir=None, use_quantization=Fals
         # Initialize OpenAI client
         client = openai.OpenAI()
         return 'gpt', client
-    else:
-        return 'llama', setup_llama_pipeline(checkpoint_dir, use_quantization, num_gpus)
+    
+    elif model_name.startswith('meta'):
+        # return 'llama', setup_llama_pipeline(checkpoint_dir, use_quantization, num_gpus)
+        client = InferenceClient(
+            provider = "novita",
+            api_key = os.environ["HF_TOKEN"],
+            )
+        return 'llama', client
 
 def generate_response(model_type, model_instance, messages, model_name=None):
     """
@@ -219,14 +262,16 @@ def generate_response(model_type, model_instance, messages, model_name=None):
         model_type (str): Either 'gpt' or 'llama'.
         model_instance: Either an OpenAI client or a Llama pipeline.
         messages (list): The input messages for the model.
-        model_name (str): The specific model name (for OpenAI models).
+        model_name (str): The specific model name (for OpenAI / meta models).
 
     Returns:
         str: The generated response.
     """
     if model_type == 'gpt':
         return generate_keywords_gpt(model_instance, model_name, messages) if model_name else ""
-    else:  # llama
+    elif model_type == 'llama':
+        return generate_keywords_llama(model_instance, model_name, messages) if model_name else ""
+    else:
         return model_instance(messages,
                            max_new_tokens=2856,
                            do_sample=False,
