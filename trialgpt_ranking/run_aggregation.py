@@ -62,8 +62,12 @@ def main(args):
         f"dataset/{args.corpus}/corpus.jsonl"
     )
 
-    output_path = f"results/aggregation_results_{args.corpus}_{args.model}.json"
-    failed_output_path = f"results/failed_aggregation_results_{args.corpus}_{args.model}.json"
+    # Set up the model to get model_type
+    model_type, model_instance = setup_model(args.model, args.num_gpus, args.checkpoint_dir, args.quantize)
+    
+    # Use model_type in filenames to avoid special character issues
+    output_path = f"results/aggregation_results_{args.corpus}_{model_type}.json"
+    failed_output_path = f"results/failed_aggregation_results_{args.corpus}_{model_type}.json"
 
     if args.overwrite.lower() == 'true' or not os.path.exists(output_path):
         print(f"Creating new aggregation results for {args.corpus} with {args.model}")

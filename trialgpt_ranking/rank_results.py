@@ -15,19 +15,48 @@ from tqdm import tqdm
 
 # Add the project root directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from common.utils import load_corpus_details
+from common.utils import load_corpus_details, setup_model
 
 eps = 1e-9
 
 def parse_arguments():
     """Parse and validate command-line arguments."""
     parser = argparse.ArgumentParser(description="Rank trials based on matching and aggregation results.")
-    parser.add_argument("matching_results_path", help="Path to the matching results JSON file")
-    parser.add_argument("agg_results_path", help="Path to the aggregation results JSON file")
+    parser.add_argument("matching_results_path", help="Path to the matching results JSON file (e.g., 'results/matching_results_trec_2022_gpt.json')")
+    parser.add_argument("agg_results_path", help="Path to the aggregation results JSON file (e.g., 'results/aggregation_results_trec_2022_gpt.json')")
     parser.add_argument("overwrite", help="Overwrite existing results (true/false)")
-    parser.add_argument("corpus", help="Corpus name")
-    parser.add_argument("model", help="Model name")
-    return parser.parse_args()
+    
+    # Make corpus and model optional - will be extracted from file paths if not provided
+    parser.add_argument("--corpus", help="Corpus name (e.g., 'trec_2022'). If not provided, will be extracted from file paths")
+    parser.add_argument("--model", help="Model name (e.g., 'gpt-4' or 'meta-llama/Llama-3.1-8B-Instruct'). If not provided, will be extracted from file paths")
+    
+    args = parser.parse_args()
+    
+    # Extract corpus and model from file paths if not provided
+    if args.corpus is None or args.model is None:
+        # Extract corpus and model info from matching_results_path
+        # Expected formats:
+        # - 'results/matching_results_<corpus>_gpt.json' → gpt-4
+        # - 'results/matching_results_<corpus>_llama.json' → meta-llama/Llama-3.1-8B-Instruct
+        # - 'results/matching_results_<corpus>_<model_name>.json' → use as is
+        import re
+        match = re.search(r'matching_results_(.+?)_([^_/]+?)\.json$', args.matching_results_path)
+        if match:
+            if args.corpus is None:
+                args.corpus = match.group(1)
+            if args.model is None:
+                model_type = match.group(2)
+                # Map common model types to their full names
+                model_mapping = {
+                    'gpt': 'gpt-4',
+                    'llama': 'meta-llama/Llama-3.1-8B-Instruct'
+                }
+                args.model = model_mapping.get(model_type, model_type)
+    
+    if args.corpus is None or args.model is None:
+        parser.error("Could not extract corpus and model from file paths. Please provide them explicitly using --corpus and --model.")
+    
+    return args
 
 def get_matching_score(matching):
     """
@@ -140,12 +169,15 @@ def main(args):
     # Load corpus details using the common utility function
     corpus_details = load_corpus_details(f"dataset/{args.corpus}/corpus.jsonl")
 
-    # Load patient summaries
-    with open(f"results/retrieval_keywords_{args.model}_{args.corpus}.json", 'r') as f:
+    # Set up the model to get model_type
+    model_type, _ = setup_model(args.model, num_gpus=1)  # num_gpus=1 as default
+    
+    # Load patient summaries using model_type for consistency
+    with open(f"results/retrieval_keywords_{model_type}_{args.corpus}.json", 'r') as f:
         patient_summaries = json.load(f)
 
-    # Set output directory
-    output_dir = "results/trial_rankings"
+    # Set up output directory with model_type
+    output_dir = f"results/trial_rankings_{args.corpus}_{model_type}"
     os.makedirs(output_dir, exist_ok=True)
 
     # Check if all_rankings.json exists and if we should overwrite
@@ -259,8 +291,8 @@ def main(args):
 
     print(f"All rankings saved to {all_rankings_file}")
 
-    # Save qrels-like output
-    qrels_path = f"results/qrels_{args.corpus}_{args.model}.txt"
+    # Save qrels-like output with model_type for consistency
+    qrels_path = f"results/qrels_{args.corpus}_{model_type}.txt"
     with open(qrels_path, 'w') as f:
         f.write('\n'.join(qrels_output))
 

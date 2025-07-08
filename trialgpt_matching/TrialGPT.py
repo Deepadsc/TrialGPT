@@ -15,11 +15,21 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # Load environment variables from .env file
 load_dotenv()
 
-# Verify OpenAI API key is set
-if not os.getenv('OPENAI_API_KEY'):
-    raise ValueError("OPENAI_API_KEY not found in .env file or environment. Please add your OpenAI API key to the .env file or set it as an environment variable.")
+# Import generate_response first to avoid circular imports
+from common.utils import generate_response, setup_model_key
 
-from common.utils import generate_response
+# Check for required API keys based on model type
+def check_api_keys(model_name: str):
+    if model_name.startswith('gpt'):
+        if not os.getenv('OPENAI_API_KEY'):
+            raise ValueError("OPENAI_API_KEY not found in .env file. Please add your OpenAI API key to the .env file.")
+    elif model_name.startswith('meta'):
+        if not os.getenv('HF_TOKEN'):
+            raise ValueError("HF_TOKEN not found in .env file. Please add your Hugging Face token to the .env file.")
+    else:
+        raise ValueError(f"Unsupported model: {model_name}. Please use either GPT or LLaMA models.")
+
+# We'll check the API keys when the model is actually used, not at import time
 
 
 def parse_criteria(criteria: str) -> str:
@@ -198,7 +208,7 @@ Please analyze the information and provide the JSON output as described above.
 def trialgpt_match(trial: dict[str, any], patient: str, model: str, model_type: str, model_instance: any) -> dict[
     str, any]:
     """
-    Match a patient to a clinical trial using GPT-based analysis.
+    Match a patient to a clinical trial using LLM-based analysis.
 
     This function evaluates a patient's eligibility for a clinical trial by analyzing
     both inclusion and exclusion criteria against the patient's information. It uses
@@ -207,10 +217,9 @@ def trialgpt_match(trial: dict[str, any], patient: str, model: str, model_type: 
     Args:
         trial (dict[str, any]): A dictionary containing clinical trial information.
         patient (str): A string containing the patient's medical information.
-        model (str): The specific GPT model name (for OpenAI models).
+        model (str): The specific model name (e.g., 'gpt-4', 'meta-llama/Llama-3.1-8B-Instruct').
         model_type (str): Either 'gpt' or 'llama'.
         model_instance: Either an OpenAI client or a Llama pipeline.
-
 
     Returns:
         dict[str, any]: A dictionary containing the matching results for both
@@ -224,6 +233,8 @@ def trialgpt_match(trial: dict[str, any], patient: str, model: str, model_type: 
         This function relies on external utility functions like `get_matching_prompt`
         and `generate_response`, which should be imported or defined elsewhere in the script.
     """
+    # Check for required API keys based on model type
+    check_api_keys(model)
     # Initialize the results dictionary
     results = {}
 

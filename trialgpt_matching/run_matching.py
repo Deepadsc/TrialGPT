@@ -35,11 +35,13 @@ def parse_arguments():
 
 def main(args):
     dataset = json.load(open(f"results/retrieved_trials.json"))
-    output_path = f"results/matching_results_{args.corpus}_{args.model}.json"
-    failed_output_path = f"results/failed_matching_results_{args.corpus}_{args.model}.json"
-
+    
     # Set up the model once before the main processing loop
     model_type, model_instance = setup_model(args.model, args.num_gpus, args.checkpoint_dir, args.quantize)
+    
+    # Use model_type (gpt/llama) in filenames instead of full model name
+    output_path = f"results/matching_results_{args.corpus}_{model_type}.json"
+    failed_output_path = f"results/failed_matching_results_{args.corpus}_{model_type}.json"
 
     # Dict{Str(patient_id): Dict{Str(label): Dict{Str(trial_id): Str(output)}}}
     if args.overwrite.lower() == 'true' or not os.path.exists(output_path):

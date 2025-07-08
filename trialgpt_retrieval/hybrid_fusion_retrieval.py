@@ -8,6 +8,7 @@ Conduct the first stage retrieval by the hybrid retriever
 import argparse
 import json
 import os
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 import sys
 from collections import defaultdict
 
@@ -48,9 +49,9 @@ def parse_arguments():
     # Additional parameters with defaults
     parser.add_argument("--overwrite", type=str, default="false", 
                        help="Overwrite existing index (true/false)")
-    parser.add_argument("--top_k", type=int, default=1000, 
+    parser.add_argument("--top_k", type=int, default=1, 
                        help="Top K documents to consider for retrieval")
-    parser.add_argument("--batch_size", type=int, default=32, 
+    parser.add_argument("--batch_size", type=int, default=8, 
                        help="Batch size for processing")
     parser.add_argument("--eligibility_threshold", type=float, default=0.5, 
                        help="Score threshold for eligibility (0-1)")
