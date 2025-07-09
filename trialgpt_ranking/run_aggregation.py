@@ -16,7 +16,7 @@ from nltk.tokenize import sent_tokenize
 from tqdm import tqdm
 
 from trialgpt_aggregation import trialgpt_aggregation
-from common.utils import load_corpus_details, setup_model, generate_response
+from common.utils import load_corpus_details, setup_model, MODEL_MAPPING
 
 
 def parse_arguments():
@@ -66,8 +66,9 @@ def main(args):
     model_type, model_instance = setup_model(args.model, args.num_gpus, args.checkpoint_dir, args.quantize)
     
     # Use model_type in filenames to avoid special character issues
-    output_path = f"results/aggregation_results_{args.corpus}_{model_type}.json"
-    failed_output_path = f"results/failed_aggregation_results_{args.corpus}_{model_type}.json"
+    prefix = MODEL_MAPPING.get(args.model, args.model)
+    output_path = f"results/aggregation_results_{args.corpus}_{prefix}.json"
+    failed_output_path = f"results/failed_aggregation_results_{args.corpus}_{prefix}.json"
 
     if args.overwrite.lower() == 'true' or not os.path.exists(output_path):
         print(f"Creating new aggregation results for {args.corpus} with {args.model}")

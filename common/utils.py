@@ -10,6 +10,19 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+MODEL_MAPPING = {
+    'gpt-4o-mini': 'gpt-4o-mini',
+    'gpt-4-turbo': 'gpt-4-turbo',
+    'gpt-4': 'gpt-4',
+    'gpt-3.5-turbo': 'gpt-3.5-turbo',
+    'Clinician_A': 'Clinician_A',
+    'Clinician_B': 'Clinician_B',
+    'Clinician_C': 'Clinician_C',
+    'Clinician_D': 'Clinician_D',
+    'meta-llama/Llama-3.1-8B-Instruct': 'Llama-3.1-8B-Instruct',
+    'meta-llama/Llama-3.3-70B-Instruct': 'Llama-3.3-70B-Instruct'
+}
+ 
 def setup_model_key(model_name: str):
     if model_name.startswith('gpt'):
         # Verify OpenAI API key is set

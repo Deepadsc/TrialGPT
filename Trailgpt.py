@@ -2,15 +2,42 @@ import subprocess
 import argparse
 import os
 from dotenv import load_dotenv
+from common.utils import MODEL_MAPPING
 import openai
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 # Load environment variables from .env file
 load_dotenv()
 
-# Verify OpenAI API key is set
-if not os.getenv('OPENAI_API_KEY'):
-    raise ValueError("OPENAI_API_KEY not found in .env file. Please add your OpenAI API key to the .env file.")
+# # Verify OpenAI API key is set
+# if not os.getenv('OPENAI_API_KEY'):
+#     raise ValueError("OPENAI_API_KEY not found in .env file. Please add your OpenAI API key to the .env file.")
+# if not os.getenv('HF_TOKEN'):
+#     raise ValueError("Huggingface Token not found in .env file. Please add your Huggingface token to the .env file.")
+
+def setup_model_key(model_name: str):
+    if model_name.startswith('gpt'):
+        # Verify OpenAI API key is set
+        if not os.getenv('OPENAI_API_KEY'):
+            raise ValueError("OPENAI_API_KEY not found in .env file. Please add your OpenAI API key to the .env file.")
+
+    elif model_name.startswith('meta'):
+        # Verify Huggingface token is set
+        if not os.getenv('HF_TOKEN'):
+            raise ValueError("Huggingface Token not found in .env file. Please add your Huggingface token to the .env file.")
+
+# MODEL_MAPPING = {
+#     'gpt-4o-mini': 'gpt-4o-mini',
+#     'gpt-4-turbo': 'gpt-4-turbo',
+#     'gpt-4': 'gpt-4',
+#     'gpt-3.5-turbo': 'gpt-3.5-turbo',
+#     'Clinician_A': 'Clinician_A',
+#     'Clinician_B': 'Clinician_B',
+#     'Clinician_C': 'Clinician_C',
+#     'Clinician_D': 'Clinician_D',
+#     'meta-llama/Llama-3.1-8B-Instruct': 'Llama-3.1-8B-Instruct',
+#     'meta-llama/Llama-3.3-70B-Instruct': 'Llama-3.3-70B-Instruct'
+# }
 
 def get_user_input():
     """
@@ -38,9 +65,11 @@ def get_user_input():
     print("2. gpt-4-turbo")
     print("3. gpt-4")
     print("4. gpt-3.5-turbo")
-    model_choice = input("Select model (1-4): ").strip()
-    model_map = {'1': 'gpt-4o-mini', '2': 'gpt-4-turbo', '3': 'gpt-4', '4': 'gpt-3.5-turbo'}
-    model = model_map.get(model_choice, 'gpt-4o-mini')
+    print("5. meta-llama/Llama-3.1-8B-Instruct")
+    print("6. meta-llama/Llama-3.3-70B-Instruct")
+    model_choice = input("Select model (1-6): ").strip()
+    model_map = {'1': 'gpt-4o-mini', '2': 'gpt-4-turbo', '3': 'gpt-4', '4': 'gpt-3.5-turbo', '5': 'meta-llama/Llama-3.1-8B-Instruct', '6': 'meta-llama/Llama-3.3-70B-Instruct'}
+    model = model_map.get(model_choice, 'meta-llama/Llama-3.1-8B-Instruct')
 
     # Only prompt for keyword generation query type if not skipping
     q_type = None
@@ -51,15 +80,17 @@ def get_user_input():
         print("3. gpt-4-turbo")
         print("4. gpt-4")
         print("5. gpt-3.5-turbo")
-        print("6. Clinician_A")
-        print("7. Clinician_B")
-        print("8. Clinician_C")
-        print("9. Clinician_D")
-        qtype_choice = input("Select query type (1-9): ").strip()
+        print("6. Llama-3.1-8B-Instruct")
+        print("7. Llama-3.3-70B-Instruct")
+        print("8. Clinician_A")
+        print("9. Clinician_B")
+        print("10. Clinician_C")
+        print("11. Clinician_D")
+        qtype_choice = input("Select query type (1-11): ").strip()
         qtype_map = {
             '1': 'raw', '2': 'gpt-4o-mini', '3': 'gpt-4-turbo', '4': 'gpt-4',
-            '5': 'gpt-3.5-turbo', '6': 'Clinician_A', '7': 'Clinician_B',
-            '8': 'Clinician_C', '9': 'Clinician_D'
+            '5': 'gpt-3.5-turbo', '6': 'Llama-3.1-8B-Instruct', '7': 'Llama-3.3-70B-Instruct',
+            '8': 'Clinician_A', '9': 'Clinician_B', '10': 'Clinician_C', '11': 'Clinician_D'
         }
         q_type = qtype_map.get(qtype_choice, 'raw')
 
@@ -69,13 +100,13 @@ def get_user_input():
     overwrite_hybrid = overwrite_matching = overwrite_aggregation = None
 
     if not skip_hybrid_fusion:
-        topk = int(input("Enter top-k value (number of results to retrieve, e.g., 20): "))
+        topk = int(input("Enter top-k value (number of results to retrieve, e.g., 3): "))
         bm25_weight = float(input("Enter BM25 weight (e.g., 1.0): "))
         medcpt_weight = float(input("Enter MedCPT weight (e.g., 1.0): "))
         rrf_k = int(input("Enter RRF k value (e.g., 20): "))
         overwrite_hybrid = input("Overwrite existing hybrid fusion results? (true/false, default: false): ").strip().lower()
         overwrite_hybrid = 'true' if overwrite_hybrid == 'true' else 'false'
-        batch_size = int(input("Enter batch size (e.g., 32): "))
+        batch_size = int(input("Enter batch size (e.g., 8): "))
         eligibility_threshold = float(input("Enter eligibility threshold (0-1, e.g., 0.5): "))
         exclusion_threshold = float(input("Enter exclusion threshold (0-1, e.g., 0.3): "))
     if not skip_matching:
@@ -163,11 +194,12 @@ def run_aggregation(corpus, model, matching_results_path, overwrite):
 
 def run_ranking(corpus, model, overwrite=False):
     print("\n=== Step 5: Running Ranking ===")
-    matching_results_path = f"results/matching_results_{corpus}_{model}.json"
-    agg_results_path = f"results/aggregation_results_{corpus}_{model}.json"
+    prefix = MODEL_MAPPING.get(model, model)
+    matching_results_path = f"results/matching_results_{corpus}_{prefix}.json"
+    agg_results_path = f"results/aggregation_results_{corpus}_{prefix}.json"
     
     # Ask user if they want to overwrite existing ranking results
-    if os.path.exists(f"results/ranking_results_{corpus}_{model}.json"):
+    if os.path.exists(f"results/ranking_results_{corpus}_{prefix}.json"):
         while True:
             overwrite_ranking = input("Ranking results already exist. Overwrite? (y/n): ").strip().lower()
             if overwrite_ranking in ['y', 'n']:
@@ -182,8 +214,8 @@ def run_ranking(corpus, model, overwrite=False):
         matching_results_path,  # matching_results_path
         agg_results_path,       # agg_results_path
         str(overwrite).lower(), # overwrite
-        corpus,                 # corpus
-        model                  # model
+        "--corpus", corpus,
+        "--model", model,
     ])
 
 if __name__ == "__main__":
@@ -209,6 +241,7 @@ if __name__ == "__main__":
     print(f"Skip Ranking: {args.get('skip_ranking', False)}")
     print("=" * 25 + "\n")
     
+    setup_model_key(args['model'])
     # Ask for confirmation
     while True:
         proceed = input("Proceed with these settings? (y/n): ").strip().lower()
@@ -238,7 +271,8 @@ if __name__ == "__main__":
     # Aggregation step
     if not args.get('skip_aggregation', False):
         # Use the default matching results path for aggregation
-        matching_results_path = f"results/matching_results_{args['corpus']}_{args['model']}.json"
+        prefix = MODEL_MAPPING.get(args['model'], args['model'])
+        matching_results_path = f"results/matching_results_{args['corpus']}_{prefix}.json"
         run_aggregation(args['corpus'], args['model'], matching_results_path, args.get('overwrite_aggregation', 'false'))
     else:
         print("\n=== Skipping Aggregation as requested. ===")

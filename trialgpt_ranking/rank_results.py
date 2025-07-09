@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 # Add the project root directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from common.utils import load_corpus_details, setup_model
+from common.utils import load_corpus_details, setup_model,MODEL_MAPPING
 
 eps = 1e-9
 
@@ -34,27 +34,20 @@ def parse_arguments():
     
     # Extract corpus and model from file paths if not provided
     if args.corpus is None or args.model is None:
-        # Extract corpus and model info from matching_results_path
-        # Expected formats:
-        # - 'results/matching_results_<corpus>_gpt.json' → gpt-4
-        # - 'results/matching_results_<corpus>_llama.json' → meta-llama/Llama-3.1-8B-Instruct
-        # - 'results/matching_results_<corpus>_<model_name>.json' → use as is
+        # Extract corpus and model_type from matching_results_path
+        # Expected format: 'results/matching_results_<corpus>_<model_type>.json'
         import re
         match = re.search(r'matching_results_(.+?)_([^_/]+?)\.json$', args.matching_results_path)
         if match:
             if args.corpus is None:
                 args.corpus = match.group(1)
             if args.model is None:
+                # Default to gpt if not specified in path
                 model_type = match.group(2)
-                # Map common model types to their full names
-                model_mapping = {
-                    'gpt': 'gpt-4',
-                    'llama': 'meta-llama/Llama-3.1-8B-Instruct'
-                }
-                args.model = model_mapping.get(model_type, model_type)
+                args.model = 'gpt-4' if model_type == 'gpt' else f'meta-llama/{model_type}'
     
     if args.corpus is None or args.model is None:
-        parser.error("Could not extract corpus and model from file paths. Please provide them explicitly using --corpus and --model.")
+        parser.error("Could not extract corpus and model from file paths. Please provide them explicitly.")
     
     return args
 
@@ -173,11 +166,12 @@ def main(args):
     model_type, _ = setup_model(args.model, num_gpus=1)  # num_gpus=1 as default
     
     # Load patient summaries using model_type for consistency
-    with open(f"results/retrieval_keywords_{model_type}_{args.corpus}.json", 'r') as f:
+    prefix = MODEL_MAPPING.get(args.model, args.model)
+    with open(f"results/retrieval_keywords_{prefix}_{args.corpus}.json", 'r') as f:
         patient_summaries = json.load(f)
-
+    
     # Set up output directory with model_type
-    output_dir = f"results/trial_rankings_{args.corpus}_{model_type}"
+    output_dir = f"results/trial_rankings_{args.corpus}_{prefix}"
     os.makedirs(output_dir, exist_ok=True)
 
     # Check if all_rankings.json exists and if we should overwrite
@@ -292,7 +286,7 @@ def main(args):
     print(f"All rankings saved to {all_rankings_file}")
 
     # Save qrels-like output with model_type for consistency
-    qrels_path = f"results/qrels_{args.corpus}_{model_type}.txt"
+    qrels_path = f"results/qrels_{args.corpus}_{prefix}.txt"
     with open(qrels_path, 'w') as f:
         f.write('\n'.join(qrels_output))
 

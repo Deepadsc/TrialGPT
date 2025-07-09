@@ -19,7 +19,7 @@ from TrialGPT import trialgpt_match
 # Add the project root directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from common.utils import setup_model
+from common.utils import setup_model,MODEL_MAPPING
 
 def parse_arguments():
     """Parse and validate command-line arguments."""
@@ -38,10 +38,10 @@ def main(args):
     
     # Set up the model once before the main processing loop
     model_type, model_instance = setup_model(args.model, args.num_gpus, args.checkpoint_dir, args.quantize)
-    
+    prefix = MODEL_MAPPING.get(args.model, args.model)
     # Use model_type (gpt/llama) in filenames instead of full model name
-    output_path = f"results/matching_results_{args.corpus}_{model_type}.json"
-    failed_output_path = f"results/failed_matching_results_{args.corpus}_{model_type}.json"
+    output_path = f"results/matching_results_{args.corpus}_{prefix}.json"
+    failed_output_path = f"results/failed_matching_results_{args.corpus}_{prefix}.json"
 
     # Dict{Str(patient_id): Dict{Str(label): Dict{Str(trial_id): Str(output)}}}
     if args.overwrite.lower() == 'true' or not os.path.exists(output_path):
