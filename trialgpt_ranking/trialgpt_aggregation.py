@@ -7,12 +7,123 @@ TrialGPT-Ranking main functions.
 import json
 import os
 import sys
+import re
 
 # Add the project root directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from common.utils import generate_response
 
+def fix_json_string(json_str, nct_id='unknown'):
+    """
+    Comprehensive function to fix malformed JSON strings.
+    
+    This function applies multiple cleaning and repair strategies to handle
+    various JSON formatting issues, including missing commas, unbalanced braces,
+    and other common syntax errors.
+    
+    Args:
+        json_str (str): The potentially malformed JSON string to fix
+        nct_id (str): Trial ID for context (used in debug info)
+        
+    Returns:
+        dict: The parsed JSON object, or an empty dict if parsing fails
+    """
+    # Return empty dict for empty strings
+    if not json_str or not json_str.strip():
+        return {}
+    
+    # Initial cleaning
+    clean_str = json_str.replace('\ufeff', '')  # Remove BOM
+    clean_str = clean_str.strip()
+    
+    # Remove leading/trailing newlines
+    while clean_str.startswith('\n'):
+        clean_str = clean_str[1:]
+    while clean_str.endswith('\n'):
+        clean_str = clean_str[:-1]
+    
+    # Try standard parsing first
+    try:
+        return json.loads(clean_str)
+    except json.JSONDecodeError:
+        pass
+    
+    # Fix common JSON formatting issues
+    # Fix missing commas between objects
+    clean_str = clean_str.replace('}\n  "', '},\n  "')
+    clean_str = clean_str.replace('}\n"', '},\n"')
+    clean_str = clean_str.replace('}\n {', '}, {')
+    clean_str = clean_str.replace('}\n{', '},{')
+    clean_str = clean_str.replace('} "', '}, "')
+    clean_str = clean_str.replace('}"', '},')
+    
+    # Fix missing commas after values before next key
+    clean_str = re.sub(r'"\s*\n\s*"', '",\n"', clean_str)
+    clean_str = re.sub(r']\s*\n\s*"', '],\n"', clean_str)
+    clean_str = re.sub(r'"\s*\n\s*\{', '",\n{', clean_str)
+    clean_str = re.sub(r'(\d+|true|false|null)\s*\n\s*"', '\\1,\n"', clean_str)
+    
+    # Try parsing with initial fixes
+    try:
+        return json.loads(clean_str)
+    except json.JSONDecodeError as e:
+        # More aggressive cleaning for specific error types
+        if "Expecting ',' delimiter" in str(e):
+            # Find the position mentioned in the error
+            match = re.search(r'char (\d+)', str(e))
+            if match:
+                pos = int(match.group(1))
+                if pos < len(clean_str):
+                    # Insert a comma at the position
+                    clean_str = clean_str[:pos] + ',' + clean_str[pos:]
+        
+        # Fix unbalanced braces
+        if "Expecting property name enclosed in double quotes" in str(e):
+            if not clean_str.startswith('{'):
+                clean_str = '{' + clean_str
+            if not clean_str.endswith('}'):
+                clean_str = clean_str + '}'
+    
+    # Try parsing with more aggressive fixes
+    try:
+        return json.loads(clean_str)
+    except json.JSONDecodeError:
+        # Try removing escape characters and fixing quotes
+        clean_str = clean_str.replace('\\', '')
+        clean_str = clean_str.replace('"{', '{').replace('}"', '}')
+        
+        # Ensure the string starts and ends with braces
+        if not clean_str.startswith('{'):
+            clean_str = '{' + clean_str
+        if not clean_str.endswith('}'):
+            clean_str = clean_str + '}'
+    
+    # Try parsing after escape character fixes
+    try:
+        return json.loads(clean_str)
+    except json.JSONDecodeError:
+        # Last resort: try to extract individual criterion entries
+        try:
+            # Extract key-value pairs using regex
+            pattern = r'"(\d+)"\s*:\s*\[(.*?)\]'
+            matches = re.findall(pattern, json_str, re.DOTALL)
+            
+            if matches:
+                result = {}
+                for key, value in matches:
+                    # Try to parse the value as a list
+                    try:
+                        result[key] = json.loads('[' + value + ']')
+                    except:
+                        # If parsing fails, use a placeholder
+                        result[key] = ["Error parsing", [], "Error parsing"]
+                return result
+        except:
+            pass
+    
+    # If all parsing attempts fail, return an empty dict
+    return {}
 
 def convert_criteria_pred_to_string(
         prediction: dict,
@@ -35,13 +146,20 @@ def convert_criteria_pred_to_string(
         str: A formatted string containing the criteria and their predictions.
     """
     output = ""
+    nct_id = trial_info.get('nct_id', 'unknown')
 
     # Process both inclusion and exclusion criteria
     for inc_exc in ["inclusion", "exclusion"]:
         # Create a dictionary to map indices to criteria
         idx2criterion = {}
+        # Check if criteria exists in trial_info
+        criteria_key = inc_exc + "_criteria"
+        if criteria_key not in trial_info:
+            # Silently continue if criteria not found
+            continue
+            
         # Split the criteria text by double newlines
-        criteria = trial_info[inc_exc + "_criteria"].split("\n\n")
+        criteria = trial_info[criteria_key].split("\n\n")
 
         idx = 0
         for criterion in criteria:
@@ -56,28 +174,63 @@ def convert_criteria_pred_to_string(
             # Add valid criterion to the dictionary
             idx2criterion[str(idx)] = criterion
             idx += 1
+                # Check if the prediction contains data for this criteria type
+        if inc_exc not in prediction:
+            # Silently continue if criteria not found in prediction
+            continue
 
+        # Get the prediction data
+        pred_data = prediction[inc_exc]
+        
+        # If it's a string (Format 2), try to parse it as JSON
+        if isinstance(pred_data, str):
+            # Use our comprehensive JSON fixing function
+            pred_data = fix_json_string(pred_data, nct_id)
+        
+        # Ensure pred_data is a dictionary
+        if not isinstance(pred_data, dict):
+            # If not a dictionary, skip silently
+            continue
+        
         # Process predictions for each criterion
-        for idx, info in enumerate(prediction[inc_exc].items()):
-            criterion_idx, preds = info
+        for idx, (criterion_idx, preds) in enumerate(pred_data.items()):
 
             # Skip criteria not in our dictionary
             if criterion_idx not in idx2criterion:
                 continue
 
             criterion = idx2criterion[criterion_idx]
+              # Handle different formats of preds
+            if isinstance(preds, list):
+                # Format 1: preds is a list with 3 elements
+                # Skip predictions without exactly 3 elements
+                if len(preds) != 3:
+                    continue
 
-            # Skip predictions without exactly 3 elements
-            if len(preds) != 3:
+                # Build the output string for this criterion
+                output += f"{inc_exc} criterion {idx}: {criterion}\n"
+                output += f"\tPatient relevance: {preds[0]}\n"
+                # Add evident sentences if they exist
+                if len(preds[1]) > 0:
+                    output += f"\tEvident sentences: {preds[1]}\n"
+                output += f"\tPatient eligibility: {preds[2]}\n"
+            elif isinstance(preds, dict):
+                # Format 2: preds is a dictionary with specific keys
+                # Extract the relevant information from the dictionary
+                relevance = preds.get(0, "")
+                evidence = preds.get(1, [])
+                eligibility = preds.get(2, "")
+                
+                # Build the output string for this criterion
+                output += f"{inc_exc} criterion {idx}: {criterion}\n"
+                output += f"\tPatient relevance: {relevance}\n"
+                # Add evident sentences if they exist
+                if evidence and len(evidence) > 0:
+                    output += f"\tEvident sentences: {evidence}\n"
+                output += f"\tPatient eligibility: {eligibility}\n"
+            else:
+                # Unknown format, skip
                 continue
-
-            # Build the output string for this criterion
-            output += f"{inc_exc} criterion {idx}: {criterion}\n"
-            output += f"\tPatient relevance: {preds[0]}\n"
-            # Add evident sentences if they exist
-            if len(preds[1]) > 0:
-                output += f"\tEvident sentences: {preds[1]}\n"
-            output += f"\tPatient eligibility: {preds[2]}\n"
 
     return output
 
@@ -91,6 +244,22 @@ def convert_pred_to_prompt(patient: str, pred: dict, trial_info: dict) -> tuple[
         f"Target conditions: {', '.join(trial_info['diseases_list'])}\n"
         f"Summary: {trial_info['brief_summary']}"
     )
+    
+        # Ensure pred has the right format before conversion
+    processed_pred = {}
+    for key in ["inclusion", "exclusion"]:
+        if key in pred:
+            if isinstance(pred[key], str):
+                try:
+                    processed_pred[key] = json.loads(pred[key])
+                except json.JSONDecodeError:
+                    # If parsing fails, use empty dict to avoid errors
+                    processed_pred[key] = {}
+            else:
+                processed_pred[key] = pred[key]
+        else:
+            processed_pred[key] = {}
+
 
     # Convert prediction to string
     pred_string = convert_criteria_pred_to_string(pred, trial_info)
@@ -168,54 +337,78 @@ def trialgpt_aggregation(patient: str, trial_results: dict, trial_info: dict, mo
                          model_instance: any):
     debug_data = []
     debug_filename = f"results/messages_trialgpt_aggregation.json"
-    system_prompt, user_prompt = convert_pred_to_prompt(
-        patient,
-        trial_results,
-        trial_info
-    )
-
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt}
-    ]
-
-    result = generate_response(model_type, model_instance, messages, model)
-    result = result.strip("`").strip("json")
-
-    # Prepare the new debug entry
-    debug_entry = {
-        "system_prompt": system_prompt,
-        "user_prompt": user_prompt,
-        "response": result
-    }
-
-    # Read existing debug data or create an empty list
-    if os.path.exists(debug_filename):
-        with open(debug_filename, 'r') as f:
-            try:
-                debug_data = json.load(f)
-            except json.JSONDecodeError:
-                debug_data = []
-    else:
-        debug_data = []
-
-    # Append the new entry
-    debug_data.append(debug_entry)
-
-    #TODO: make debug optional, would be slow for production datasets
-    # Write the updated debug data back to the file
-    with open(debug_filename, 'w') as f:
-        json.dump(debug_data, f, indent=4)
-
     try:
-        result = json.loads(result)
-    except json.JSONDecodeError:
-        print(f"Error parsing JSON: {result}")
-        result = {
-            "relevance_explanation": "Error parsing JSON",
-            "relevance_score_R": 0,
-            "eligibility_explanation": "Error parsing JSON",
-            "eligibility_score_E": 0
+        # Create a copy of trial_results to avoid modifying the original
+        processed_results = {}
+        for key, value in trial_results.items():
+            if key in ["inclusion", "exclusion"]:
+                if isinstance(value, str):
+                    try:
+                        processed_results[key] = json.loads(value)
+                    except json.JSONDecodeError:
+                        # If parsing fails, use empty dict to avoid errors
+                        processed_results[key] = {}
+                else:
+                    processed_results[key] = value
+            else:
+                processed_results[key] = value
+                
+        system_prompt, user_prompt = convert_pred_to_prompt(
+            patient,
+            processed_results,
+            trial_info
+        )
+
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ]
+
+        result = generate_response(model_type, model_instance, messages, model)
+        result = result.strip("`").strip("json")
+
+        # Prepare the new debug entry
+        debug_entry = {
+            "system_prompt": system_prompt,
+            "user_prompt": user_prompt,
+            "response": result
         }
 
-    return result
+        # Read existing debug data or create an empty list
+        if os.path.exists(debug_filename):
+            with open(debug_filename, 'r') as f:
+                try:
+                    debug_data = json.load(f)
+                except json.JSONDecodeError:
+                    debug_data = []
+        else:
+            debug_data = []
+
+        # Append the new entry
+        debug_data.append(debug_entry)
+
+        #TODO: make debug optional, would be slow for production datasets
+        # Write the updated debug data back to the file
+        with open(debug_filename, 'w') as f:
+            json.dump(debug_data, f, indent=4)
+
+        try:
+            result = json.loads(result)
+        except json.JSONDecodeError:
+            print(f"Error parsing JSON: {result}")
+            result = {
+                "relevance_explanation": "Error parsing JSON",
+                "relevance_score_R": 0,
+                "eligibility_explanation": "Error parsing JSON",
+                "eligibility_score_E": 0
+            }
+
+        return result
+    except Exception as e:
+        print(f"Error in trialgpt_aggregation: {e}")
+        return {
+            "relevance_explanation": f"Error processing data: {str(e)}",
+            "relevance_score_R": 0,
+            "eligibility_explanation": f"Error processing data: {str(e)}",
+            "eligibility_score_E": 0
+        }

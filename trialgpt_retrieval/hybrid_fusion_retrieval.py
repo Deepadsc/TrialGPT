@@ -14,6 +14,8 @@ from collections import defaultdict
 
 import numpy as np
 import torch
+import nltk 
+nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 from transformers import AutoModel, AutoTokenizer
 
