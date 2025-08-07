@@ -56,8 +56,12 @@ def get_user_input():
     print("1. sigir")
     print("2. trec_2021")
     print("3. trec_2022")
-    corpus_choice = input("Select corpus (1-3): ").strip()
-    corpus_map = {'1': 'sigir', '2': 'trec_2021', '3': 'trec_2022'}
+    print("4. custom")
+    corpus_choice = input("Select corpus (1-4): ").strip()
+    if corpus_choice == '4':
+        corpus_name = input("Enter custom corpus name: ").strip()
+    
+    corpus_map = {'1': 'sigir', '2': 'trec_2021', '3': 'trec_2022', '4': corpus_name}
     corpus = corpus_map.get(corpus_choice, 'sigir')
 
     print("\nAvailable models:")
@@ -106,7 +110,7 @@ def get_user_input():
         rrf_k = int(input("Enter RRF k value (e.g., 20): "))
         overwrite_hybrid = input("Overwrite existing hybrid fusion results? (true/false, default: false): ").strip().lower()
         overwrite_hybrid = 'true' if overwrite_hybrid == 'true' else 'false'
-        batch_size = int(input("Enter batch size (e.g., 8): "))
+        batch_size = int(input("Enter batch size (e.g., 1): "))
         eligibility_threshold = float(input("Enter eligibility threshold (0-1, e.g., 0.5): "))
         exclusion_threshold = float(input("Enter exclusion threshold (0-1, e.g., 0.3): "))
     if not skip_matching:
