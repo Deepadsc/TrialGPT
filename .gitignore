@@ -12,7 +12,7 @@ ENV/
 
 # Ignore results and intermediate data
 # results/
-*.jsonl
+# *.jsonl
 *.log
 *.tmp
 *.bak
