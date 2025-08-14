@@ -56,9 +56,14 @@ def get_user_input():
     print("1. sigir")
     print("2. trec_2021")
     print("3. trec_2022")
-    corpus_choice = input("Select corpus (1-3): ").strip()
-    corpus_map = {'1': 'sigir', '2': 'trec_2021', '3': 'trec_2022'}
-    corpus = corpus_map.get(corpus_choice, 'sigir')
+    print("4. custom")
+    corpus_choice = input("Select corpus (1-4): ").strip()
+    if corpus_choice == '4':
+        corpus_name = input("Enter corpus name: ").strip().lower()
+        corpus = corpus_name
+    else:
+        corpus_map = {'1': 'sigir', '2': 'trec_2021', '3': 'trec_2022'}
+        corpus = corpus_map.get(corpus_choice, 'sigir')
 
     print("\nAvailable models:")
     print("1. gpt-4o-mini")
