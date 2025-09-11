@@ -12,7 +12,67 @@ import sys
 import traceback
 import numpy as np
 from tqdm import tqdm
+import re
+# Add the project root directory to the Python path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from common.utils import load_corpus_details
 
+def safe_parse_json_field(field):
+    """
+    Robustly parse a field that may be a dict, a JSON string, or a malformed JSON string with extra text.
+    Returns a dict or {}.
+    """
+    if isinstance(field, dict):
+        return field
+
+    if not isinstance(field, str):
+        return {}
+
+    # 1. Extract the JSON substring (between first '{' and last '}')
+    match = re.search(r'(\{.*\})', field, re.DOTALL)
+    if match:
+        json_str = match.group(1)
+    else:
+        json_str = field
+
+    # 2. Try normal JSON parsing
+    try:
+        return json.loads(json_str)
+    except Exception:
+        pass
+
+    # 3. Try to repair common JSON issues
+    # a) Replace single quotes with double quotes
+    repaired = json_str.replace("'", '"')
+    # b) Remove trailing commas before closing braces/brackets
+    repaired = re.sub(r',\s*([}\]])', r'\1', repaired)
+    # c) Remove newlines and excessive spaces
+    repaired = re.sub(r'\n', ' ', repaired)
+    repaired = re.sub(r'\s+', ' ', repaired)
+
+    try:
+        return json.loads(repaired)
+    except Exception:
+        pass
+
+    # 4. As a last resort, extract key-value pairs with regex (very basic fallback)
+    result = {}
+    try:
+        # This will extract keys and values of the form "key": [ ... ]
+        pairs = re.findall(r'"(\d+)":\s*(\[[^\]]*\])', repaired)
+        for k, v in pairs:
+            try:
+                result[k] = json.loads(v)
+            except Exception:
+                result[k] = v
+        if result:
+            return result
+    except Exception:
+        pass
+
+    # 5. If all else fails, print a warning and return empty dict
+    print(f"[WARN] Could not robustly parse JSON field:\n{field[:200]}...")
+    return {}
 # Add the project root directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from common.utils import load_corpus_details
@@ -25,6 +85,7 @@ def parse_arguments():
     parser.add_argument("matching_results_path", help="Path to the matching results JSON file")
     parser.add_argument("agg_results_path", help="Path to the aggregation results JSON file")
     parser.add_argument("overwrite", help="Overwrite existing results (true/false)")
+    # Make corpus and model optional - will be extracted from file paths if not provided
     parser.add_argument("corpus", help="Corpus name")
     parser.add_argument("model", help="Model name")
     return parser.parse_args()
@@ -136,7 +197,18 @@ def main(args):
         matching_results = json.load(f)
     with open(args.agg_results_path, 'r') as f:
         agg_results = json.load(f)
-
+        
+    # Extract corpus and model from the matching_results_path filename
+    matching_filename = os.path.basename(args.matching_results_path)
+    # Example: matching_results_sigir_gpt-4-turbo.json
+    match = re.match(r"matching_results_(.+)_(.+)\.json", matching_filename)
+    if match:
+        corpus = match.group(1)
+        model = match.group(2)
+    else:
+        raise ValueError(f"Could not parse corpus/model from filename: {matching_filename}")
+    # Load corpus details using the common utility function
+    
     # Load corpus details using the common utility function
     corpus_details = load_corpus_details(f"dataset/{args.corpus}/corpus.jsonl")
 

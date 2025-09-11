@@ -1,7 +1,7 @@
 __author__ = "qiao"
 
 """
-Using GPT or Llama to aggregate the scores by itself.
+Using GPT or Claude to aggregate the scores by itself.
 """
 
 import argparse
@@ -25,10 +25,7 @@ def parse_arguments():
     parser.add_argument("corpus", help="Corpus name")
     parser.add_argument("model", help="Model to use for aggregation")
     parser.add_argument("matching_results_path", help="Path to the matching results file")
-    parser.add_argument("overwrite", help="Overwrite existing results (true/false)")
-    parser.add_argument("-g", "--num_gpus", help="The number of GPUs to use for model distribution")
-    parser.add_argument("-d", "--checkpoint_dir", help="Checkpoint directory for Llama models")
-    parser.add_argument("-q", "--quantize", action="store_true", help="Use 8-bit quantization for Llama models")
+    parser.add_argument("overwrite", help="Overwrite existing results (true/false)")    parser.add_argument("-d", "--checkpoint_dir", help="Checkpoint directory for Llama models")
     return parser.parse_args()
 
 def load_data(retrieved_trials_path, corpus_path):
@@ -82,7 +79,7 @@ def main(args):
     results = json.load(open(args.matching_results_path))
 
     # Set up the model
-    model_type, model_instance = setup_model(args.model, args.num_gpus, args.checkpoint_dir, args.quantize)
+    model_type, model_instance = setup_model(args.model)
 
     for patient_entry in tqdm(retrieved_trials, desc="Processing patients"):
         patient_id = patient_entry["patient_id"]
@@ -114,7 +111,8 @@ def main(args):
                     continue
 
                 trial_results = results.get(patient_id, {}).get(label, {}).get(trial_id)
-
+                
+                # Skip if trial_results is not a dictionary or is empty
                 if not isinstance(trial_results, dict):
                     failed_outputs[patient_id][trial_id] = "matching result error"
                     continue

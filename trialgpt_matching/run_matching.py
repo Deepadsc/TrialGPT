@@ -27,9 +27,6 @@ def parse_arguments():
     parser.add_argument("corpus", help="Corpus name")
     parser.add_argument("model", help="Model to use for matching")
     parser.add_argument("overwrite", help="Overwrite existing results (true/false)")
-    parser.add_argument("-g", "--num_gpus", help="The number of GPUs to use for model distribution")
-    parser.add_argument("-d", "--checkpoint_dir", help="Checkpoint directory for Llama models")
-    parser.add_argument("-q", "--quantize", action="store_true", help="Use 8-bit quantization for Llama models")
     return parser.parse_args()
 
 
@@ -39,7 +36,7 @@ def main(args):
     failed_output_path = f"results/failed_matching_results_{args.corpus}_{args.model}.json"
 
     # Set up the model once before the main processing loop
-    model_type, model_instance = setup_model(args.model, args.num_gpus, args.checkpoint_dir, args.quantize)
+    model_type, model_instance = setup_model(args.model)
 
     # Dict{Str(patient_id): Dict{Str(label): Dict{Str(trial_id): Str(output)}}}
     if args.overwrite.lower() == 'true' or not os.path.exists(output_path):

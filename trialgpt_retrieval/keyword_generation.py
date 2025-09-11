@@ -12,10 +12,10 @@ import sys
 from tqdm import tqdm
 
 # Add the project root directory to the Python path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root) 
 from common.utils import setup_model, generate_response
-
 
 def parse_arguments_kg():
     """
@@ -32,10 +32,7 @@ def parse_arguments_kg():
     # Required arguments
     parser.add_argument("-c", "--corpus", required=True, help="The corpus to process: trec_2021, trec_2022, or sigir")
     parser.add_argument("-m", "--model", required=True, help="The model to use for generating keywords")
-    parser.add_argument("-g", "--num_gpus", help="The number of GPUs to use for model distribution")
     # Optional arguments
-    parser.add_argument("-d", "--checkpoint_dir", help="Checkpoint directory for Llama models")
-    parser.add_argument("-q", "--quantize", action="store_true", help="Use 8-bit quantization for Llama models")
 
     return parser.parse_args()
 
@@ -87,13 +84,13 @@ def main(args):
     """
     Generate search keywords for patient descriptions using specified model and corpus.
 
-    This function processes patient descriptions from a given corpus using either GPT-4o-mini or Llama models
+    This function processes patient descriptions from a given corpus using either GPT-4o-mini or Claude models
     to generate relevant medical keywords. It saves the results to a JSON file.
     """
     outputs = {}
     failed_outputs = {}
 
-    model_type, model_instance = setup_model(args.model, args.num_gpus, args.checkpoint_dir, args.quantize)
+    model_type, model_instance = setup_model(args.model)
 
     # Count total lines in the input file for progress tracking
     with open(f"dataset/{args.corpus}/queries.jsonl", "r") as f:
@@ -105,19 +102,42 @@ def main(args):
             try:
                 entry = json.loads(line)
                 messages = get_keyword_generation_messages(entry["text"])
-
-                if model_type == 'gpt':
-                    output = generate_response(model_type, model_instance, messages, args.model)
-                else:
-                    output = generate_response(model_type, model_instance, messages)
-
+                entry_id = entry["_id"]
+                
+                print(f"\nProcessing entry {entry_id}")
+                print(f"Using model: {args.model}")
+                
                 try:
-                    outputs[entry["_id"]] = json.loads(output)
-                except json.JSONDecodeError:
-                    print(f"Failed to parse JSON for entry {entry['_id']}. Output: {output}")
-                    failed_outputs[entry["_id"]] = {
-                        "error": "Failed to parse JSON",
-                        "raw_output": output
+                    if model_type == 'gpt':
+                        output = generate_response(model_type, model_instance, messages, args.model)
+                    else:
+                        output = generate_response(model_type, model_instance, messages)
+                    
+                    print(f"Raw API response: {output[:200]}..." if output else "Empty API response")
+                    
+                    if not output:
+                        raise ValueError("Empty response from API")
+                        
+                    try:
+                        parsed_output = json.loads(output)
+                        if not isinstance(parsed_output, dict) or 'conditions' not in parsed_output:
+                            raise ValueError("Response missing required 'conditions' field")
+                        outputs[entry_id] = parsed_output
+                        print(f"Successfully processed entry {entry_id}")
+                        
+                    except json.JSONDecodeError as je:
+                        print(f"JSON decode error for entry {entry_id}: {str(je)}")
+                        print(f"Raw response: {output}")
+                        failed_outputs[entry_id] = {
+                            "error": f"Failed to parse JSON: {str(je)}",
+                            "raw_output": output
+                        }
+                        
+                except Exception as e:
+                    print(f"Error generating response for entry {entry_id}: {str(e)}")
+                    failed_outputs[entry_id] = {
+                        "error": f"Generation error: {str(e)}",
+                        "raw_output": output if 'output' in locals() else "No output generated"
                     }
             except Exception as e:
                 print(f"Error processing entry {entry['_id']}: {str(e)}")

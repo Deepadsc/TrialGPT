@@ -49,7 +49,7 @@ def setup_model(model_name):
     if model_name.startswith('gpt'):
         client = openai.OpenAI()
         return 'gpt', client
-    if model_name.startswith('claude'):
+    elif model_name.startswith('claude'):
         api_key = os.getenv('ANTHROPIC_API_KEY')
         if not api_key:
             raise ValueError("ANTHROPIC_API_KEY environment variable not set")
@@ -57,6 +57,7 @@ def setup_model(model_name):
         return 'claude', client
     else:
         raise ValueError(f"Unsupported model name: {model_name}")
+
 def generate_response(model_type, model_instance, messages, model_name=None):
     """
     Generate a response using either Claude or GPT models.

@@ -5,9 +5,10 @@ Conduct the first stage retrieval by the hybrid retriever
 """
 #nltk.download('punkt')
 
+import os
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'  # Add this line
 import argparse
 import json
-import os
 import sys
 from collections import defaultdict
 
@@ -19,8 +20,11 @@ from transformers import AutoModel, AutoTokenizer
 # Force all torch operations to use CPU
 DEVICE = torch.device('cpu')
 
+
 # Add the project root directory to the Python path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root) 
 
 from common.utils import load_corpus_details
 from trialgpt_retrieval.corpus_index import get_bm25_corpus_index, get_medcpt_corpus_index, load_and_format_patient_descriptions

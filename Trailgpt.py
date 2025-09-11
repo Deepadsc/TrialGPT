@@ -15,10 +15,12 @@ if project_root not in sys.path:
 load_dotenv()
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
-if not os.getenv('OPENAI_API_KEY'):
-    raise ValueError("OPENAI_API_KEY not found in .env file. Please add your OpenAI API key to the .env file.")
-if not os.getenv('ANTHROPIC_API_KEY'):
-    raise ValueError("ANTHROPIC_API_KEY not found in .env file. Please add your Anthropic API key to the .env file.")
+# Check if at least one API key is provided
+if not os.getenv('OPENAI_API_KEY') and not os.getenv('ANTHROPIC_API_KEY'):
+    raise ValueError("Neither OPENAI_API_KEY nor ANTHROPIC_API_KEY found in .env file. Please add at least one API key to the .env file.")
+
+# Set default model to use based on available API keys
+DEFAULT_MODEL = 'gpt-4o-mini' if os.getenv('OPENAI_API_KEY') else 'claude-3-5-haiku-20241022'
 
 def get_user_input():
     """
@@ -31,8 +33,9 @@ def get_user_input():
     skip_hybrid_fusion = input("Skip hybrid fusion retrieval? (true/false, default: false): ").strip().lower() == 'true'
     skip_matching = input("Skip matching? (true/false, default: false): ").strip().lower() == 'true'
     skip_aggregation = input("Skip aggregation? (true/false, default: false): ").strip().lower() == 'true'
+    skip_ranking = input("Skip ranking? (true/false, default: false): ").strip().lower() == 'true'
 
-    # Prompt for core corpus/model (needed for all steps)
+    # Always ask for corpus first as it's needed for all steps
     print("\nAvailable corpuses:")
     print("1. sigir")
     print("2. trec_2021")
@@ -41,50 +44,101 @@ def get_user_input():
     corpus_map = {'1': 'sigir', '2': 'trec_2021', '3': 'trec_2022'}
     corpus = corpus_map.get(corpus_choice, 'sigir')
 
-    print("\nAvailable models:")
-    print("1. gpt-4o-mini")
-    print("2. gpt-4-turbo")
-    print("3. gpt-4")
-    print("4. gpt-3.5-turbo")
-    print("5. claude-3-5-sonnet-20241022")
-    print("6. claude-3-haiku-20240307")
-    print("7. claude-3-opus-20240229")
-    model_choice = input("Select model (1-7): ").strip()
-    model_map = {'1': 'gpt-4o-mini', '2': 'gpt-4-turbo', '3': 'gpt-4', '4': 'gpt-3.5-turbo', '5': 'claude-3-5-sonnet-20241022', '6': 'claude-3-haiku-20240307', '7': 'claude-3-opus-20240229'}
-    model = model_map.get(model_choice, 'gpt-4o-mini')
-
-    # Only prompt for keyword generation query type if not skipping
-    q_type = None
+    # Only ask for model if keyword generation, matching, or aggregation is not skipped
+    model = None
     if not skip_keyword_gen:
-        print("\nAvailable query types:")
-        print("1. raw (original queries)")
-        print("2. gpt-4o-mini")
-        print("3. gpt-4-turbo")
-        print("4. gpt-4")
-        print("5. gpt-3.5-turbo")
-        print("6. claude-3-5-sonnet-20241022")
-        print("7. claude-3-haiku-20240307")
-        print("8. claude-3-opus-20240229")
-        print("9. Clinician_A")
-        print("10. Clinician_B")
-        print("11. Clinician_C")
-        print("12. Clinician_D")
-        qtype_choice = input("Select query type (1-12): ").strip()
-        qtype_map = {
-            '1': 'raw', '2': 'gpt-4o-mini', '3': 'gpt-4-turbo', '4': 'gpt-4',
-            '5': 'gpt-3.5-turbo',   '6': 'claude-3-5-sonnet-20241022', '7': 'claude-3-haiku-20240307',
-            '8': 'claude-3-opus-20240229', '9': 'Clinician_A', '10': 'Clinician_B',
-            '11': 'Clinician_C', '12': 'Clinician_D'
+        print("\n=== Model Selection for Keyword Generation ===")
+        print("1. gpt-4o-mini")
+        print("2. gpt-4-turbo")
+        print("3. gpt-3.5-turbo")
+        print("4. claude-3-5-haiku-20241022")
+        print("5. claude-3-5-sonnet-20240620")
+        print("6. claude-3-opus-20240229")
+        model_choice = input("Select model (1-6): ").strip()
+        model_map = {
+            '1': 'gpt-4o-mini',
+            '2': 'gpt-4-turbo',
+            '3': 'gpt-3.5-turbo',
+            '4': 'claude-3-5-haiku-20241022',
+            '5': 'claude-3-5-sonnet-20240620',
+            '6': 'claude-3-opus-20240229',
         }
-        q_type = qtype_map.get(qtype_choice, 'raw')
-
-    # Only prompt for hybrid fusion params if not skipping
-    # Step-specific overwrite flags
+        model = model_map.get(model_choice, DEFAULT_MODEL)
+    elif not skip_matching or not skip_aggregation:
+        # If we're skipping keyword gen but doing matching or aggregation, we still need a model
+        print("\n=== Model Selection ===")
+        print("1. gpt-4o-mini")
+        print("2. gpt-4-turbo")
+        print("3. gpt-3.5-turbo")
+        print("4. claude-3-5-haiku-20241022")
+        print("5. claude-3-5-sonnet-20240620")
+        print("6. claude-3-opus-20240229")
+        model_choice = input("Select model (1-6): ").strip()
+        model_map = {
+            '1': 'gpt-4o-mini',
+            '2': 'gpt-4-turbo',
+            '3': 'gpt-3.5-turbo',
+            '4': 'claude-3-5-haiku-20241022',
+            '5': 'claude-3-5-sonnet-20240620',
+            '6': 'claude-3-opus-20240229',
+        }
+        model = model_map.get(model_choice, DEFAULT_MODEL)
+    elif not skip_ranking:
+        # prompt for model (add this block!)
+        print("\n=== Model Selection for Ranking ===")
+        print("1. gpt-4o-mini")
+        print("2. gpt-4-turbo")
+        print("3. gpt-3.5-turbo")
+        print("4. claude-3-5-haiku-20241022")
+        print("5. claude-3-5-sonnet-20240620")
+        print("6. claude-3-opus-20240229")
+        model_choice = input("Select model (1-6): ").strip()
+        model_map = {
+            '1': 'gpt-4o-mini',
+            '2': 'gpt-4-turbo',
+            '3': 'gpt-3.5-turbo',
+            '4': 'claude-3-5-haiku-20241022',
+            '5': 'claude-3-5-sonnet-20240620',
+            '6': 'claude-3-opus-20240229',
+        }
+        model = model_map.get(model_choice, DEFAULT_MODEL)
+    # Only ask for query type and hybrid fusion params if hybrid fusion is not skipped
     q_type = None
     topk = bm25_weight = medcpt_weight = rrf_k = batch_size = eligibility_threshold = exclusion_threshold = None
     overwrite_hybrid = overwrite_matching = overwrite_aggregation = None
 
     if not skip_hybrid_fusion:
+        print("\n=== Hybrid Fusion Retrieval Settings ===")
+        print("\nAvailable query types (select which pre-generated queries to use):")
+        print("1. raw (original queries)")
+        print("2. gpt-4o-mini")
+        print("3. gpt-4-turbo")
+        print("4. gpt-3.5-turbo")
+        print("5. claude-3-5-haiku-20241022")
+        print("6. claude-3-5-sonnet-20240620")
+        print("7. claude-3-opus-20240229")
+        print("8. Clinician_A")
+        print("9. Clinician_B")
+        print("7. Clinician_C")
+        print("8. Clinician_D")
+        qtype_choice = input("Select query type (1-8): ").strip()
+        qtype_map = {
+            '1': 'raw',
+            '2': 'gpt-4o-mini',
+            '3': 'gpt-4-turbo',
+            '4': 'gpt-3.5-turbo',
+            '5': 'claude-3-5-haiku-20241022',
+            '6': 'claude-3-5-sonnet-20240620',
+            '7': 'claude-3-opus-20240229',
+            '8': 'Clinician_A',
+            '9': 'Clinician_B',
+            '10': 'Clinician_C',
+            '8': 'Clinician_D'
+        }
+        q_type = qtype_map.get(qtype_choice, 'raw')
+
+        # Hybrid fusion parameters
+        print("\n=== Hybrid Fusion Parameters ===")
         topk = int(input("Enter top-k value (number of results to retrieve, e.g., 20): "))
         bm25_weight = float(input("Enter BM25 weight (e.g., 1.0): "))
         medcpt_weight = float(input("Enter MedCPT weight (e.g., 1.0): "))
@@ -94,6 +148,7 @@ def get_user_input():
         batch_size = int(input("Enter batch size (e.g., 32): "))
         eligibility_threshold = float(input("Enter eligibility threshold (0-1, e.g., 0.5): "))
         exclusion_threshold = float(input("Enter exclusion threshold (0-1, e.g., 0.3): "))
+
     if not skip_matching:
         overwrite_matching = input("Overwrite existing matching results? (true/false, default: false): ").strip().lower()
         overwrite_matching = 'true' if overwrite_matching == 'true' else 'false'
@@ -116,7 +171,7 @@ def get_user_input():
         'skip_hybrid_fusion': skip_hybrid_fusion,
         'skip_matching': skip_matching,
         'skip_aggregation': skip_aggregation,
-        'skip_ranking': False,     # Never skip ranking as it's the final step
+        'skip_ranking': skip_ranking,
         'overwrite_hybrid': overwrite_hybrid,
         'overwrite_matching': overwrite_matching,
         'overwrite_aggregation': overwrite_aggregation
@@ -124,6 +179,17 @@ def get_user_input():
 
 def run_step(description, command):
     print(f"\n🚀 {description}")
+
+    # Validate command components
+    for i, part in enumerate(command):
+        if not isinstance(part, str):
+            # If a part is None or not a string, this indicates an issue upstream.
+            # Log the problematic part and the command for easier debugging.
+            print(f"❌ Error: Command part at index {i} is not a string (value: {part!r}, type: {type(part).__name__}) for step '{description}'.")
+            print(f"   Problematic command: {command}")
+            # Exit because subprocess.run expects a list of strings.
+            exit(1)
+            
     print(f"Running: {' '.join(command)}")
     result = subprocess.run(command)
     if result.returncode != 0:

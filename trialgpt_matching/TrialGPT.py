@@ -8,7 +8,7 @@ import json
 import os
 import sys
 from dotenv import load_dotenv
-from common.utils import generate_response
+from ..common.utils import generate_response
 # Add the project root directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -209,9 +209,9 @@ def trialgpt_match(trial: dict[str, any], patient: str, model: str, model_type: 
     Args:
         trial (dict[str, any]): A dictionary containing clinical trial information.
         patient (str): A string containing the patient's medical information.
-        model (str): The specific GPT model name (for OpenAI  models) or Claude model name (for Anthropic models) or Llama model name (for Llama models).
-        model_type (str): Either 'gpt' or 'claude' or 'llama'.
-        model_instance: Either an OpenAI client or Claude client or a Llama pipeline.
+        model (str): The specific GPT model name (for OpenAI  models) or Claude model name (for Anthropic models).
+        model_type (str): Either 'gpt' or 'claude'.
+        model_instance: Either an OpenAI client or Claude client.
 
 
     Returns:
